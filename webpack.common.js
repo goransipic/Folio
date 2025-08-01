@@ -26,11 +26,11 @@ const assets = [
   {from: 'site.webmanifest', to: 'site.webmanifest'},
 ];
 
-// Generate patterns for each language (copy files into /en/, /hr/)
+// Copy to root for 'hr', and prefix with lang for others
 const patterns = languages.flatMap(lang =>
   assets.map(({from, to}) => ({
     from,
-    to: `${lang}/${to}`,
+    to: lang === 'hr' ? to : `${lang}/${to}`,
   }))
 );
 
@@ -49,11 +49,12 @@ module.exports = {
   },
   plugins: [
     ...languages.map(lang => new HtmlWebpackPlugin({
-      filename: `${lang}/index.html`,
+      filename: lang === 'hr' ? 'index.html' : `${lang}/index.html`,
       template: './templates/index.hbs',
-      templateParameters: () => (loadJson(lang))})),
+      templateParameters: () => loadJson(lang),
+    })),
     // Copy localized static files
-    new CopyPlugin({patterns}),
+    new CopyPlugin({ patterns }),
   ],
 };
 
