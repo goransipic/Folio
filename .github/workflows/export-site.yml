@@ -1,17 +1,16 @@
-name: Deploy to GitHub Pages
+name: Build and deploy to docs folder on main
 
 on:
   push:
     branches: [main]
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
+      - uses: actions/checkout@v4
+      
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -20,11 +19,17 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build with Webpack
+      - name: Build site
         run: npm run build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+      - name: Commit and push docs folder if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs
+          if ! git diff --cached --quiet; then
+            git commit -m "Update docs folder with latest build [skip ci]"
+            git push origin main
+          else
+            echo "No changes in docs folder"
+          fi
