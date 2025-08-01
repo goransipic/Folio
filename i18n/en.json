@@ -433,5 +433,27 @@
   "all_rights_reserved_text": "All rights reserved",
   "terms_text": "Terms",
   "privacy_text": "Privacy",
-  "cookies_text": "Cookies"
+  "cookies_text": "Cookies",
+
+  "contactTranslation": {
+    "contactForm" : {
+    "title": "Don't be shy, say hi!",
+    "subtitle": "Have a question, a project? We'd love to discuss...",
+    "namePlaceholder": "Name",
+    "emailPlaceholder": "E-mail",
+    "subjectPlaceholder": "Subject",
+    "messagePlaceholder": "Message",
+    "sendButton": "Send Message"
+    },
+    "contactInfo": {
+      "phoneTitle": "+(251) 854-6308",
+      "phoneDescription": "Call us on above number to get quick solution. Additional charges may apply",
+      "skypeTitle": "Skype: HelloFolio",
+      "skypeDescription": "If you have technical questions, chat live with developers in our Skype chat",
+      "emailTitle": "general@folio.com",
+      "emailDescription": "For general queries and questions including partnership opportunities",
+      "careerTitle": "career@folio.com",
+      "careerDescription": "Careers & Press related queries please email us at above address"
+    }
+  }
 }

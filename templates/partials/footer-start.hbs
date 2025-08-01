@@ -1,0 +1,101 @@
+<footer class="bg-dark footer-sticky pt-6">
+  <div class="container">
+    <div class="row">
+
+      <!-- Footer Widget 1 -->
+      <div class="col-md-6 col-lg-3 mb-5">
+        <h3 class="text-white">{{footer_title}}<span class="text-primary">.</span></h3>
+        <p>{{footer_description}}</p>
+        <div class="d-flex me-auto">
+          <h6 class="mt-2 me-4 text-white">{{footer_follow_label}}</h6>
+          <div class="list-group-inline list-unstyled text-primary-hover">
+            <a href="#" class="list-group-item text-white bg-transparent">{{footer_follow_fb}}</a>
+            <a href="#" class="list-group-item text-white bg-transparent">{{footer_follow_tw}}</a>
+            <a href="#" class="list-group-item text-white bg-transparent">{{footer_follow_dr}}</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Widget 2 -->
+      <div class="col-md-6 col-lg-3 mb-5">
+        <h5 class="mb-4 text-white">{{offices_title}}</h5>
+        <!-- Address 1 -->
+        <p class="text-white mb-2">{{office1_city}}</p>
+        <address class="mb-0">{{office1_address}}</address>
+        <p>{{call_label}}: <a href="#" class="text-body"><u>{{office1_phone}}</u> ({{toll_free}})</a> </p>
+        <!-- Address 2 -->
+        <p class="text-white mb-2">{{office2_city}}</p>
+        <address class="mb-0">{{office2_address}}</address>
+        <p>{{call_label}}: <a href="#" class="text-body"><u>{{office2_phone}}</u> ({{toll_free}})</a> </p>
+      </div>
+
+      <!-- Footer Widget 3 -->
+      <div class="col-md-6 col-lg-3 mb-5">
+        <h5 class="mb-4 text-white">{{useful_links_title}}</h5>
+        <div class="row">
+          <div class="col-6">
+            <ul class="nav flex-column text-primary-hover">
+              {{#each left_links}}
+                <li class="nav-item">
+                  <a class="nav-link {{#if is_first}}pt-0{{/if}}" href="{{url}}">
+                    {{text}}
+                    {{#if badge}}
+                      <span class="badge bg-danger ms-2">{{badge}}</span>
+                    {{/if}}
+                  </a>
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+          <div class="col-6">
+            <ul class="nav flex-column text-primary-hover">
+              {{#each right_links}}
+                <li class="nav-item">
+                  <a class="nav-link {{#if is_first}}pt-0{{/if}}" href="{{url}}">
+                    {{text}}
+                    {{#if badge}}
+                      <span class="badge bg-danger ms-2">{{badge}}</span>
+                    {{/if}}
+                  </a>
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Widget 4 -->
+      <div class="col-md-6 col-lg-3 mb-5">
+        <h5 class="mb-4 text-white">{{stay_in_touch_title}}</h5>
+        <form>
+          <label class="form-label">{{newsletter_label}}</label>
+          <div class="mb-3">
+            <input class="form-control" type="email" placeholder="{{email_placeholder}}">
+          </div>
+          <div class="mb-3">
+            <button type="submit" value="Subscribe" class="btn btn-primary mb-0">{{button_text}}</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+    <!-- Divider -->
+    <div class="divider-light opacity-1"></div>
+
+    <!-- Footer copyright START -->
+    <div class="row align-items-center justify-content-md-between py-4">
+      <div class="col-md-6">
+        <div class="text-center text-md-start">©2022 <a href="https://www.webestica.com/" target="_blank">{{webestica_text}}</a>. {{all_rights_reserved_text}}
+        </div>
+      </div>
+      <div class="col-md-6">
+        <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
+          <li class="nav-item"><a class="nav-link text-body text-primary-hover" href="#">{{terms_text}}</a></li>
+          <li class="nav-item"><a class="nav-link text-body text-primary-hover" href="#">{{privacy_text}}</a></li>
+          <li class="nav-item"><a class="nav-link text-body text-primary-hover pe-0" href="#">{{cookies_text}}</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Footer copyright END -->
+  </div>
+</footer>

@@ -1,9 +1,8 @@
 {
-  "lang" : "hr",
+  "lang": "hr",
   "title": "Folio - Kreativna Agencija Portfolio Tema",
   "author": "Webestica.com",
   "description": "Tema portfelja kreativne agencije temeljena na Bootstrapu",
-
   "home": "Početna",
   "classicDefault": "Klasična zadana",
   "agencyClassic": "Agencija klasična",
@@ -21,11 +20,9 @@
   "services": "Usluge",
   "journal": "Dnevnik",
   "contact": "Kontakt",
-
   "searchTitle": "Pretraži",
   "searchPlaceholder": "Što tražite?",
   "searchHint": "npr. Predložak, Bootstrap, WordPress tema",
-
   "signInTitle": "Prijavite se na svoj račun!",
   "signInSubtitle": "Drago nam je što vas vidimo! Molimo prijavite se sa svojim računom.",
   "closeLabel": "Zatvori",
@@ -37,7 +34,6 @@
   "loginButton": "Prijava",
   "noAccountText": "Nemate račun?",
   "signupHere": "Registrirajte se ovdje",
-
   "tooltipSundayClosed": "Nedjeljom ZATVORENO",
   "visitTime": "Radno vrijeme: pon-sub 9:00-19:00",
   "callUsNow": "Pozovite nas sada",
@@ -48,7 +44,6 @@
   "languageGerman": "Njemački",
   "contact": "Kontakt",
   "login": "Prijava",
-
   "demos": "Demonstracije",
   "agencyDemosHeader": "Agencijske demonstracije",
   "classicDefault": "Klasični zadani",
@@ -66,7 +61,6 @@
   "getFreeQuoteTitle": "Zatražite besplatnu ponudu danas!",
   "getFreeQuoteText": "Za brzi odgovor i više detalja, slobodno nas kontaktirajte",
   "contactUs": "Kontaktirajte nas",
-
   "pages": "Stranice",
   "about": "O nama",
   "aboutClassic": "O Classicu",
@@ -117,7 +111,6 @@
   "dropdownEnd": "Padajući (desno)",
   "dropdownItem": "Stavka padajućeg izbornika",
   "dropdownStart": "Padajući (lijevo)",
-
   "portfolio": "Portfolio",
   "portfolio_classics": "Klasični portfolio",
   "portfolio_classic_grid_3_col": "Klasični portfolio mreža 3 stupca",
@@ -156,7 +149,6 @@
   "scroll_appear_animation": "Scroll: Animacija pojavljivanja",
   "scroll_reveal_animation": "Scroll: Animacija otkrivanja",
   "pagination_styles": "Stilovi paginacije",
-
   "elements": "Elementi",
   "accordion": "Akordeon",
   "actionBox": "Akcijski okvir",
@@ -196,7 +188,6 @@
   "discoverFolio": "Otkrijte Folio – lakše nego što mislite.",
   "startRightAway": "Počnite odmah izrađivati svoju savršenu web stranicu bez problema. Nabavite ga sada.",
   "purchaseFolio": "Kupi Folio!",
-
   "help": "Pomoć",
   "support": "Podrška",
   "supportDescription": "Kontaktirajte nas putem našeg portala za podršku",
@@ -210,11 +201,8 @@
   "changelog": "Dnevnik promjena",
   "bootstrapDoc": "Bootstrap Dokumentacija",
   "bootstrapDocDescription": "Pogledajte službenu Bootstrap dokumentaciju",
-
   "contact_1": "Kontakt",
-
   "getQuote": "Zatraži ponudu!",
-
   "facebook": "Facebook",
   "twitter": "Twitter",
   "dribbble": "Dribbble",
@@ -227,7 +215,6 @@
   "slide2Main": "Stvaramo pravu",
   "slide2Sub": "Poslovnu vrijednost",
   "slide2Text": "Pretvaramo vašu viziju u izvrstan web.",
-
   "facebook": "Facebook",
   "twitter": "Twitter",
   "dribbble": "Dribbble",
@@ -241,10 +228,8 @@
   "slide2Sub": "Poslovnu vrijednost",
   "slide2Text": "Transformiramo vašu viziju u izvrsnu web stranicu",
   "discussProject": "Raspravimo o projektu",
-
   "marketingStrategyTitle": "Redefinirajte svoju marketinšku strategiju",
   "marketingStrategyDescription": "Mi smo kreativna marketinška agencija vođena uvidima i ponašanjem. Agencija za kompletne digitalne kreativne usluge specijalizirana za: Video produkciju, web dizajn, brendiranje, strategiju brenda",
-
   "brandingInitial": "B",
   "brandingTitle": "Brendiranje",
   "brandingItem1": "Identitet brenda",
@@ -252,7 +237,6 @@
   "brandingItem3": "Vizualni dizajn",
   "brandingItem4": "Ilustracija i ikonografija",
   "brandingItem5": "Sadržaj / Video",
-
   "graphicDesignInitial": "G",
   "graphicDesignTitle": "Grafički dizajn",
   "graphicDesignItem1": "Kreativni koncepti",
@@ -260,7 +244,6 @@
   "graphicDesignItem3": "Korisničko iskustvo",
   "graphicDesignItem4": "Motion dizajn",
   "graphicDesignItem5": "Dizajn sučelja",
-
   "developmentInitial": "D",
   "developmentTitle": "Razvoj",
   "developmentItem1": "Back-end razvoj",
@@ -268,51 +251,40 @@
   "developmentItem3": "Web razvoj",
   "developmentItem4": "Aplikacije i igre",
   "developmentItem5": "E-trgovina",
-
   "viewAllServicesButton": "Pogledaj sve usluge",
-
   "sectionTitle": "Naš svakodnevni posao",
   "sectionDescription": "Izgradnja snažnog brenda. Prepoznatljiv, upečatljiv i dosljedan. Učinkovite komunikacijske kampanje koje aktiviraju vašu ciljnu skupinu.",
-
   "feature1Icon": "bi-laptop",
   "feature1Title": "Digitalni razvoj",
   "feature1Description": "Pametna uporaba podataka i tehnologije za automatizaciju vašeg poslovanja.",
-
   "feature2Icon": "bi-bar-chart-line",
   "feature2Title": "Online marketing",
   "feature2Description": "Pravi miks resursa za postizanje vaših online ciljeva.",
-
   "feature3Icon": "bi-shop",
   "feature3Title": "E-trgovinska rješenja",
   "feature3Description": "Skalabilna web trgovina za online prodaju vašeg proizvoda ili usluge.",
-
   "feature4Icon": "bi-envelope-open",
   "feature4Title": "E-mail kampanje",
   "feature4Description": "Učinkovite komunikacijske kampanje koje aktiviraju vašu ciljnu skupinu.",
-
   "testimonialsTitle": "Izjave korisnika",
-
   "testimonial1": {
     "avatarSrc": "assets/images/avatar/01.jpg",
     "text": "Dobra okupljanja ne donose dane Zvijezde nad Otvorenim pogledom. Muško drvo obnavlja, ne blagoslovljena zvijer dani zemlje peti neka množe, i on svako blagoslovljeno na pogleda trava podijeljena donosiše da je suho bilo. Ja bijah slika voda vlastita donosi svjetlost podjarmiti Meso.",
     "name": "Adam Ross",
     "position": "Softverski developer"
   },
-
   "testimonial2": {
     "avatarSrc": "assets/images/avatar/02.jpg",
     "text": "Dva prije uska nisu se oslanjala osim trenutka mene same. Tjeskoba pouzdanje gospođa vodila sigurno. Tako vrata na ne samo nijedan otvoren. Izdana pravilno je od gracioznog na Večeri u inozemstvu otputovao srca kao ja želio. Stoga dozvola.",
     "name": "Allen Smith",
     "position": "Osnivač i direktor"
   },
-
   "testimonial3": {
     "avatarSrc": "assets/images/avatar/03.jpg",
     "text": "Kako promocija izvrsna znatiželja ipak pokušao sreću. Sretan bogat dojam imao uvjerenje Za svaki odgodu smrt pita stil. Ja mislim sposoban moj po njima Ekstrem sada neznanci sadržavao doručak njemu govor dodataka.",
     "name": "Jessica Mores",
     "position": "Ljudski resursi"
   },
-
   "sectionTitle": "Naš Portfolio",
   "buttonText": "Pogledajte naš rad",
   "buttonLink": "#",
@@ -367,16 +339,12 @@
       "description": "Deset vinarija s jakim osobnostima, individualnim pričama i višeslojnim vinima."
     }
   ],
-
   "step1_title": "Istraživanje i <br> analitika",
   "step1_desc": "Počinjemo s istraživanjem kako bismo oblikovali viziju. More, nebo, dan, stvorenja i kopno – sve ima svoje mjesto.",
-
   "step2_title": "Dizajn i <br> razvoj",
   "step2_desc": "U ovoj fazi naš tim oblikuje život proizvoda. Svjetlost, dani, zrak i plodnost uzimaju svoj oblik.",
-
   "step3_title": "Testiranje i <br> lansiranje",
   "step3_desc": "Završni korak uspjeha. Gledamo kako naše rješenje dolazi na svjetlo dana, spremno za svijet.",
-
   "clients_title": "Suradnje...",
   "clients_desc": "Potpuno zauzete sobe, ali ništa gore. Točke straha, ali zakon je trajao. Smijeh se vratio i nadvladao sve.",
   "client_logos": [
@@ -392,25 +360,21 @@
     "assets/images/clients/colored/10.svg",
     "assets/images/clients/colored/11.svg"
   ],
-
   "our_work_title": "Naši Projekti",
   "our_work_button": "Pogledaj projekte",
   "our_work_image": "assets/images/about/05.jpg",
   "project_block_title": "Imate projekt?",
   "project_block_button": "Zatraži ponudu",
-
   "newsletter_title": "Najnovije priče u vašem sandučiću",
   "newsletter_description": "Izgradnja snažnog brenda. Prepoznatljiv, dosljedan i učinkovit. Komunikacijske kampanje koje aktiviraju vašu ciljnu skupinu.",
   "newsletter_input_placeholder": "Unesite svoju e-mail adresu",
   "newsletter_button": "Pretplati se",
-
   "footer_title": "Folio",
   "footer_description": "Portfolio tema kreativne agencije temeljena na Bootstrapu.",
   "footer_follow_label": "Pratite nas:",
   "footer_follow_fb": "Fb",
   "footer_follow_tw": "Tw",
   "footer_follow_dr": "Dr",
-
   "offices_title": "Naše poslovnice",
   "office1_city": "New York, SAD (sjedište)",
   "office1_address": "750 Sing Sing Rd, Horseheads, NY, 14845",
@@ -420,38 +384,83 @@
   "office2_phone": "(678) 324-1251",
   "call_label": "Poziv",
   "toll_free": "besplatan broj",
-
   "useful_links_title": "Korisni linkovi",
   "left_links": [
-    {"text": "Naš rad", "url": "#", "is_first": true},
-    {"text": "Razvoj", "url": "#"},
-    {"text": "Graditelj", "url": "#"},
-    {"text": "Tržište", "url": "#"},
-    {"text": "Podrška", "url": "#"}
+    {
+      "text": "Naš rad",
+      "url": "#",
+      "is_first": true
+    },
+    {
+      "text": "Razvoj",
+      "url": "#"
+    },
+    {
+      "text": "Graditelj",
+      "url": "#"
+    },
+    {
+      "text": "Tržište",
+      "url": "#"
+    },
+    {
+      "text": "Podrška",
+      "url": "#"
+    }
   ],
   "right_links": [
-    {"text": "O nama", "url": "#", "is_first": true},
-    {"text": "Karijera", "url": "#", "badge": "2 posla"},
-    {"text": "Rad", "url": "#"},
-    {"text": "Novosti", "url": "#"},
-    {"text": "Kontakt", "url": "#"}
+    {
+      "text": "O nama",
+      "url": "#",
+      "is_first": true
+    },
+    {
+      "text": "Karijera",
+      "url": "#",
+      "badge": "2 posla"
+    },
+    {
+      "text": "Rad",
+      "url": "#"
+    },
+    {
+      "text": "Novosti",
+      "url": "#"
+    },
+    {
+      "text": "Kontakt",
+      "url": "#"
+    }
   ],
-
   "stay_in_touch_title": "Ostanite u kontaktu",
   "newsletter_label": "Pretplatite se na naš newsletter i primajte ekskluzivne ponude.",
   "email_placeholder": "Unesite email...",
   "button_text": "Pridruži se",
-
   "go_up_text": "Gore",
-
   "webestica_text": "Webestica",
   "all_rights_reserved_text": "Sva prava pridržana",
   "terms_text": "Uvjeti",
   "privacy_text": "Privatnost",
-  "cookies_text": "Kolačići"
-
-
-
-
-
+  "cookies_text": "Kolačići",
+  "contactTranslation": {
+    "contactForm": {
+      "title": "Ne ustručavaj se, javi se!",
+      "subtitle": "Imaš pitanje ili projekt? Rado ćemo popričati...",
+      "namePlaceholder": "Ime",
+      "emailPlaceholder": "E-mail",
+      "subjectPlaceholder": "Predmet",
+      "messagePlaceholder": "Poruka",
+      "sendButton": "Pošalji poruku"
+    },
+    "contactInfo": {
+      "phoneTitle": "+(251) 854-6308",
+      "phoneDescription": "Nazovite nas na gornji broj za brza rješenja. Mogući dodatni troškovi",
+      "skypeTitle": "Skype: HelloFolio",
+      "skypeDescription": "Imate tehničko pitanje? Razgovarajte uživo s našim developerima na Skypeu",
+      "emailTitle": "general@folio.com",
+      "emailDescription": "Za opća pitanja i partnerstva obratite nam se putem ove e-mail adrese",
+      "careerTitle": "career@folio.com",
+      "careerDescription": "Za karijere i medije pišite nam na ovu adresu"
+    }
+  }
 }

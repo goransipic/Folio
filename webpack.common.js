@@ -40,7 +40,10 @@ module.exports = {
     rules: [
       {
         test: /\.hbs$/,
-        loader: 'handlebars-loader'
+        loader: 'handlebars-loader',
+        options: {
+          partialDirs: [path.resolve(__dirname, 'templates/partials')],
+        },
       }
     ]
   },
