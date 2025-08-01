@@ -50,6 +50,11 @@ module.exports = {
       template: './templates/index.hbs',
       templateParameters: () => loadJson(lang),
     })),
+    ...languages.map(lang => new HtmlWebpackPlugin({
+      filename: lang === 'hr' ? 'contact.html' : `${lang}/contact.html`,
+      template: './templates/contact.hbs',
+      templateParameters: () => loadJson(lang),
+    })),
     // Copy localized static files
     new CopyPlugin({ patterns }),
   ],
