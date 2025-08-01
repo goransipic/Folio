@@ -14,6 +14,9 @@
     "build": "webpack --config webpack.config.prod.js"
   },
   "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "babel-loader": "^10.0.0",
     "copy-webpack-plugin": "^11.0.0",
     "handlebars": "^4.7.8",
     "handlebars-loader": "^1.7.3",
@@ -22,5 +25,8 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4",
     "webpack-merge": "^5.10.0"
+  },
+  "dependencies": {
+    "firebase": "^12.0.0"
   }
 }

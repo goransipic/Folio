@@ -32,12 +32,24 @@ const patterns = languages.flatMap(lang =>
 );
 
 module.exports = {
+  entry: {
+    app: './assets/js/app.js',
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
+    filename: './assets/js/appOutput.js',
   },
   module: {
     rules: [
+      // Babel support for .js files
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+        },
+      },
       {
         test: /\.hbs$/,
         loader: 'handlebars-loader',
@@ -52,11 +64,13 @@ module.exports = {
       filename: lang === 'hr' ? 'index.html' : `${lang}/index.html`,
       template: './templates/index.hbs',
       templateParameters: () => loadJson(lang),
+      inject: false,
     })),
     ...languages.map(lang => new HtmlWebpackPlugin({
       filename: lang === 'hr' ? 'contact.html' : `${lang}/contact.html`,
       template: './templates/contact.hbs',
       templateParameters: () => loadJson(lang),
+      inject: false,
     })),
     // Copy localized static files
     new CopyPlugin({ patterns }),

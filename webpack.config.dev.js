@@ -21,12 +21,6 @@ class AddI18nDependenciesPlugin {
 module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map',
-  entry: {
-    app: './assets/js/dummy.js',
-  },
-  output: {
-    filename: './js/app.js',
-  },
   devServer: {
     static: {
       directory: path.join(__dirname, 'dist')
