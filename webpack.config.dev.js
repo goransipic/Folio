@@ -33,7 +33,7 @@ module.exports = merge(common, {
     },
     watchFiles: ['./templates/**/*.hbs','./i18n/**/*.json'],
     open: {
-      target: ['/hr/'],
+      target: ['./'],
       app: {
         name: 'google chrome'
       }
