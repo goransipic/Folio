@@ -18,10 +18,7 @@ const assets = [
   {from: 'assets/css', to: 'assets/css'},
   {from: 'assets/vendor', to: 'assets/vendor'},
   {from: 'assets/js', to: 'assets/js'},
-  {from: 'icon.svg', to: 'icon.svg'},
-  {from: 'favicon.ico', to: 'favicon.ico'},
   {from: 'robots.txt', to: 'robots.txt'},
-  {from: 'icon.png', to: 'icon.png'},
   {from: '404.html', to: '404.html'},
   {from: 'site.webmanifest', to: 'site.webmanifest'},
 ];
