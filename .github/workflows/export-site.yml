@@ -39,7 +39,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Change this to your output folder:
-          path: ./docs
+          path: ./dist
 
   deploy:
     runs-on: ubuntu-latest

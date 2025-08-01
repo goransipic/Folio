@@ -36,7 +36,7 @@ const patterns = languages.flatMap(lang =>
 
 module.exports = {
   output: {
-    path: path.resolve(__dirname, 'docs'),
+    path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
   module: {

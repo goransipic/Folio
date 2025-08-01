@@ -7,4 +7,4 @@ node_modules
 Folio.iml
 .editorconfig
 .gitattributes
-/docs/
+/dist/
