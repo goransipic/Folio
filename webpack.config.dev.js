@@ -22,7 +22,7 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map',
   entry: {
-    app: './assets/js/functions.js',
+    app: './assets/js/dummy.js',
   },
   output: {
     filename: './js/app.js',

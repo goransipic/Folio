@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{lang}}">
 <head>
-  <title>Folio - Creative Agency Portfolio Theme</title>
+  <title>{{title}}</title>
+
   <!-- Meta Tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="Webestica.com">
-  <meta name="description" content="Bootstrap based Creative Agency Portfolio Theme">
+  <meta name="author" content="{{author}}">
+  <meta name="description" content="{{description}}">
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="assets/images/favicon.ico">
@@ -43,38 +44,37 @@
     <!-- Offcanvas inner START -->
     <ul class="nav dropdown-toggle-start-icon d-block flex-column mb-5">
       <li class="nav-item display-6 h5 position-relative">
-        <a href="index.html" class="nav-link text-white-stroke d-block">Home</a>
-        <!-- Offcanvas dropdown START -->
+        <a href="index.html" class="nav-link text-white-stroke d-block">{{home}}</a>
         <a class="dropdown-toggle collapsed" data-bs-toggle="collapse" href="#home-dropdown-collapse" role="button" aria-expanded="false" aria-controls="home-dropdown-collapse"></a>
+      </li>
       <li class="collapse" id="home-dropdown-collapse">
         <ul class="nav flex-column w-100 pb-4 pe-0 pe-lg-5">
-          <li class="nav-item"> <a class="nav-link text-body" href="index.html">Classic Default</a> </li>
-          <li class="nav-item"> <a class="nav-link text-body" href="index-2.html">Agency classic</a> </li>
-          <li class="nav-item"> <a class="nav-link text-body" href="index-3.html">Agency Trendy<span class="badge bg-danger ms-2">Hot</span></a> </li>
-          <li class="nav-item"> <a class="nav-link text-body" href="index-4.html">Agency Modern</a> </li>
-          <li class="nav-item"> <a class="nav-link text-body" href="index-5.html">Studio showcase</a> </li>
-          <li class="nav-item"> <a class="nav-link text-body" href="index-6.html">Creative agency</a> </li>
-          <li class="nav-item"> <a class="nav-link text-body" href="index-7.html">Digital studio</a> </li>
-          <li class="nav-item"> <a class="nav-link text-body" href="index-8.html">Portfolio showcase</a> </li>
-          <li class="nav-item"> <a class="nav-link text-body" href="index-9.html">Corporate </a> </li>
-          <li class="nav-item"> <a class="nav-link text-body" href="index-10.html">Personal Portfolio</a> </li>
+          <li class="nav-item"> <a class="nav-link text-body" href="index.html">{{classicDefault}}</a> </li>
+          <li class="nav-item"> <a class="nav-link text-body" href="index-2.html">{{agencyClassic}}</a> </li>
+          <li class="nav-item"> <a class="nav-link text-body" href="index-3.html">{{agencyTrendy}}<span class="badge bg-danger ms-2">{{hot}}</span></a> </li>
+          <li class="nav-item"> <a class="nav-link text-body" href="index-4.html">{{agencyModern}}</a> </li>
+          <li class="nav-item"> <a class="nav-link text-body" href="index-5.html">{{studioShowcase}}</a> </li>
+          <li class="nav-item"> <a class="nav-link text-body" href="index-6.html">{{creativeAgency}}</a> </li>
+          <li class="nav-item"> <a class="nav-link text-body" href="index-7.html">{{digitalStudio}}</a> </li>
+          <li class="nav-item"> <a class="nav-link text-body" href="index-8.html">{{portfolioShowcase}}</a> </li>
+          <li class="nav-item"> <a class="nav-link text-body" href="index-9.html">{{corporate}}</a> </li>
+          <li class="nav-item"> <a class="nav-link text-body" href="index-10.html">{{personalPortfolio}}</a> </li>
         </ul>
       </li>
-      <!-- Offcanvas dropdown END -->
       <li class="nav-item display-6 h5">
-        <a class="nav-link text-white-stroke" href="#">About</a>
+        <a class="nav-link text-white-stroke" href="#">{{about}}</a>
       </li>
       <li class="nav-item display-6 h5">
-        <a class="nav-link text-white-stroke" href="#">Work</a>
+        <a class="nav-link text-white-stroke" href="#">{{work}}</a>
       </li>
       <li class="nav-item display-6 h5">
-        <a class="nav-link text-white-stroke" href="#">Services</a>
+        <a class="nav-link text-white-stroke" href="#">{{services}}</a>
       </li>
       <li class="nav-item display-6 h5">
-        <a class="nav-link text-white-stroke" href="#">Our Journal</a>
+        <a class="nav-link text-white-stroke" href="#">{{journal}}</a>
       </li>
       <li class="nav-item display-6 h5">
-        <a class="nav-link text-white-stroke" href="#">Contact Us</a>
+        <a class="nav-link text-white-stroke" href="#">{{contact}}</a>
       </li>
     </ul>
     <div class="mt-auto mb-5">
@@ -90,7 +90,7 @@
 <div class="search-full collapse bg-dark p-3 pb-lg-0" id="search-open">
   <div class="container position-relative">
     <h2 class="position-absolute start-0 bottom-0 mb-n5 display-1 text-white-stroke opacity-1">
-      <span class="d-block">Search</span>
+      <span class="d-block">{{searchTitle}}</span>
     </h2>
     <div class="row vh-100">
       <div class="d-flex flex-column my-auto py-5 w-100">
@@ -98,7 +98,7 @@
         <form class="form-dark form-line position-relative w-100">
           <div class="mb-3 input-group-lg input-text-white-stroke mb-0">
             <!-- Search input -->
-            <input class="form-control font-heading caret-primary mb-0 pe-6" type="text" name="search" placeholder="What are you looking for?">
+            <input class="form-control font-heading caret-primary mb-0 pe-6" type="text" name="search" placeholder="{{searchPlaceholder}}">
             <span class="focus-border"></span>
           </div>
           <!-- Search button -->
@@ -107,7 +107,7 @@
           </button>
         </form>
         <!-- Search form END -->
-        <p class="small mt-2 mb-0">e.g. Template, Bootstrap, WordPress theme </p>
+        <p class="small mt-2 mb-0">{{searchHint}}</p>
       </div>
 
       <!-- Search button close START -->
@@ -121,15 +121,15 @@
 <!-- Search END -->
 
 <!-- Login Popup START -->
-<div class="modal fade" id="topbarlogin" >
+<div class="modal fade" id="topbarlogin">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header bg-primary pattern-overlay-7">
         <div class="modal-title p-3 text-white-force">
-          <h5 class="mb-0">Sign in to your account!</h5>
-          <p class="mb-0">Nice to see you! Please log in with your account.</p>
+          <h5 class="mb-0">{{signInTitle}}</h5>
+          <p class="mb-0">{{signInSubtitle}}</p>
         </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{closeLabel}}"></button>
       </div>
       <div class="modal-body">
         <div class="w-100 p-3">
@@ -137,26 +137,26 @@
           <form>
             <!-- Email -->
             <div class="mb-3">
-              <label class="form-label" for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail">
+              <label class="form-label" for="exampleInputEmail1">{{emailLabel}}</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="{{emailPlaceholder}}">
             </div>
             <!-- Password -->
             <div class="mb-3">
-              <label class="form-label" for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*********">
+              <label class="form-label" for="exampleInputPassword1">{{passwordLabel}}</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="{{passwordPlaceholder}}">
             </div>
             <!-- Checkbox -->
             <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">keep me signed in</label>
+              <label class="form-check-label" for="exampleCheck1">{{keepSignedIn}}</label>
             </div>
             <!-- Button -->
             <div class="row align-items-center">
               <div class="col-sm-4">
-                <button type="submit" class="btn btn-dark btn-line">Login</button>
+                <button type="submit" class="btn btn-dark btn-line">{{loginButton}}</button>
               </div>
               <div class="col-sm-8 text-sm-end">
-                <span class="text-muted">Don't have an account? <a href="sign-up.html">Signup here</a></span>
+                <span class="text-muted">{{noAccountText}} <a href="sign-up.html">{{signupHere}}</a></span>
               </div>
             </div>
           </form>
@@ -180,11 +180,11 @@ Header START -->
         <div class="d-flex align-items-center justify-content-center">
           <!-- Top info -->
           <ul class="nav justify-content-center justify-content-md-start">
-            <li class="nav-item me-3" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" title="Sunday CLOSED">
-              <span class="text-white"><i class="far fa-clock me-2"></i>Visit time: Mon-Sat 9:00-19:00</span>
+            <li class="nav-item me-3" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" title="{{tooltipSundayClosed}}">
+              <span class="text-white"><i class="far fa-clock me-2"></i>{{visitTime}}</span>
             </li>
             <li class="nav-item">
-              <a class="navbar-link text-white text-primary-hover" href="#"><i class="fas fa-headset me-2"></i>Call us now: +135-869-328</a>
+              <a class="navbar-link text-white text-primary-hover" href="#"><i class="fas fa-headset me-2"></i>{{callUsNow}}: +135-869-328</a>
             </li>
           </ul>
         </div>
@@ -193,31 +193,33 @@ Header START -->
         <div class="d-flex align-items-center justify-content-center">
           <!-- Language -->
           <div class="dropdown ms-3">
-            <a class="dropdown-toggle text-white text-primary-hover" href="#" role="button" id="dropdownLanguage" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img class="fa-fw me-2" src="assets/images/flags/uk.svg" alt=""> English </a>
+            <a class="dropdown-toggle text-white text-primary-hover" href="#" role="button" id="dropdownLanguage" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img class="fa-fw me-2" src="assets/images/flags/uk.svg" alt="">{{languageEnglish}}
+            </a>
             <div class="dropdown-menu mt-2 shadow" aria-labelledby="dropdownLanguage">
-              <span class="dropdown-item-text">Select language</span>
+              <span class="dropdown-item-text">{{selectLanguage}}</span>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#"><img class="fa-fw me-2" src="assets/images/flags/sp.svg" alt=""> Español</a>
-              <a class="dropdown-item" href="#"><img class="fa-fw me-2" src="assets/images/flags/fr.svg" alt=""> Français</a>
-              <a class="dropdown-item" href="#"><img class="fa-fw me-2" src="assets/images/flags/gr.svg" alt=""> Deutsch</a>
+              <a class="dropdown-item" href="#"><img class="fa-fw me-2" src="assets/images/flags/sp.svg" alt="">{{languageSpanish}}</a>
+              <a class="dropdown-item" href="#"><img class="fa-fw me-2" src="assets/images/flags/fr.svg" alt="">{{languageFrench}}</a>
+              <a class="dropdown-item" href="#"><img class="fa-fw me-2" src="assets/images/flags/gr.svg" alt="">{{languageGerman}}</a>
             </div>
           </div>
 
           <!-- Top link -->
           <ul class="nav ms-3">
             <li class="nav-item">
-              <a href="contact.html" class="nav-link text-white text-primary-hover">Contact</a>
+              <a href="contact.html" class="nav-link text-white text-primary-hover">{{contact}}</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-white text-primary-hover" data-bs-toggle="modal" data-bs-target="#topbarlogin"><i class="far fa-user me-2"></i>Login</a>
+              <a href="#" class="nav-link text-white text-primary-hover" data-bs-toggle="modal" data-bs-target="#topbarlogin"><i class="far fa-user me-2"></i>{{login}}</a>
             </li>
           </ul>
 
           <!-- Top social -->
           <ul class="list-unstyled d-flex">
-            <li> <a class="text-white text-primary-hover px-2" href="#"><i class="fab fa-facebook-f"></i></a> </li>
-            <li> <a class="text-white text-primary-hover px-2" href="#"><i class="fab fa-instagram"></i></a> </li>
-            <li> <a class="text-white text-primary-hover ps-2" href="#"><i class="fab fa-twitter"></i></a> </li>
+            <li><a class="text-white text-primary-hover px-2" href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a class="text-white text-primary-hover px-2" href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a class="text-white text-primary-hover ps-2" href="#"><i class="fab fa-twitter"></i></a></li>
           </ul>
         </div>
       </div>
@@ -250,28 +252,28 @@ Header START -->
             <div class="dropdown-menu pb-3 pb-lg-0" aria-labelledby="demosMenu" >
               <div class="d-block d-sm-flex">
                 <ul class="list-unstyled w-100 pe-0 pe-lg-5">
-                  <li class="dropdown-header">Agency Demos12</li>
-                  <li> <a class="dropdown-item" href="index.html">Classic Default</a> </li>
-                  <li> <a class="dropdown-item" href="index-2.html">Agency classic</a> </li>
-                  <li> <a class="dropdown-item" href="index-3.html">Agency Trendy<span class="badge bg-danger ms-2">Hot</span></a> </li>
-                  <li> <a class="dropdown-item" href="index-4.html">Agency Modern</a> </li>
-                  <li> <a class="dropdown-item" href="index-5.html">Studio showcase</a> </li>
+                  <li class="dropdown-header">{{agencyDemosHeader}}</li>
+                  <li> <a class="dropdown-item" href="index.html">{{classicDefault}}</a> </li>
+                  <li> <a class="dropdown-item" href="index-2.html">{{agencyClassic}}</a> </li>
+                  <li> <a class="dropdown-item" href="index-3.html">{{agencyTrendy}}<span class="badge bg-danger ms-2">{{hotBadge}}</span></a> </li>
+                  <li> <a class="dropdown-item" href="index-4.html">{{agencyModern}}</a> </li>
+                  <li> <a class="dropdown-item" href="index-5.html">{{studioShowcase}}</a> </li>
                 </ul>
                 <ul class="list-unstyled w-100 pe-0 pe-lg-5">
-                  <li class="dropdown-header mt-3 mt-sm-0">Portfolio Demos</li>
-                  <li> <a class="dropdown-item" href="index-6.html">Creative agency</a> </li>
-                  <li> <a class="dropdown-item" href="index-7.html">Digital studio</a> </li>
-                  <li> <a class="dropdown-item" href="index-8.html">Portfolio showcase</a> </li>
-                  <li> <a class="dropdown-item" href="index-9.html">Corporate </a> </li>
-                  <li> <a class="dropdown-item" href="index-10.html">Personal Portfolio</a> </li>
+                  <li class="dropdown-header mt-3 mt-sm-0">{{portfolioDemosHeader}}</li>
+                  <li> <a class="dropdown-item" href="index-6.html">{{creativeAgency}}</a> </li>
+                  <li> <a class="dropdown-item" href="index-7.html">{{digitalStudio}}</a> </li>
+                  <li> <a class="dropdown-item" href="index-8.html">{{portfolioShowcase}}</a> </li>
+                  <li> <a class="dropdown-item" href="index-9.html">{{corporate}}</a> </li>
+                  <li> <a class="dropdown-item" href="index-10.html">{{personalPortfolio}}</a> </li>
                 </ul>
               </div>
               <!-- Nav action box -->
               <div class="w-100 mt-4 d-none d-lg-flex">
                 <div class="text-center bg-primary-multiply position-relative overflow-hidden px-3 py-5 w-100">
-                  <h4 class="mb-0 text-white">Get free quote today!</h4>
-                  <p class=" text-white">For quick response and more details, Feel free to contact us</p>
-                  <a class="btn btn-white btn-sm" target="_blank" href="https://folio.webestica.com/landing">Contact Us</a>
+                  <h4 class="mb-0 text-white">{{getFreeQuoteTitle}}</h4>
+                  <p class="text-white">{{getFreeQuoteText}}</p>
+                  <a class="btn btn-white btn-sm" target="_blank" href="https://folio.webestica.com/landing">{{contactUs}}</a>
                   <img class="bg-primary-multiply position-absolute top-50 start-50 translate-middle z-index-n9 w-100" src="assets/images/bg/03.jpg" alt="">
                 </div>
               </div>
@@ -280,99 +282,106 @@ Header START -->
 
           <!-- Menu item 2 Pages -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+            <a class="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{pages}}</a>
             <ul class="dropdown-menu" aria-labelledby="pagesMenu">
               <!-- About menu -->
               <li class="dropdown-submenu dropend">
-                <a class="dropdown-item dropdown-toggle" href="#">About</a>
+                <a class="dropdown-item dropdown-toggle" href="#">{{about}}</a>
                 <ul class="dropdown-menu" data-bs-popper="none">
-                  <li> <a class="dropdown-item" href="about.html">About Classic</a></li>
-                  <li> <a class="dropdown-item" href="about-advance.html">About advance</a></li>
-                  <li> <a class="dropdown-item" href="about-agency.html">About agency</a></li>
-                  <li> <a class="dropdown-item" href="approach.html">Approach</a></li>
-                  <li> <a class="dropdown-item" href="mission-and-vision.html">Mission and vision</a></li>
-                  <li> <a class="dropdown-item" href="history.html">history</a></li>
-                  <li> <a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
-                  <li> <a class="dropdown-item" href="why-choose-us.html">Why choose us</a></li>
-                  <li> <a class="dropdown-item" href="team.html">team</a></li>
-                  <li> <a class="dropdown-item" href="careers.html">careers</a></li>
-                  <li> <a class="dropdown-item" href="careers-single.html">careers single</a></li>
+                  <li><a class="dropdown-item" href="about.html">{{aboutClassic}}</a></li>
+                  <li><a class="dropdown-item" href="about-advance.html">{{aboutAdvance}}</a></li>
+                  <li><a class="dropdown-item" href="about-agency.html">{{aboutAgency}}</a></li>
+                  <li><a class="dropdown-item" href="approach.html">{{approach}}</a></li>
+                  <li><a class="dropdown-item" href="mission-and-vision.html">{{missionAndVision}}</a></li>
+                  <li><a class="dropdown-item" href="history.html">{{history}}</a></li>
+                  <li><a class="dropdown-item" href="testimonials.html">{{testimonials}}</a></li>
+                  <li><a class="dropdown-item" href="why-choose-us.html">{{whyChooseUs}}</a></li>
+                  <li><a class="dropdown-item" href="team.html">{{team}}</a></li>
+                  <li><a class="dropdown-item" href="careers.html">{{careers}}</a></li>
+                  <li><a class="dropdown-item" href="careers-single.html">{{careersSingle}}</a></li>
                 </ul>
               </li>
+
               <!-- Hero sections menu -->
               <li class="dropdown-submenu dropend">
-                <a class="dropdown-item dropdown-toggle" href="#">Hero sections<span class="badge bg-danger ms-2">New</span></a>
+                <a class="dropdown-item dropdown-toggle" href="#">{{heroSections}}<span class="badge bg-danger ms-2">{{newBadge}}</span></a>
                 <ul class="dropdown-menu" data-bs-popper="none">
-                  <li><a class="dropdown-item" href="hero-01.html">Hero form</a></li>
-                  <li><a class="dropdown-item" href="hero-02.html">Big title & video</a></li>
-                  <li><a class="dropdown-item" href="hero-03.html">Split banner</a></li>
-                  <li><a class="dropdown-item" href="hero-04.html">Video & company info</a></li>
-                  <li><a class="dropdown-item" href="hero-05.html">Vector graphics</a></li>
-                  <li><a class="dropdown-item" href="hero-06.html">Typography intro</a></li>
-                  <li><a class="dropdown-item" href="hero-07.html">Overlap text</a></li>
-                  <li><a class="dropdown-item" href="hero-08.html">Device mockup</a></li>
-                  <li><a class="dropdown-item" href="hero-09.html">Split overlay</a></li>
-                  <li><a class="dropdown-item" href="hero-10.html">Showcase typography</a></li>
+                  <li><a class="dropdown-item" href="hero-01.html">{{heroForm}}</a></li>
+                  <li><a class="dropdown-item" href="hero-02.html">{{bigTitleVideo}}</a></li>
+                  <li><a class="dropdown-item" href="hero-03.html">{{splitBanner}}</a></li>
+                  <li><a class="dropdown-item" href="hero-04.html">{{videoCompanyInfo}}</a></li>
+                  <li><a class="dropdown-item" href="hero-05.html">{{vectorGraphics}}</a></li>
+                  <li><a class="dropdown-item" href="hero-06.html">{{typographyIntro}}</a></li>
+                  <li><a class="dropdown-item" href="hero-07.html">{{overlapText}}</a></li>
+                  <li><a class="dropdown-item" href="hero-08.html">{{deviceMockup}}</a></li>
+                  <li><a class="dropdown-item" href="hero-09.html">{{splitOverlay}}</a></li>
+                  <li><a class="dropdown-item" href="hero-10.html">{{showcaseTypography}}</a></li>
                 </ul>
               </li>
-              <li> <a class="dropdown-item" href="service.html">service</a></li>
-              <li> <a class="dropdown-item" href="service-detail.html">Service detail</a></li>
+
+              <li><a class="dropdown-item" href="service.html">{{service}}</a></li>
+              <li><a class="dropdown-item" href="service-detail.html">{{serviceDetail}}</a></li>
+
               <!-- Blog menu -->
               <li class="dropdown-submenu dropend">
-                <a class="dropdown-item dropdown-toggle" href="#">Blog<span class="badge bg-success ms-2">2 new post</span></a>
+                <a class="dropdown-item dropdown-toggle" href="#">{{blog}}<span class="badge bg-success ms-2">{{blogNewPostBadge}}</span></a>
                 <ul class="dropdown-menu" data-bs-popper="none">
-                  <li><a class="dropdown-item" href="blog-classic-3-col.html">Blog classic 3 col</a></li>
-                  <li><a class="dropdown-item" href="blog-metro-3-col.html">Blog metro 3 col</a></li>
-                  <li><a class="dropdown-item" href="blog-minimal.html">Blog minimal <span class="badge bg-success ms-2">2 new post</span></a></li>
-                  <li><a class="dropdown-item" href="blog-text-reveal.html">Blog text reveal</a></li>
+                  <li><a class="dropdown-item" href="blog-classic-3-col.html">{{blogClassic3Col}}</a></li>
+                  <li><a class="dropdown-item" href="blog-metro-3-col.html">{{blogMetro3Col}}</a></li>
+                  <li><a class="dropdown-item" href="blog-minimal.html">{{blogMinimal}} <span class="badge bg-success ms-2">{{blogNewPostBadge}}</span></a></li>
+                  <li><a class="dropdown-item" href="blog-text-reveal.html">{{blogTextReveal}}</a></li>
                   <li class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="blog-detail.html">Blog detail</a></li>
-                  <li><a class="dropdown-item" href="blog-detail-minimal.html">Blog detail minimal</a></li>
+                  <li><a class="dropdown-item" href="blog-detail.html">{{blogDetail}}</a></li>
+                  <li><a class="dropdown-item" href="blog-detail-minimal.html">{{blogDetailMinimal}}</a></li>
                 </ul>
               </li>
-              <!-- About menu -->
+
+              <!-- Contact menu -->
               <li class="dropdown-submenu dropend">
-                <a class="dropdown-item dropdown-toggle" href="#">Contact</a>
+                <a class="dropdown-item dropdown-toggle" href="#">{{contact}}</a>
                 <ul class="dropdown-menu" data-bs-popper="none">
-                  <li> <a class="dropdown-item" href="contact.html">contact</a></li>
-                  <li> <a class="dropdown-item" href="contact-2.html">contact 2</a></li>
-                  <li> <a class="dropdown-item" href="contact-3.html">Contact 3</a></li>
+                  <li><a class="dropdown-item" href="contact.html">{{contact}}</a></li>
+                  <li><a class="dropdown-item" href="contact-2.html">{{contact2}}</a></li>
+                  <li><a class="dropdown-item" href="contact-3.html">{{contact3}}</a></li>
                 </ul>
               </li>
+
+              <!-- Authentication menu -->
               <li class="dropdown-submenu dropend">
-                <a class="dropdown-item dropdown-toggle" href="#">Authentication</a>
+                <a class="dropdown-item dropdown-toggle" href="#">{{authentication}}</a>
                 <ul class="dropdown-menu" data-bs-popper="none">
-                  <li> <a class="dropdown-item" href="sign-in.html">Sign in</a> </li>
-                  <li> <a class="dropdown-item" href="sign-up.html">Sign up</a> </li>
-                  <li> <a class="dropdown-item" href="password-recovery.html">Password recovery</a> </li>
+                  <li><a class="dropdown-item" href="sign-in.html">{{signIn}}</a></li>
+                  <li><a class="dropdown-item" href="sign-up.html">{{signUp}}</a></li>
+                  <li><a class="dropdown-item" href="password-recovery.html">{{passwordRecovery}}</a></li>
                 </ul>
               </li>
-              <li> <a class="dropdown-item" href="pricing.html">pricing</a></li>
-              <li> <a class="dropdown-item" href="faq.html">faq</a></li>
-              <li> <a class="dropdown-item" href="404.html">Error 404</a></li>
-              <li> <a class="dropdown-item" href="maintenance-mode.html">maintenance mode</a></li>
+
+              <li><a class="dropdown-item" href="pricing.html">{{pricing}}</a></li>
+              <li><a class="dropdown-item" href="faq.html">{{faq}}</a></li>
+              <li><a class="dropdown-item" href="404.html">{{error404}}</a></li>
+              <li><a class="dropdown-item" href="maintenance-mode.html">{{maintenanceMode}}</a></li>
+
               <!-- Dropdown menu levels -->
               <li class="dropdown-divider"></li>
               <li class="dropdown-submenu dropend">
-                <a class="dropdown-item dropdown-toggle" href="#">Dropdown levels</a>
+                <a class="dropdown-item dropdown-toggle" href="#">{{dropdownLevels}}</a>
                 <ul class="dropdown-menu dropdown-menu-start" data-bs-popper="none">
                   <li class="dropdown-submenu dropend">
-                    <a class="dropdown-item dropdown-toggle" href="#">Dropdown (end)</a>
+                    <a class="dropdown-item dropdown-toggle" href="#">{{dropdownEnd}}</a>
                     <ul class="dropdown-menu" data-bs-popper="none">
-                      <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
-                      <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+                      <li><a class="dropdown-item" href="#">{{dropdownItem}}</a></li>
+                      <li><a class="dropdown-item" href="#">{{dropdownItem}}</a></li>
                     </ul>
                   </li>
-                  <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+                  <li><a class="dropdown-item" href="#">{{dropdownItem}}</a></li>
                   <li class="dropdown-submenu dropstart">
-                    <a class="dropdown-item dropdown-toggle" href="#">Dropdown (start)</a>
-                    <!-- dropdown menu open left -->
+                    <a class="dropdown-item dropdown-toggle" href="#">{{dropdownStart}}</a>
                     <ul class="dropdown-menu dropdown-menu-end" data-bs-popper="none">
-                      <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
-                      <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+                      <li><a class="dropdown-item" href="#">{{dropdownItem}}</a></li>
+                      <li><a class="dropdown-item" href="#">{{dropdownItem}}</a></li>
                     </ul>
                   </li>
-                  <li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+                  <li><a class="dropdown-item" href="#">{{dropdownItem}}</a></li>
                 </ul>
               </li>
             </ul>
@@ -380,60 +389,60 @@ Header START -->
 
           <!-- Menu item 3 Portfolio -->
           <li class="nav-item dropdown dropdown-fullwidth">
-            <a class="nav-link dropdown-toggle" href="#" id="portfolioMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+            <a class="nav-link dropdown-toggle" href="#" id="portfolioMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{portfolio}}</a>
             <div class="dropdown-menu" aria-labelledby="portfolioMenu">
               <div class="container">
                 <div class="row g-0 flex-fill">
                   <div class="col-sm-6 col-lg-3">
                     <ul class="list-unstyled mb-4 mb-lg-0">
-                      <li class="dropdown-header">Portfolio Classics</li>
-                      <li> <a class="dropdown-item" href="portfolio-classic-grid-3-col.html">Portfolio Classic grid 3 col</a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-classic-grid-4-col.html">Portfolio Classic grid 4 col</a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-classic-grid-6-col-fullwidth.html">Portfolio Classic grid 6 col</a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-classic-masonry-3-col.html">Portfolio Classic Masonry 3 col</a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-classic-masonry-4-col.html">Portfolio Classic Masonry 4 col</a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-classic-masonry-6-col-fullwidth.html">Portfolio Classic Masonry 6 col</a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-metro-grid-3-col.html">Portfolio Metro grid 3 col</a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-metro-grid-4-col.html">Portfolio Metro grid 4 col</a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-metro-grid-filter.html">Portfolio Metro grid filter</a> </li>
+                      <li class="dropdown-header">{{portfolio_classics}}</li>
+                      <li><a class="dropdown-item" href="portfolio-classic-grid-3-col.html">{{portfolio_classic_grid_3_col}}</a></li>
+                      <li><a class="dropdown-item" href="portfolio-classic-grid-4-col.html">{{portfolio_classic_grid_4_col}}</a></li>
+                      <li><a class="dropdown-item" href="portfolio-classic-grid-6-col-fullwidth.html">{{portfolio_classic_grid_6_col}}</a></li>
+                      <li><a class="dropdown-item" href="portfolio-classic-masonry-3-col.html">{{portfolio_classic_masonry_3_col}}</a></li>
+                      <li><a class="dropdown-item" href="portfolio-classic-masonry-4-col.html">{{portfolio_classic_masonry_4_col}}</a></li>
+                      <li><a class="dropdown-item" href="portfolio-classic-masonry-6-col-fullwidth.html">{{portfolio_classic_masonry_6_col}}</a></li>
+                      <li><a class="dropdown-item" href="portfolio-metro-grid-3-col.html">{{portfolio_metro_grid_3_col}}</a></li>
+                      <li><a class="dropdown-item" href="portfolio-metro-grid-4-col.html">{{portfolio_metro_grid_4_col}}</a></li>
+                      <li><a class="dropdown-item" href="portfolio-metro-grid-filter.html">{{portfolio_metro_grid_filter}}</a></li>
                     </ul>
                   </div>
                   <div class="col-sm-6 col-lg-3">
                     <ul class="list-unstyled mb-4 mb-lg-0">
-                      <li class="dropdown-header">Portfolio Advance</li>
-                      <li> <a class="dropdown-item" href="portfolio-overlap.html">Portfolio Overlap</a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-overlap-reveal.html">Portfolio Overlap reveal</a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-overlap-tilt.html">Portfolio Overlap Tilt</a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-broken-grid.html">Portfolio broken grid</a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-text-reveal.html">Portfolio text reveal <span class="badge bg-danger ms-2">Trendy</span></a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-full-width-dark.html">Portfolio full dark</a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-grid-uneven.html">Portfolio Uneven</a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-slider.html">Portfolio Slider</a> </li>
+                      <li class="dropdown-header">{{portfolio_advance}}</li>
+                      <li><a class="dropdown-item" href="portfolio-overlap.html">{{portfolio_overlap}}</a></li>
+                      <li><a class="dropdown-item" href="portfolio-overlap-reveal.html">{{portfolio_overlap_reveal}}</a></li>
+                      <li><a class="dropdown-item" href="portfolio-overlap-tilt.html">{{portfolio_overlap_tilt}}</a></li>
+                      <li><a class="dropdown-item" href="portfolio-broken-grid.html">{{portfolio_broken_grid}}</a></li>
+                      <li><a class="dropdown-item" href="portfolio-text-reveal.html">{{portfolio_text_reveal}} <span class="badge bg-danger ms-2">{{trendy}}</span></a></li>
+                      <li><a class="dropdown-item" href="portfolio-full-width-dark.html">{{portfolio_full_dark}}</a></li>
+                      <li><a class="dropdown-item" href="portfolio-grid-uneven.html">{{portfolio_uneven}}</a></li>
+                      <li><a class="dropdown-item" href="portfolio-slider.html">{{portfolio_slider}}</a></li>
                     </ul>
                   </div>
                   <div class="col-sm-6 col-lg-3">
                     <ul class="list-unstyled mb-4 mb-lg-0">
-                      <li class="dropdown-header">Portfolio Detail pages</li>
-                      <li> <a class="dropdown-item" href="portfolio-detail-1.html">Portfolio detail 01</a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-detail-2.html">Portfolio detail 02</a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-case-study-1.html">Portfolio case study 01</a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-case-study-2.html">Portfolio case study 02</a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-case-study-3.html">Portfolio case study 03</a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-case-study-4.html">Portfolio case study 04</a> </li>
+                      <li class="dropdown-header">{{portfolio_detail_pages}}</li>
+                      <li><a class="dropdown-item" href="portfolio-detail-1.html">{{portfolio_detail_01}}</a></li>
+                      <li><a class="dropdown-item" href="portfolio-detail-2.html">{{portfolio_detail_02}}</a></li>
+                      <li><a class="dropdown-item" href="portfolio-case-study-1.html">{{portfolio_case_study_01}}</a></li>
+                      <li><a class="dropdown-item" href="portfolio-case-study-2.html">{{portfolio_case_study_02}}</a></li>
+                      <li><a class="dropdown-item" href="portfolio-case-study-3.html">{{portfolio_case_study_03}}</a></li>
+                      <li><a class="dropdown-item" href="portfolio-case-study-4.html">{{portfolio_case_study_04}}</a></li>
                     </ul>
                   </div>
                   <div class="col-sm-6 col-lg-3">
                     <ul class="list-unstyled">
-                      <li class="dropdown-header">Portfolio hover & Element</li>
-                      <li> <a class="dropdown-item" href="portfolio-classic-grid-3-col.html">Hover: Classic</a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-overlap-tilt.html">Hover: Tilt Animation</a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-grayscale.html">Hover: Grayscale</a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-color-overlay.html">Hover: Color Overlay</a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-text-reveal.html">Hover: Text reveal</a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-hover-inside.html">Hover: Card inside</a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-appear.html">Scroll: Appear Animation</a> </li>
-                      <li> <a class="dropdown-item" href="portfolio-overlap-reveal.html">Scroll: Reveal Animation</a> </li>
-                      <li> <a class="dropdown-item" href="elements-pagination.html">Pagination Styles</a> </li>
+                      <li class="dropdown-header">{{portfolio_hover_and_element}}</li>
+                      <li><a class="dropdown-item" href="portfolio-classic-grid-3-col.html">{{hover_classic}}</a></li>
+                      <li><a class="dropdown-item" href="portfolio-overlap-tilt.html">{{hover_tilt_animation}}</a></li>
+                      <li><a class="dropdown-item" href="portfolio-grayscale.html">{{hover_grayscale}}</a></li>
+                      <li><a class="dropdown-item" href="portfolio-color-overlay.html">{{hover_color_overlay}}</a></li>
+                      <li><a class="dropdown-item" href="portfolio-text-reveal.html">{{hover_text_reveal}}</a></li>
+                      <li><a class="dropdown-item" href="portfolio-hover-inside.html">{{hover_card_inside}}</a></li>
+                      <li><a class="dropdown-item" href="portfolio-appear.html">{{scroll_appear_animation}}</a></li>
+                      <li><a class="dropdown-item" href="portfolio-overlap-reveal.html">{{scroll_reveal_animation}}</a></li>
+                      <li><a class="dropdown-item" href="elements-pagination.html">{{pagination_styles}}</a></li>
                     </ul>
                   </div>
                 </div>
@@ -443,69 +452,71 @@ Header START -->
 
           <!-- Menu item 4 Elements -->
           <li class="nav-item dropdown dropdown-fullwidth">
-            <a class="nav-link dropdown-toggle" href="#" id="elementsMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Elements</a>
+            <a class="nav-link dropdown-toggle" href="#" id="elementsMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{elements}}
+            </a>
             <div class="dropdown-menu" aria-labelledby="elementsMenu">
               <div class="container">
                 <div class="row g-0 flex-fill">
                   <div class="col-sm-6 col-lg-3">
                     <ul class="list-unstyled">
-                      <li> <a class="dropdown-item" href="elements-accordion.html"><i class="far fa-plus-square fa-fw me-2"></i>Accordion</a> </li>
-                      <li> <a class="dropdown-item" href="elements-action-box.html"><i class="fas fa-paperclip fa-fw me-2"></i>Action box</a> </li>
-                      <li> <a class="dropdown-item" href="elements-alerts.html"><i class="fas fa-exclamation-triangle fa-fw me-2"></i>Alerts</a> </li>
-                      <li> <a class="dropdown-item" href="elements-animation.html"><i class="fas fa-radiation-alt fa-fw me-2"></i>Animation</a> </li>
-                      <li> <a class="dropdown-item" href="elements-avatar.html"><i class="far fa-user fa-fw me-2"></i>Avatar</a> </li>
-                      <li> <a class="dropdown-item" href="elements-blockquote.html"><i class="fas fa-quote-right fa-fw me-2"></i>Blockquote</a> </li>
-                      <li> <a class="dropdown-item" href="elements-breadcrumbs.html"><i class="fas fa-angle-right fa-fw me-2"></i>breadcrumbs</a> </li>
-                      <li> <a class="dropdown-item" href="elements-buttons.html"><i class="fas fa-link fa-fw me-2"></i>Buttons</a> </li>
-                      <li> <a class="dropdown-item" href="elements-cards.html"><i class="far fa-window-restore fa-fw me-2"></i>Cards</a> </li>
+                      <li><a class="dropdown-item" href="elements-accordion.html"><i class="far fa-plus-square fa-fw me-2"></i>{{accordion}}</a></li>
+                      <li><a class="dropdown-item" href="elements-action-box.html"><i class="fas fa-paperclip fa-fw me-2"></i>{{actionBox}}</a></li>
+                      <li><a class="dropdown-item" href="elements-alerts.html"><i class="fas fa-exclamation-triangle fa-fw me-2"></i>{{alerts}}</a></li>
+                      <li><a class="dropdown-item" href="elements-animation.html"><i class="fas fa-radiation-alt fa-fw me-2"></i>{{animation}}</a></li>
+                      <li><a class="dropdown-item" href="elements-avatar.html"><i class="far fa-user fa-fw me-2"></i>{{avatar}}</a></li>
+                      <li><a class="dropdown-item" href="elements-blockquote.html"><i class="fas fa-quote-right fa-fw me-2"></i>{{blockquote}}</a></li>
+                      <li><a class="dropdown-item" href="elements-breadcrumbs.html"><i class="fas fa-angle-right fa-fw me-2"></i>{{breadcrumbs}}</a></li>
+                      <li><a class="dropdown-item" href="elements-buttons.html"><i class="fas fa-link fa-fw me-2"></i>{{buttons}}</a></li>
+                      <li><a class="dropdown-item" href="elements-cards.html"><i class="far fa-window-restore fa-fw me-2"></i>{{cards}}</a></li>
                     </ul>
                   </div>
                   <div class="col-sm-6 col-lg-3">
                     <ul class="list-unstyled">
-                      <li> <a class="dropdown-item" href="elements-clients.html"><i class="fas fa-user-tie fa-fw me-2"></i>Clients</a> </li>
-                      <li> <a class="dropdown-item" href="elements-counter.html"><i class="fas fa-sort-numeric-up-alt fa-fw me-2"></i>Counter</a> </li>
-                      <li> <a class="dropdown-item" href="elements-decorations.html"><i class="fas fa-spray-can fa-fw me-2"></i>decorations</a> </li>
-                      <li> <a class="dropdown-item" href="elements-divider.html"><i class="fas fa-cut fa-fw me-2"></i>Divider</a> </li>
-                      <li> <a class="dropdown-item" href="elements-feature-box.html"><i class="fas fa-newspaper fa-fw me-2"></i>Feature box</a> </li>
-                      <li> <a class="dropdown-item" href="elements-forms.html"><i class="far fa-clipboard fa-fw me-2"></i>Forms</a> </li>
-                      <li> <a class="dropdown-item" href="elements-forms-layout.html"><i class="fab fa-wpforms fa-fw me-2"></i>Forms layout</a> </li>
-                      <li> <a class="dropdown-item" href="elements-google-map.html"><i class="fas fa-map fa-fw me-2"></i>Google Map</a> </li>
-                      <li> <a class="dropdown-item" href="elements-list-group.html"><i class="fas fa-list fa-fw me-2"></i>list group</a> </li>
+                      <li><a class="dropdown-item" href="elements-clients.html"><i class="fas fa-user-tie fa-fw me-2"></i>{{clients}}</a></li>
+                      <li><a class="dropdown-item" href="elements-counter.html"><i class="fas fa-sort-numeric-up-alt fa-fw me-2"></i>{{counter}}</a></li>
+                      <li><a class="dropdown-item" href="elements-decorations.html"><i class="fas fa-spray-can fa-fw me-2"></i>{{decorations}}</a></li>
+                      <li><a class="dropdown-item" href="elements-divider.html"><i class="fas fa-cut fa-fw me-2"></i>{{divider}}</a></li>
+                      <li><a class="dropdown-item" href="elements-feature-box.html"><i class="fas fa-newspaper fa-fw me-2"></i>{{featureBox}}</a></li>
+                      <li><a class="dropdown-item" href="elements-forms.html"><i class="far fa-clipboard fa-fw me-2"></i>{{forms}}</a></li>
+                      <li><a class="dropdown-item" href="elements-forms-layout.html"><i class="fab fa-wpforms fa-fw me-2"></i>{{formsLayout}}</a></li>
+                      <li><a class="dropdown-item" href="elements-google-map.html"><i class="fas fa-map fa-fw me-2"></i>{{googleMap}}</a></li>
+                      <li><a class="dropdown-item" href="elements-list-group.html"><i class="fas fa-list fa-fw me-2"></i>{{listGroup}}</a></li>
                     </ul>
                   </div>
                   <div class="col-sm-6 col-lg-3">
                     <ul class="list-unstyled">
-                      <li> <a class="dropdown-item" href="elements-modals.html"><i class="fas fa-search-plus fa-fw me-2"></i>Modals popup</a> </li>
-                      <li> <a class="dropdown-item" href="elements-offcanvas.html"><i class="fas fa-bars fa-fw me-2"></i>Offcanvas menus</a> </li>
-                      <li> <a class="dropdown-item" href="elements-pagination.html"><i class="fas fa-ellipsis-h fa-fw me-2"></i>Pagination</a> </li>
-                      <li> <a class="dropdown-item" href="elements-preloader.html"><i class="fas fa-spinner fa-spin fa-fw me-2"></i>Pre loaders</a> </li>
-                      <li> <a class="dropdown-item" href="elements-process.html"><i class="fas fa-tasks fa-fw me-2"></i>Process (Work Step)</a> </li>
-                      <li> <a class="dropdown-item" href="elements-progress.html"><i class="fas fa-grip-lines fa-fw me-2"></i>progress bar</a> </li>
-                      <li> <a class="dropdown-item" href="elements-social-icons.html"><i class="fas fa-share-alt fa-fw me-2"></i>social icons</a> </li>
-                      <li> <a class="dropdown-item" href="elements-tables.html"><i class="fas fa-table fa-fw me-2"></i>Tables</a> </li>
-                      <li> <a class="dropdown-item" href="elements-tabs.html"><i class="fas fa-toggle-on fa-fw me-2"></i>Tabs and Navs</a> </li>
+                      <li><a class="dropdown-item" href="elements-modals.html"><i class="fas fa-search-plus fa-fw me-2"></i>{{modalsPopup}}</a></li>
+                      <li><a class="dropdown-item" href="elements-offcanvas.html"><i class="fas fa-bars fa-fw me-2"></i>{{offcanvasMenus}}</a></li>
+                      <li><a class="dropdown-item" href="elements-pagination.html"><i class="fas fa-ellipsis-h fa-fw me-2"></i>{{pagination}}</a></li>
+                      <li><a class="dropdown-item" href="elements-preloader.html"><i class="fas fa-spinner fa-spin fa-fw me-2"></i>{{preloaders}}</a></li>
+                      <li><a class="dropdown-item" href="elements-process.html"><i class="fas fa-tasks fa-fw me-2"></i>{{processWorkStep}}</a></li>
+                      <li><a class="dropdown-item" href="elements-progress.html"><i class="fas fa-grip-lines fa-fw me-2"></i>{{progressBar}}</a></li>
+                      <li><a class="dropdown-item" href="elements-social-icons.html"><i class="fas fa-share-alt fa-fw me-2"></i>{{socialIcons}}</a></li>
+                      <li><a class="dropdown-item" href="elements-tables.html"><i class="fas fa-table fa-fw me-2"></i>{{tables}}</a></li>
+                      <li><a class="dropdown-item" href="elements-tabs.html"><i class="fas fa-toggle-on fa-fw me-2"></i>{{tabsAndNavs}}</a></li>
                     </ul>
                   </div>
                   <div class="col-sm-6 col-lg-3">
                     <ul class="list-unstyled">
-                      <li> <a class="dropdown-item" href="elements-typing-headlines.html"><i class="fas fa-i-cursor blink-animation fa-fw me-2"></i>Typing headlines</a> </li>
-                      <li> <a class="dropdown-item" href="elements-typography.html"><i class="fas fa-font fa-fw me-2"></i>Typography</a> </li>
-                      <li> <a class="dropdown-item" href="elements-video.html"><i class="fas fa-file-video fa-fw me-2"></i>Video</a> </li>
-                      <li> <a class="dropdown-item" href="elements-video-background.html"><i class="fas fa-photo-video fa-fw me-2"></i>Video background</a> </li>
+                      <li><a class="dropdown-item" href="elements-typing-headlines.html"><i class="fas fa-i-cursor blink-animation fa-fw me-2"></i>{{typingHeadlines}}</a></li>
+                      <li><a class="dropdown-item" href="elements-typography.html"><i class="fas fa-font fa-fw me-2"></i>{{typography}}</a></li>
+                      <li><a class="dropdown-item" href="elements-video.html"><i class="fas fa-file-video fa-fw me-2"></i>{{video}}</a></li>
+                      <li><a class="dropdown-item" href="elements-video-background.html"><i class="fas fa-photo-video fa-fw me-2"></i>{{videoBackground}}</a></li>
                       <li class="dropdown-divider"></li>
-                      <li class="dropdown-header mb-0">Plugins</li>
-                      <li> <a class="dropdown-item" href="elements-glightbox.html"><i class="fas fa-expand fa-fw me-2"></i>GLightbox popup</a> </li>
-                      <li> <a class="dropdown-item" href="elements-isotope.html"><i class="fas fa-sliders-h fa-fw me-2"></i>Isotope (Filters & Masonry)</a> </li>
-                      <li> <a class="dropdown-item" href="elements-tiny-slider.html"><i class="far fa-arrow-alt-circle-right fa-fw me-2"></i>Tiny slider</a> </li>
+                      <li class="dropdown-header mb-0">{{plugins}}</li>
+                      <li><a class="dropdown-item" href="elements-glightbox.html"><i class="fas fa-expand fa-fw me-2"></i>{{glightboxPopup}}</a></li>
+                      <li><a class="dropdown-item" href="elements-isotope.html"><i class="fas fa-sliders-h fa-fw me-2"></i>{{isotopeFiltersMasonry}}</a></li>
+                      <li><a class="dropdown-item" href="elements-tiny-slider.html"><i class="far fa-arrow-alt-circle-right fa-fw me-2"></i>{{tinySlider}}</a></li>
                     </ul>
                   </div>
                   <div class="col-12 mt-3">
                     <div class="bg-dark p-5 pb-4 w-100 pattern-overlay-1">
                       <div class="row d-md-flex justify-content-center">
-                        <h5 class="col-md-4 text-white mb-4">Discover Folio - It's easier than you might think.</h5>
-                        <p class="col-md-3 text-white">Start right away to create your dream website hassle free. Grab yours now.</p>
+                        <h5 class="col-md-4 text-white mb-4">{{discoverFolio}}</h5>
+                        <p class="col-md-3 text-white">{{startRightAway}}</p>
                         <div class="col-md-3 text-md-end">
-                          <a class="btn btn-line btn-primary" target="_blank" href="https://themes.getbootstrap.com/store/webestica/">Purchase Folio!</a>
+                          <a class="btn btn-line btn-primary" target="_blank" href="https://themes.getbootstrap.com/store/webestica/">{{purchaseFolio}}</a>
                         </div>
                       </div>
                     </div>
@@ -517,15 +528,17 @@ Header START -->
 
           <!-- Menu item 5 Docs-->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="docMenu" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">Help</a>
+            <a class="nav-link dropdown-toggle" href="#" id="docMenu" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
+              {{help}}
+            </a>
             <ul class="dropdown-menu pb-0 dropdown-menu-sm-end" data-bs-popper="none" aria-labelledby="docMenu">
               <li>
                 <a class="dropdown-item ps-4" href="https://support.webestica.com/" target="_blank">
                   <div class="d-flex">
                     <i class="display-8 mt-n1 me-3 text-primary fa-fw bi bi-chat-right-text"></i>
                     <div>
-                      <h6 class="my-0">Support<i class="fas fa-external-link-square-alt text-body ms-2"></i></h6>
-                      <p class="small text-body d-none d-md-block mb-0">Contact us through our Support portal</p>
+                      <h6 class="my-0">{{support}}<i class="fas fa-external-link-square-alt text-body ms-2"></i></h6>
+                      <p class="small text-body d-none d-md-block mb-0">{{supportDescription}}</p>
                     </div>
                   </div>
                 </a>
@@ -536,14 +549,14 @@ Header START -->
                   <div class="d-flex mb-2">
                     <i class="display-8 mt-n1 me-3 text-primary fa-fw bi bi-book-half"></i>
                     <div>
-                      <h6 class="my-0">Folio Doc</h6>
-                      <p class="small text-body d-none d-md-block">General instruction about theme and support</p>
-                      <a class="dropdown-item px-0" href="https://folio.webestica.com/docs/index.html">Introduction</a>
-                      <a class="dropdown-item px-0" href="https://folio.webestica.com/docs/index.html">Directory structure</a>
-                      <a class="dropdown-item px-0" href="https://folio.webestica.com/docs/gulp.html">Gulp</a>
-                      <a class="dropdown-item px-0" href="https://folio.webestica.com/docs/customization.html">Customization</a>
-                      <a class="dropdown-item px-0" href="https://folio.webestica.com/docs/color-scheme.html">Color Scheme</a>
-                      <a class="dropdown-item px-0" href="https://folio.webestica.com/docs/changelog.html">changelog</a>
+                      <h6 class="my-0">{{folioDoc}}</h6>
+                      <p class="small text-body d-none d-md-block">{{folioDocDescription}}</p>
+                      <a class="dropdown-item px-0" href="https://folio.webestica.com/docs/index.html">{{introduction}}</a>
+                      <a class="dropdown-item px-0" href="https://folio.webestica.com/docs/index.html">{{directoryStructure}}</a>
+                      <a class="dropdown-item px-0" href="https://folio.webestica.com/docs/gulp.html">{{gulp}}</a>
+                      <a class="dropdown-item px-0" href="https://folio.webestica.com/docs/customization.html">{{customization}}</a>
+                      <a class="dropdown-item px-0" href="https://folio.webestica.com/docs/color-scheme.html">{{colorScheme}}</a>
+                      <a class="dropdown-item px-0" href="https://folio.webestica.com/docs/changelog.html">{{changelog}}</a>
                     </div>
                   </div>
                 </div>
@@ -553,8 +566,8 @@ Header START -->
                   <div class="d-flex">
                     <i class="display-8 mt-n2 me-3 text-primary fa-fw bi bi-bootstrap"></i>
                     <div>
-                      <h6 class="my-0">Bootstrap Doc<i class="fas fa-external-link-square-alt text-body ms-2"></i></h6>
-                      <p class="small text-body d-none d-md-block">Checkout Bootstrap official Doc</p>
+                      <h6 class="my-0">{{bootstrapDoc}}<i class="fas fa-external-link-square-alt text-body ms-2"></i></h6>
+                      <p class="small text-body d-none d-md-block">{{bootstrapDocDescription}}</p>
                     </div>
                   </div>
                 </a>
@@ -563,7 +576,9 @@ Header START -->
           </li>
 
           <!-- Menu item 6 link-->
-          <li class="nav-item">	<a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">{{contact_1}}</a>
+          </li>
         </ul>
       </div>
       <!-- Main Menu END -->
@@ -573,12 +588,12 @@ Header START -->
         <!-- Nav Search Opener-->
         <div class="nav-item">
           <a class="nav-link ms-2" data-bs-toggle="collapse" href="javascript:void(0)" data-bs-target="#search-open">
-            <i class="bi bi-search display-9 "> </i>
+            <i class="bi bi-search display-9"> </i>
           </a>
         </div>
         <!-- Nav Button -->
         <div class="nav-item d-none d-xl-block">
-          <a href="#" class="btn btn-sm btn-primary mb-0 mx-2">Get Quote!</a>
+          <a href="#" class="btn btn-sm btn-primary mb-0 mx-2">{{getQuote}}</a>
         </div>
         <!-- Nav side Opener -->
         <div class="nav-item">
@@ -604,16 +619,16 @@ Header END -->
     <!-- Social sites link left -->
     <div class="position-absolute top-50 start-0 translate-middle z-index-9 ms-4 d-none d-xxl-block">
       <div class="list-group-inline list-unstyled rotate-270">
-        <a href="#" class="list-group-item text-white bg-transparent mt-4">Facebook</a>
-        <a href="#" class="list-group-item text-white bg-transparent mt-4">Twitter</a>
-        <a href="#" class="list-group-item text-white bg-transparent mt-4">Dribble</a>
+        <a href="#" class="list-group-item text-white bg-transparent mt-4">{{facebook}}</a>
+        <a href="#" class="list-group-item text-white bg-transparent mt-4">{{twitter}}</a>
+        <a href="#" class="list-group-item text-white bg-transparent mt-4">{{dribbble}}</a>
       </div>
     </div>
 
-    <!-- Scoll Down -->
+    <!-- Scroll Down -->
     <div class="scroll-down scroll-down-light m-5 d-none d-md-block">
       <div class="scroll-line"></div>
-      <span class="scoll-text">Scroll Down</span>
+      <span class="scoll-text">{{scrollDown}}</span>
     </div>
 
     <!-- Banner START -->
@@ -626,10 +641,12 @@ Header END -->
             <div class="row d-flex h-100">
               <div class="col-md-8 justify-content-center align-self-center align-items-start">
                 <div class="slider-content text-start">
-                  <h5 class="animate__animated animate__fadeInUp animate__delay-1s text-white mb-1 mb-md-4">Branding, design and digital based</h5>
-                  <h2 class="display-1 text-white-stroke text-primary-shadow d-block animate__animated animate__fadeInUp animate__delay-2s">Agency</h2>
-                  <p class="animate__animated animate__fadeInUp animate__delay-3s lead text-white">We're digital creative agency. We help our customers better manage their web presence in order to achieve greater success online.</p>
-                  <div class="animate__animated animate__fadeInUp mt-4 animate__delay-4s"><a href="#" class="btn btn-line text-white">How it works</a></div>
+                  <h5 class="animate__animated animate__fadeInUp animate__delay-1s text-white mb-1 mb-md-4">{{slide1Title}}</h5>
+                  <h2 class="display-1 text-white-stroke text-primary-shadow d-block animate__animated animate__fadeInUp animate__delay-2s">{{slide1Main}}</h2>
+                  <p class="animate__animated animate__fadeInUp animate__delay-3s lead text-white">{{slide1Text}}</p>
+                  <div class="animate__animated animate__fadeInUp mt-4 animate__delay-4s">
+                    <a href="#" class="btn btn-line text-white">{{howItWorks}}</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -643,10 +660,14 @@ Header END -->
             <div class="row d-flex h-100">
               <div class="col-md-8 justify-content-center align-self-center align-items-start">
                 <div class="slider-content text-start">
-                  <h5 class="animate__animated animate__fadeInUp animate__delay-1s text-white mt-2 my-md-4">Folio digital Agency</h5>
-                  <h2 class="animate__animated animate__fadeInUp animate__delay-2s display-4 fw-bold text-white"><span class="text-white-stroke text-primary-shadow d-block">Creating Real</span>Business Value</h2>
-                  <p class="animate__animated animate__fadeInUp animate__delay-3s lead text-white d-none d-sm-block">We transform your perception into an excellent website</p>
-                  <div class="animate__animated animate__fadeInUp animate__delay-4s mt-3"><a href="#" class="btn btn-primary">Discuss a Project</a></div>
+                  <h5 class="animate__animated animate__fadeInUp animate__delay-1s text-white mt-2 my-md-4">{{slide2Title}}</h5>
+                  <h2 class="animate__animated animate__fadeInUp animate__delay-2s display-4 fw-bold text-white">
+                    <span class="text-white-stroke text-primary-shadow d-block">{{slide2Main}}</span>{{slide2Sub}}
+                  </h2>
+                  <p class="animate__animated animate__fadeInUp animate__delay-3s lead text-white d-none d-sm-block">{{slide2Text}}</p>
+                  <div class="animate__animated animate__fadeInUp animate__delay-4s mt-3">
+                    <a href="#" class="btn btn-primary">{{howItWorks}}</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -770,52 +791,52 @@ Header END -->
     <div class="container position-relative">
       <div class="row">
         <div class="col-lg-8 mb-5">
-          <h2 class="display-5">Redefine your marketing strategy</h2>
-          <p>We are an insight and behavior-driven creative marketing agency. A Full Service Digital Creative Agency Specializing in: Video Production, Web Design, Branding, Brand Strategy</p>
+          <h2 class="display-5">{{marketingStrategyTitle}}</h2>
+          <p>{{marketingStrategyDescription}}</p>
         </div>
       </div>
       <div class="row d-flex justify-content-lg-end">
         <!-- Service Item 1-->
         <div class="col-sm-6 col-lg-3 mb-5 mb-lg-0">
-          <h2 class="display-1 text-dark-stroke text-hover-fill text-primary-shadow">B</h2>
-          <h5 class="mb-4">Branding</h5>
+          <h2 class="display-1 text-dark-stroke text-hover-fill text-primary-shadow">{{brandingInitial}}</h2>
+          <h5 class="mb-4">{{brandingTitle}}</h5>
           <div class="list-group list-group-borderless list-unstyled">
-            <a href="#" class="list-group-item bg-transparent">Brand Identity</a>
-            <a href="#" class="list-group-item bg-transparent">Art Direction</a>
-            <a href="#" class="list-group-item bg-transparent">Visual Design</a>
-            <a href="#" class="list-group-item bg-transparent">Illustration & Iconography</a>
-            <a href="#" class="list-group-item bg-transparent">Content / Video</a>
+            <a href="#" class="list-group-item bg-transparent">{{brandingItem1}}</a>
+            <a href="#" class="list-group-item bg-transparent">{{brandingItem2}}</a>
+            <a href="#" class="list-group-item bg-transparent">{{brandingItem3}}</a>
+            <a href="#" class="list-group-item bg-transparent">{{brandingItem4}}</a>
+            <a href="#" class="list-group-item bg-transparent">{{brandingItem5}}</a>
           </div>
         </div>
         <!-- Service Item 2-->
         <div class="col-sm-6 col-lg-3 mb-5 mb-lg-0">
-          <h2 class="display-1 text-dark-stroke text-hover-fill text-primary-shadow">G</h2>
-          <h5 class="mb-4">Graphic Design</h5>
+          <h2 class="display-1 text-dark-stroke text-hover-fill text-primary-shadow">{{graphicDesignInitial}}</h2>
+          <h5 class="mb-4">{{graphicDesignTitle}}</h5>
           <div class="list-group list-group-borderless list-unstyled">
-            <a href="#" class="list-group-item bg-transparent">Creative Concepting</a>
-            <a href="#" class="list-group-item bg-transparent">Apps & mobile</a>
-            <a href="#" class="list-group-item bg-transparent">User Experience</a>
-            <a href="#" class="list-group-item bg-transparent">Motion Design</a>
-            <a href="#" class="list-group-item bg-transparent">Interface Design</a>
+            <a href="#" class="list-group-item bg-transparent">{{graphicDesignItem1}}</a>
+            <a href="#" class="list-group-item bg-transparent">{{graphicDesignItem2}}</a>
+            <a href="#" class="list-group-item bg-transparent">{{graphicDesignItem3}}</a>
+            <a href="#" class="list-group-item bg-transparent">{{graphicDesignItem4}}</a>
+            <a href="#" class="list-group-item bg-transparent">{{graphicDesignItem5}}</a>
           </div>
         </div>
         <!-- Service Item 3-->
         <div class="col-sm-6 col-lg-3 mb-5 mb-lg-0">
-          <h2 class="display-1 text-dark-stroke text-hover-fill text-primary-shadow">D</h2>
-          <h5 class="mb-4">Development</h5>
+          <h2 class="display-1 text-dark-stroke text-hover-fill text-primary-shadow">{{developmentInitial}}</h2>
+          <h5 class="mb-4">{{developmentTitle}}</h5>
           <div class="list-group list-group-borderless list-unstyled">
-            <a href="#" class="list-group-item bg-transparent">Back-end Development</a>
-            <a href="#" class="list-group-item bg-transparent">Front-end Development</a>
-            <a href="#" class="list-group-item bg-transparent">Web Development</a>
-            <a href="#" class="list-group-item bg-transparent">Apps & Game</a>
-            <a href="#" class="list-group-item bg-transparent">E-commerce</a>
+            <a href="#" class="list-group-item bg-transparent">{{developmentItem1}}</a>
+            <a href="#" class="list-group-item bg-transparent">{{developmentItem2}}</a>
+            <a href="#" class="list-group-item bg-transparent">{{developmentItem3}}</a>
+            <a href="#" class="list-group-item bg-transparent">{{developmentItem4}}</a>
+            <a href="#" class="list-group-item bg-transparent">{{developmentItem5}}</a>
           </div>
         </div>
       </div><!-- row END -->
 
       <div class="row d-flex justify-content-end">
         <div class="col-lg-9">
-          <a href="#" class="btn btn-line text-dark mt-4">View all services</a>
+          <a href="#" class="btn btn-line text-dark mt-4">{{viewAllServicesButton}}</a>
         </div>
       </div>
     </div>
@@ -830,34 +851,34 @@ Header END -->
       <div class="row">
         <!-- Title -->
         <div class="col-md-5 mb-5">
-          <h2 class="display-5 text-white-stroke">Our every day business</h2>
-          <p>Building a strong brand. Distinctive, recognizable and consistent. Effective communication campaigns that activate your target group.</p>
+          <h2 class="display-5 text-white-stroke">{{sectionTitle}}</h2>
+          <p>{{sectionDescription}}</p>
         </div>
         <div class="col-md-7 mb-5">
           <div class="row">
-            <!-- Feature item -->
+            <!-- Feature item 1 -->
             <div class="col-sm-6 mb-5">
-              <i class="display-6 text-primary bi bi-laptop"></i>
-              <h5 class="text-white my-3">Digital Development</h5>
-              <p class="text-secondary">Smart use of data & technology for the automation of your business.</p>
+              <i class="display-6 text-primary bi {{feature1Icon}}"></i>
+              <h5 class="text-white my-3">{{feature1Title}}</h5>
+              <p class="text-secondary">{{feature1Description}}</p>
             </div>
-            <!-- Feature item -->
+            <!-- Feature item 2 -->
             <div class="col-sm-6 mb-5">
-              <i class="display-6 text-primary bi bi-bar-chart-line"></i>
-              <h5 class="text-white my-3">Online Marketing</h5>
-              <p class="text-secondary">The right mix of resources for achieving your online goals.</p>
+              <i class="display-6 text-primary bi {{feature2Icon}}"></i>
+              <h5 class="text-white my-3">{{feature2Title}}</h5>
+              <p class="text-secondary">{{feature2Description}}</p>
             </div>
-            <!-- Feature item -->
+            <!-- Feature item 3 -->
             <div class="col-sm-6 mb-5 mb-sm-0">
-              <i class="display-6 text-primary bi bi-shop"></i>
-              <h5 class="text-white my-3">E-Commerce Solution</h5>
-              <p class="text-secondary m-0">A scalable web shop for online sales of your product or service.</p>
+              <i class="display-6 text-primary bi {{feature3Icon}}"></i>
+              <h5 class="text-white my-3">{{feature3Title}}</h5>
+              <p class="text-secondary m-0">{{feature3Description}}</p>
             </div>
-            <!-- Feature item -->
+            <!-- Feature item 4 -->
             <div class="col-sm-6">
-              <i class="display-6 text-primary bi bi-envelope-open"></i>
-              <h5 class="text-white my-3">E-mail Campaigns</h5>
-              <p class="text-secondary m-0">Effective communication campaigns that activate your target group.</p>
+              <i class="display-6 text-primary bi {{feature4Icon}}"></i>
+              <h5 class="text-white my-3">{{feature4Title}}</h5>
+              <p class="text-secondary m-0">{{feature4Description}}</p>
             </div>
           </div>
         </div>
@@ -874,38 +895,50 @@ Header END -->
       <div class="row position-relative">
         <!-- Title -->
         <div class="col-sm-8 mb-3 mx-auto text-center pt-7">
-          <h2 class="display-5 mb-5 text-dark-stroke">Testimonials</h2>
+          <h2 class="display-5 mb-5 text-dark-stroke">{{testimonialsTitle}}</h2>
         </div>
         <!-- Testimonials -->
         <div class="col-md-10 mx-auto text-center pb-7">
           <div class="tiny-slider arrow-md-none arrow-bordered arrow-large arrow-round">
             <div class="tiny-slider-inner" data-gutter="0" data-edge="50" data-autoplay="false" data-arrow="true" data-dots="false" data-items="1">
 
-              <!-- Testimonial item -->
+              <!-- Testimonial item 1 -->
               <div class="item px-3 px-md-6">
-                <div class="position-absolute top-50 start-50 translate-middle display-1 text-body z-index-n9 opacity-1"><i class="fas fa-quote-left"></i></div>
-                <div class="avatar"><img class="avatar-img rounded-circle" src="assets/images/avatar/01.jpg" alt="avatar"></div>
-                <p class="lead">The good gathering doesn't bearing day Stars over Open behold May male tree replenish don't blessed beast days earth fifth let multiply and he every blessed to upon behold grass divided brought was that dry I Were image waters own bring light subdue Meat</p>
-                <h6 class="mb-0 mt-3">Adam Ross</h6>
-                <span class="small">Software Developer</span>
+                <div class="position-absolute top-50 start-50 translate-middle display-1 text-body z-index-n9 opacity-1">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <div class="avatar">
+                  <img class="avatar-img rounded-circle" src="{{testimonial1.avatarSrc}}" alt="avatar">
+                </div>
+                <p class="lead">{{testimonial1.text}}</p>
+                <h6 class="mb-0 mt-3">{{testimonial1.name}}</h6>
+                <span class="small">{{testimonial1.position}}</span>
               </div>
 
-              <!-- Testimonial item -->
+              <!-- Testimonial item 2 -->
               <div class="item px-3 px-md-6">
-                <div class="position-absolute top-50 start-50 translate-middle display-1 text-body z-index-n9 opacity-1"><i class="fas fa-quote-left"></i></div>
-                <div class="avatar"><img class="avatar-img rounded-circle" src="assets/images/avatar/02.jpg" alt="avatar"></div>
-                <p class="lead">Two before narrow not relied how except moment myself Dejection assurance mrs led certainly So gate at no only none open Betrayed at properly it of graceful on Dinner abroad am depart ye turned hearts as me wished Therefore allowance.</p>
-                <h6 class="mb-0 mt-3">Allen Smith</h6>
-                <span class="small">Founder and CEO</span>
+                <div class="position-absolute top-50 start-50 translate-middle display-1 text-body z-index-n9 opacity-1">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <div class="avatar">
+                  <img class="avatar-img rounded-circle" src="{{testimonial2.avatarSrc}}" alt="avatar">
+                </div>
+                <p class="lead">{{testimonial2.text}}</p>
+                <h6 class="mb-0 mt-3">{{testimonial2.name}}</h6>
+                <span class="small">{{testimonial2.position}}</span>
               </div>
 
-              <!-- Testimonial item -->
+              <!-- Testimonial item 3 -->
               <div class="item px-3 px-md-6">
-                <div class="position-absolute top-50 start-50 translate-middle display-1 text-body z-index-n9 opacity-1"><i class="fas fa-quote-left"></i></div>
-                <div class="avatar"><img class="avatar-img rounded-circle" src="assets/images/avatar/03.jpg" alt="avatar"></div>
-                <p class="lead">How promotion excellent curiosity yet attempted happiness Gay prosperous impression had conviction For every delay death ask style Me mean able my by in they Extremity now strangers contained breakfast him discourse additions.</p>
-                <h6 class="mb-0 mt-3">Jessica Mores</h6>
-                <span class="small">Human Resource</span>
+                <div class="position-absolute top-50 start-50 translate-middle display-1 text-body z-index-n9 opacity-1">
+                  <i class="fas fa-quote-left"></i>
+                </div>
+                <div class="avatar">
+                  <img class="avatar-img rounded-circle" src="{{testimonial3.avatarSrc}}" alt="avatar">
+                </div>
+                <p class="lead">{{testimonial3.text}}</p>
+                <h6 class="mb-0 mt-3">{{testimonial3.name}}</h6>
+                <span class="small">{{testimonial3.position}}</span>
               </div>
 
             </div>
@@ -924,10 +957,10 @@ Header END -->
       <!-- Title -->
       <div class="row d-flex justify-content-between align-items-center">
         <div class="col-sm-8 mb-3">
-          <h2 class="display-5 mb-0 mb-sm-4 text-dark-stroke">Our Portfolio</h2>
+          <h2 class="display-5 mb-0 mb-sm-4 text-dark-stroke">{{sectionTitle}}</h2>
         </div>
         <div class="col-sm-4 mb-4 text-start text-sm-end">
-          <a href="#" class="btn btn-line text-dark mt-3">View our work</a>
+          <a href="{{buttonLink}}" class="btn btn-line text-dark mt-3">{{buttonText}}</a>
         </div>
       </div>
       <!-- Portfolio items -->
@@ -936,138 +969,24 @@ Header END -->
           <div class="tiny-slider dots-bordered">
             <div class="tiny-slider-inner" data-arrow="false" data-dots="true" data-items-xl="3" data-items-lg="3" data-items-md="3" data-items-sm="2" data-items-xs="1">
 
-              <!-- Card item START -->
-              <div class="item">
-                <a href="#" class="card card-metro">
-                  <!-- Card Image -->
-                  <div class="card-image">
-                    <img src="assets/images/portfolio/01.jpg" alt="card image">
-                  </div>
-                  <!-- Card Overlay -->
-                  <div class="card-img-overlay d-flex flex-column">
-                    <img class="w-40" src="assets/images/clients/light/01.svg" alt="">
-                    <div class="mt-auto card-text">
-                      <h5 class="text-white">The missing link in e-Mobility</h5>
-                      <p class="small text-white mb-0 text-truncate">What hasn’t been a great fit in e-mobility until now.</p>
+              {{#each portfolioItems}}
+                <div class="item">
+                  <a href="{{link}}" class="card card-metro">
+                    <!-- Card Image -->
+                    <div class="card-image">
+                      <img src="{{imageSrc}}" alt="card image">
                     </div>
-                  </div>
-                </a>
-              </div>
-              <!-- Card item END -->
-
-              <!-- Card item START -->
-              <div class="item">
-                <a href="#" class="card card-metro">
-                  <!-- Card Image -->
-                  <div class="card-image">
-                    <img src="assets/images/portfolio/02.jpg" alt="card image">
-                  </div>
-                  <!-- Card Overlay -->
-                  <div class="card-img-overlay d-flex flex-column">
-                    <img class="w-40" src="assets/images/clients/light/02.svg" alt="">
-                    <div class="mt-auto card-text">
-                      <h5 class="text-white">Trumer brewed happiness</h5>
-                      <p class="small text-white mb-0 text-truncate">Private brewery for excellent beer</p>
+                    <!-- Card Overlay -->
+                    <div class="card-img-overlay d-flex flex-column">
+                      <img class="w-40" src="{{clientLogo}}" alt="">
+                      <div class="mt-auto card-text">
+                        <h5 class="text-white">{{title}}</h5>
+                        <p class="small text-white mb-0 text-truncate">{{description}}</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </div>
-              <!-- Card item END -->
-
-              <!-- Card item START -->
-              <div class="item">
-                <a href="#" class="card card-metro">
-                  <!-- Card Image -->
-                  <div class="card-image">
-                    <img src="assets/images/portfolio/03.jpg" alt="card image">
-                  </div>
-                  <!-- Card Overlay -->
-                  <div class="card-img-overlay d-flex flex-column">
-                    <img class="w-40" src="assets/images/clients/light/03.svg" alt="">
-                    <div class="mt-auto card-text">
-                      <h5 class="text-white">Enticing like the ocean</h5>
-                      <p class="small text-white mb-0 text-truncate">Viktoria Louise is the blossoming fashion label of Vicky Heiler</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!-- Card item END -->
-
-              <!-- Card item START -->
-              <div class="item">
-                <a href="#" class="card card-metro">
-                  <!-- Card Image -->
-                  <div class="card-image">
-                    <img src="assets/images/portfolio/04.jpg" alt="card image">
-                  </div>
-                  <!-- Card Overlay -->
-                  <div class="card-img-overlay d-flex flex-column">
-                    <img class="w-40" src="assets/images/clients/light/04.svg" alt="">
-                    <div class="mt-auto card-text">
-                      <h5 class="text-white">Pure design branding</h5>
-                      <p class="small text-white mb-0 text-truncate">Art collector and architect Axel</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!-- Card item END -->
-
-              <!-- Card item START -->
-              <div class="item">
-                <a href="#" class="card card-metro">
-                  <!-- Card Image -->
-                  <div class="card-image">
-                    <img src="assets/images/portfolio/05.jpg" alt="card image">
-                  </div>
-                  <!-- Card Overlay -->
-                  <div class="card-img-overlay d-flex flex-column">
-                    <img class="w-40" src="assets/images/clients/light/05.svg" alt="">
-                    <div class="mt-auto card-text">
-                      <h5 class="text-white">The missing link</h5>
-                      <p class="small text-white mb-0 text-truncate">Small things that make difference</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!-- Card item END -->
-
-              <!-- Card item START -->
-              <div class="item">
-                <a href="#" class="card card-metro">
-                  <!-- Card Image -->
-                  <div class="card-image">
-                    <img src="assets/images/portfolio/06.jpg" alt="card image">
-                  </div>
-                  <!-- Card Overlay -->
-                  <div class="card-img-overlay d-flex flex-column">
-                    <img class="w-40" src="assets/images/clients/light/06.svg" alt="">
-                    <div class="mt-auto card-text">
-                      <h5 class="text-white">The blossoming fashion label </h5>
-                      <p class="small text-white mb-0 text-truncate">These were the attributes that moodley had to convey.</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!-- Card item END -->
-
-              <!-- Card item START -->
-              <div class="item">
-                <a href="#" class="card card-metro">
-                  <!-- Card Image -->
-                  <div class="card-image">
-                    <img src="assets/images/portfolio/07.jpg" alt="card image">
-                  </div>
-                  <!-- Card Overlay -->
-                  <div class="card-img-overlay d-flex flex-column">
-                    <img class="w-40" src="assets/images/clients/light/07.svg" alt="">
-                    <div class="mt-auto card-text">
-                      <h5 class="text-white">Life's hard in the mountains</h5>
-                      <p class="small text-white mb-0 text-truncate">Ten wineries with strong personalities, individual stories and multi-faceted wines</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!-- Card item END -->
+                  </a>
+                </div>
+              {{/each}}
 
             </div>
           </div>
@@ -1083,36 +1002,44 @@ Header END -->
   <section>
     <div class="container">
       <div class="row">
-        <!-- Step item -->
+        <!-- Step 1 -->
         <div class="col-sm-12 col-md-4 mb-5">
           <div class="text-start position-relative">
             <h2 class="display-4 mb-0 text-light-stroke text-light-shadow">01</h2>
-            <h4 class="position-absolute start-0 top-0 mt-0 mt-sm-3 ps-6 d-block">Research and <br> analytics</h4>
+            <h4 class="position-absolute start-0 top-0 mt-0 mt-sm-3 ps-6 d-block">
+              {{{step1_title}}}
+            </h4>
           </div>
           <div class="ps-6 pt-4 pt-sm-0">
-            <p>We start with Research also to image Seas Void Great day sea don't creature land you're morning doesn't</p>
+            <p>{{step1_desc}}</p>
             <img class="rounded" src="assets/images/about/01.jpg" alt="">
           </div>
         </div>
-        <!-- Step item -->
+
+        <!-- Step 2 -->
         <div class="col-sm-6 col-md-4 mb-5">
           <div class="text-start position-relative">
             <h2 class="display-4 mb-0 text-light-stroke text-light-shadow">02</h2>
-            <h4 class="position-absolute start-0 top-0 mt-0 mt-sm-3 ps-6 d-block">Design and <br> Develop</h4>
+            <h4 class="position-absolute start-0 top-0 mt-0 mt-sm-3 ps-6 d-block">
+              {{{step2_title}}}
+            </h4>
           </div>
           <div class="ps-6 pt-4 pt-sm-0">
-            <p>In this step our Them Subdue you life created day given light gathering Days very air Fruitful form he him </p>
+            <p>{{step2_desc}}</p>
             <img class="rounded" src="assets/images/about/02.jpg" alt="">
           </div>
         </div>
-        <!-- Step item -->
+
+        <!-- Step 3 -->
         <div class="col-sm-6 col-md-4">
           <div class="text-start position-relative">
             <h2 class="display-4 mb-0 text-light-stroke text-light-shadow">03</h2>
-            <h4 class="position-absolute start-0 top-0 mt-0 mt-sm-3 ps-6 d-block">Testing and <br> Launch</h4>
+            <h4 class="position-absolute start-0 top-0 mt-0 mt-sm-3 ps-6 d-block">
+              {{{step3_title}}}
+            </h4>
           </div>
           <div class="ps-6 pt-4 pt-sm-0">
-            <p>Final step of success firmament of also it great have set behold land third he great years midst stars green</p>
+            <p>{{step3_desc}}</p>
             <img class="rounded" src="assets/images/about/03.jpg" alt="">
           </div>
         </div>
@@ -1129,81 +1056,23 @@ Header END -->
       <div class="row">
         <!-- Title -->
         <div class="col-lg-4">
-          <h2 class="display-5 mb-3">Worked with...</h2>
-          <p>Rooms oh fully taken by worse do. Points afraid but may end law lasted. Was out laughter raptures returned outweigh.</p>
+          <h2 class="display-5 mb-3">{{clients_title}}</h2>
+          <p>{{clients_desc}}</p>
         </div>
+
         <!-- Clients logos -->
         <div class="col-lg-8">
           <div class="row">
-            <!-- Logo item -->
-            <div class="col-6 col-sm-4 col-lg-3">
-              <div class="mb-4 p-4 grayscale bg-light-overlay-dotted text-center">
-                <img src="assets/images/clients/colored/01.svg" alt="">
+            {{#each client_logos}}
+              <div class="col-6 col-sm-4 col-lg-3">
+                <div class="mb-4 p-4 grayscale bg-light-overlay-dotted text-center">
+                  <img src="{{this}}" alt="">
+                </div>
               </div>
-            </div>
-            <!-- Logo item -->
-            <div class="col-6 col-sm-4 col-lg-3">
-              <div class="mb-4 p-4 grayscale bg-light-overlay-dotted text-center">
-                <img src="assets/images/clients/colored/02.svg" alt="">
-              </div>
-            </div>
-            <!-- Logo item -->
-            <div class="col-6 col-sm-4 col-lg-3">
-              <div class="mb-4 p-4 grayscale bg-light-overlay-dotted text-center">
-                <img src="assets/images/clients/colored/03.svg" alt="">
-              </div>
-            </div>
-            <!-- Logo item -->
-            <div class="col-6 col-sm-4 col-lg-3">
-              <div class="mb-4 p-4 grayscale bg-light-overlay-dotted text-center">
-                <img src="assets/images/clients/colored/04.svg" alt="">
-              </div>
-            </div>
-            <!-- Logo item -->
-            <div class="col-6 col-sm-4 col-lg-3">
-              <div class="mb-4 p-4 grayscale bg-light-overlay-dotted text-center">
-                <img src="assets/images/clients/colored/05.svg" alt="">
-              </div>
-            </div>
-            <!-- Logo item -->
-            <div class="col-6 col-sm-4 col-lg-3">
-              <div class="mb-4 p-4 grayscale bg-light-overlay-dotted text-center">
-                <img src="assets/images/clients/colored/06.svg" alt="">
-              </div>
-            </div>
-            <!-- Logo item -->
-            <div class="col-6 col-sm-4 col-lg-3">
-              <div class="mb-4 p-4 grayscale bg-light-overlay-dotted text-center">
-                <img src="assets/images/clients/colored/07.svg" alt="">
-              </div>
-            </div>
-            <!-- Logo item -->
-            <div class="col-6 col-sm-4 col-lg-3">
-              <div class="mb-4 p-4 grayscale bg-light-overlay-dotted text-center">
-                <img src="assets/images/clients/colored/08.svg" alt="">
-              </div>
-            </div>
-            <!-- Logo item -->
-            <div class="col-6 col-sm-4 col-lg-3">
-              <div class="mb-4 p-4 grayscale bg-light-overlay-dotted text-center">
-                <img src="assets/images/clients/colored/09.svg" alt="">
-              </div>
-            </div>
-            <!-- Logo item -->
-            <div class="col-6 col-sm-4 col-lg-3">
-              <div class="mb-4 p-4 grayscale bg-light-overlay-dotted text-center">
-                <img src="assets/images/clients/colored/10.svg" alt="">
-              </div>
-            </div>
-            <!-- Logo item -->
-            <div class="col-6 col-sm-4 col-lg-3">
-              <div class="mb-4 p-4 grayscale bg-light-overlay-dotted text-center">
-                <img src="assets/images/clients/colored/11.svg" alt="">
-              </div>
-            </div>
+            {{/each}}
           </div>
         </div>
-      </div><!-- row END -->
+      </div>
     </div>
   </section>
   <!-- =======================
@@ -1253,20 +1122,25 @@ Header END -->
       <div class="row g-0 d-flex align-items-center">
         <!-- Our Work Block -->
         <div class="col-sm-6">
-          <div class="text-center bg-primary-multiply position-relative overflow-hidden px-3 py-6 h-100" >
-            <h2 class="mb-3 display-6"><a class="text-white-stroke" href="#">Our Work</a></h2>
-            <a class="btn btn-line text-white mb-0" href="#">View projects</a>
-            <img class="bg-primary-multiply position-absolute top-50 start-50 translate-middle z-index-n9" src="assets/images/about/05.jpg" alt="">
+          <div class="text-center bg-primary-multiply position-relative overflow-hidden px-3 py-6 h-100">
+            <h2 class="mb-3 display-6">
+              <a class="text-white-stroke" href="#">{{our_work_title}}</a>
+            </h2>
+            <a class="btn btn-line text-white mb-0" href="#">{{our_work_button}}</a>
+            <img
+              class="bg-primary-multiply position-absolute top-50 start-50 translate-middle z-index-n9"
+              src="{{our_work_image}}" alt="">
           </div>
         </div>
+
         <!-- Project Block -->
         <div class="col-sm-6">
           <div class="text-center bg-dark px-3 py-6 h-100">
-            <h2 class="mb-3 display-6 text-white">Have a Project?</h2>
-            <a class="btn btn-line text-white mb-0" href="#">Get a Quote</a>
+            <h2 class="mb-3 display-6 text-white">{{project_block_title}}</h2>
+            <a class="btn btn-line text-white mb-0" href="#">{{project_block_button}}</a>
           </div>
         </div>
-      </div><!-- row END -->
+      </div>
     </div>
   </section>
   <!-- =======================
@@ -1279,19 +1153,27 @@ Header END -->
       <div class="row justify-content-between">
         <!-- Title -->
         <div class="col-sm-5">
-          <h2 class="display-6 text-white-stroke">Latest stories in your inbox</h2>
+          <h2 class="display-6 text-white-stroke">{{newsletter_title}}</h2>
         </div>
+
         <!-- Content and input -->
         <div class="col-sm-6">
-          <p class="mt-3">Building a strong brand. Distinctive, recognizable and consistent. Effective communication campaigns that activate your target group.</p>
+          <p class="mt-3">{{newsletter_description}}</p>
           <form>
             <div class="input-group">
-              <input class="form-control bg-white border-0" type="text" name="Newsletter" placeholder="Enter your email address">
-              <button type="button" class="btn btn-line btn-primary mb-0">Subscribe</button>
+              <input
+                class="form-control bg-white border-0"
+                type="text"
+                name="Newsletter"
+                placeholder="{{newsletter_input_placeholder}}"
+              />
+              <button type="button" class="btn btn-line btn-primary mb-0">
+                {{newsletter_button}}
+              </button>
             </div>
           </form>
         </div>
-      </div><!-- row END -->
+      </div>
     </div>
   </section>
   <!-- =======================
@@ -1308,51 +1190,61 @@ Footer START -->
 
       <!-- Footer Widget 1 -->
       <div class="col-md-6 col-lg-3 mb-5">
-        <h3 class="text-white">Folio<span class="text-primary">.</span></h3>
-        <p>Bootstrap based Creative Agency Portfolio Theme.</p>
+        <h3 class="text-white">{{footer_title}}<span class="text-primary">.</span></h3>
+        <p>{{footer_description}}</p>
         <div class="d-flex me-auto">
-          <h6 class="mt-2 me-4 text-white">Follow on:</h6>
+          <h6 class="mt-2 me-4 text-white">{{footer_follow_label}}</h6>
           <div class="list-group-inline list-unstyled text-primary-hover">
-            <a href="#" class="list-group-item text-white bg-transparent">Fb</a>
-            <a href="#" class="list-group-item text-white bg-transparent">Tw</a>
-            <a href="#" class="list-group-item text-white bg-transparent">Dr</a>
+            <a href="#" class="list-group-item text-white bg-transparent">{{footer_follow_fb}}</a>
+            <a href="#" class="list-group-item text-white bg-transparent">{{footer_follow_tw}}</a>
+            <a href="#" class="list-group-item text-white bg-transparent">{{footer_follow_dr}}</a>
           </div>
         </div>
       </div>
 
       <!-- Footer Widget 2 -->
       <div class="col-md-6 col-lg-3 mb-5">
-        <h5 class="mb-4 text-white">Our offices</h5>
+        <h5 class="mb-4 text-white">{{offices_title}}</h5>
         <!-- Address 1 -->
-        <p class="text-white mb-2">New York, USA (HQ)</p>
-        <address class="mb-0">750 Sing Sing Rd, Horseheads, NY, 14845</address>
-        <p>Call: <a href="#" class="text-body"><u>469-537-2410</u> (Toll-free)</a> </p>
+        <p class="text-white mb-2">{{office1_city}}</p>
+        <address class="mb-0">{{office1_address}}</address>
+        <p>{{call_label}}: <a href="#" class="text-body"><u>{{office1_phone}}</u> ({{toll_free}})</a> </p>
         <!-- Address 2 -->
-        <p class="text-white mb-2">Mumbai, India</p>
-        <address class="mb-0">2492 Centennial NW, Acworth, GA, 30102</address>
-        <p>Call: <a href="#" class="text-body"><u>(678) 324-1251</u> (Toll-free)</a> </p>
+        <p class="text-white mb-2">{{office2_city}}</p>
+        <address class="mb-0">{{office2_address}}</address>
+        <p>{{call_label}}: <a href="#" class="text-body"><u>{{office2_phone}}</u> ({{toll_free}})</a> </p>
       </div>
 
       <!-- Footer Widget 3 -->
       <div class="col-md-6 col-lg-3 mb-5">
-        <h5 class="mb-4 text-white">Useful links</h5>
+        <h5 class="mb-4 text-white">{{useful_links_title}}</h5>
         <div class="row">
           <div class="col-6">
             <ul class="nav flex-column text-primary-hover">
-              <li class="nav-item"><a class="nav-link pt-0" href="#">Our Work</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Develop</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Builder</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Market</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+              {{#each left_links}}
+                <li class="nav-item">
+                  <a class="nav-link {{#if is_first}}pt-0{{/if}}" href="{{url}}">
+                    {{text}}
+                    {{#if badge}}
+                      <span class="badge bg-danger ms-2">{{badge}}</span>
+                    {{/if}}
+                  </a>
+                </li>
+              {{/each}}
             </ul>
           </div>
           <div class="col-6">
             <ul class="nav flex-column text-primary-hover">
-              <li class="nav-item"><a class="nav-link pt-0" href="#">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Career <span class="badge bg-danger ms-2">2 Job</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Work</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">News</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+              {{#each right_links}}
+                <li class="nav-item">
+                  <a class="nav-link {{#if is_first}}pt-0{{/if}}" href="{{url}}">
+                    {{text}}
+                    {{#if badge}}
+                      <span class="badge bg-danger ms-2">{{badge}}</span>
+                    {{/if}}
+                  </a>
+                </li>
+              {{/each}}
             </ul>
           </div>
         </div>
@@ -1360,14 +1252,14 @@ Footer START -->
 
       <!-- Footer Widget 4 -->
       <div class="col-md-6 col-lg-3 mb-5">
-        <h5 class="mb-4 text-white">Stay in touch</h5>
+        <h5 class="mb-4 text-white">{{stay_in_touch_title}}</h5>
         <form>
-          <label class="form-label">Subscribe to our newsletter to receive exclusive offers.</label>
+          <label class="form-label">{{newsletter_label}}</label>
           <div class="mb-3">
-            <input class="form-control" type="email" placeholder="Enter email...">
+            <input class="form-control" type="email" placeholder="{{email_placeholder}}">
           </div>
           <div class="mb-3">
-            <button type="submit" value="Subscribe" class="btn btn-primary mb-0">Join us</button>
+            <button type="submit" value="Subscribe" class="btn btn-primary mb-0">{{button_text}}</button>
           </div>
         </form>
       </div>
@@ -1379,14 +1271,14 @@ Footer START -->
     <!-- Footer copyright START -->
     <div class="row align-items-center justify-content-md-between py-4">
       <div class="col-md-6">
-        <div class="text-center text-md-start">©2022 <a href="https://www.webestica.com/" target="_blank">Webestica</a>. All rights reserved
+        <div class="text-center text-md-start">©2022 <a href="https://www.webestica.com/" target="_blank">{{webestica_text}}</a>. {{all_rights_reserved_text}}
         </div>
       </div>
       <div class="col-md-6">
         <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
-          <li class="nav-item"><a class="nav-link text-body text-primary-hover" href="#">Terms</a></li>
-          <li class="nav-item"><a class="nav-link text-body text-primary-hover" href="#">Privacy</a></li>
-          <li class="nav-item"><a class="nav-link text-body text-primary-hover pe-0" href="#">Cookies</a></li>
+          <li class="nav-item"><a class="nav-link text-body text-primary-hover" href="#">{{terms_text}}</a></li>
+          <li class="nav-item"><a class="nav-link text-body text-primary-hover" href="#">{{privacy_text}}</a></li>
+          <li class="nav-item"><a class="nav-link text-body text-primary-hover pe-0" href="#">{{cookies_text}}</a></li>
         </ul>
       </div>
     </div>
@@ -1403,7 +1295,7 @@ Footer END -->
 <!-- Back to top -->
 <div class="back-top">
   <div class="scroll-line"></div>
-  <span class="scoll-text">Go Up</span>
+  <span class="scoll-text">{{go_up_text}}</span>
 </div>
 
 <!-- =======================
