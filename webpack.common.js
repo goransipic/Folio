@@ -33,12 +33,13 @@ const patterns = languages.flatMap(lang =>
 
 module.exports = {
   entry: {
-    app: './assets/js/app.js',
+    index: './assets/js/index.js',
+    contact: './assets/js/app.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
-    filename: './assets/js/appOutput.js',
+    filename: 'assets/js/[name].js',
   },
   module: {
     rules: [
@@ -64,13 +65,13 @@ module.exports = {
       filename: lang === 'hr' ? 'index.html' : `${lang}/index.html`,
       template: './templates/index.hbs',
       templateParameters: () => loadJson(lang),
-      inject: false,
+      chunks: ['index'],
     })),
     ...languages.map(lang => new HtmlWebpackPlugin({
       filename: lang === 'hr' ? 'contact.html' : `${lang}/contact.html`,
       template: './templates/contact.hbs',
       templateParameters: () => loadJson(lang),
-      inject: false,
+      chunks: ['contact'],
     })),
     // Copy localized static files
     new CopyPlugin({ patterns }),
