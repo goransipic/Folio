@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
           await signOut(auth);
           console.log("🚪 User signed out.");
-          window.location.href = "/";
+          window.location.href = "index.html";
         } catch (error) {
           console.error("Logout failed:", error.message);
           alert("Logout failed: " + error.message);
@@ -41,13 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const user = userCredential.user;
       console.log("Logged in:", user.email);
 
-      const url = new URL(window.location.href);
-      const segments = url.pathname.split("/");
-
-      segments[segments.length - 1] = "contact.html"; // change only the last part
-      url.pathname = segments.join("/");
-
-      window.location.href = url.toString();
+      window.location.href = "contact.html";
     } catch (error) {
       console.error("Login failed:", error.message);
       alert("Login failed: " + error.message);
