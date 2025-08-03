@@ -34,7 +34,7 @@ const patterns = languages.flatMap(lang =>
 module.exports = {
   entry: {
     index: './assets/js/index.js',
-    contact: './assets/js/app.js',
+    contact: './assets/js/contact.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
