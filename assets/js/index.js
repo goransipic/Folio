@@ -41,7 +41,13 @@ document.addEventListener("DOMContentLoaded", () => {
       const user = userCredential.user;
       console.log("Logged in:", user.email);
 
-      window.location.href = "contact.html"; // Example redirect
+      const url = new URL(window.location.href);
+      const segments = url.pathname.split("/");
+
+      segments[segments.length - 1] = "contact.html"; // change only the last part
+      url.pathname = segments.join("/");
+
+      window.location.href = url.toString();
     } catch (error) {
       console.error("Login failed:", error.message);
       alert("Login failed: " + error.message);
