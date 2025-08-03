@@ -1,7 +1,8 @@
-import { db } from "./firebaseConfig";
-import { collection, doc, setDoc, Timestamp } from 'firebase/firestore';
+import  app  from "./firebaseConfig";
+import {doc, getFirestore, setDoc, Timestamp} from 'firebase/firestore';
 
 document.addEventListener("DOMContentLoaded", () => {
+  const db = getFirestore(app);
   const form = document.getElementById("contact-form");
 
   form.addEventListener("submit", async (e) => {
