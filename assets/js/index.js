@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const user = userCredential.user;
       console.log("Logged in:", user.email);
 
-      window.location.href = "/contact.html"; // Example redirect
+      window.location.href = "contact.html"; // Example redirect
     } catch (error) {
       console.error("Login failed:", error.message);
       alert("Login failed: " + error.message);
