@@ -26,8 +26,13 @@ document.addEventListener("DOMContentLoaded", () => {
         createdAt: Timestamp.now()
       });
 
-      console.log("Message sent, document ID:", email);
-      alert("Hvala! Vaša poruka je poslana.");
+      //console.log("Message sent, document ID:", email);
+      const foo = document.getElementById("container-feedback");
+      foo.innerHTML = `<div>
+            <h1 class="text-white-stroke">Hvala! Vaša poruka je poslana.</h1>
+            <a class="btn btn-primary mt-4" href="/">Početna</a>
+        </div>`;
+      //alert("Hvala! Vaša poruka je poslana.");
       form.reset();
     } catch (err) {
       console.error("Error adding document:", err);
