@@ -1,0 +1,18 @@
+<svg width="512px" height="138px" viewBox="0 0 512 138" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
+  <g fill="#ffffff" fill-rule="nonzero">
+    <!-- Letter E -->
+    <path d="M10 0 L10 130 L70 130 L70 110 L30 110 L30 75 L65 75 L65 55 L30 55 L30 20 L70 20 L70 0 Z"/>
+    <!-- Letter K -->
+    <path d="M90 0 L90 130 L110 130 L110 75 L145 130 L170 130 L130 80 L175 0 L150 0 L110 55 L110 0 Z"/>
+    <!-- Letter O -->
+    <path d="M190 20 C190 0 240 0 240 20 L240 110 C240 130 190 130 190 110 Z M210 30 L220 30 L220 100 L210 100 Z"/>
+    <!-- Letter Z -->
+    <path d="M260 0 L320 0 L280 65 L320 130 L260 130 L300 75 L260 75 Z"/>
+    <!-- Letter I -->
+    <rect x="340" y="0" width="20" height="130"/>
+    <!-- Letter V -->
+    <path d="M370 0 L395 130 L420 0 L400 0 L385 90 L370 0 Z"/>
+    <!-- Letter A -->
+    <path d="M440 130 L475 0 L510 130 L490 130 L475 70 L460 130 Z M465 45 L485 45 L475 80 Z"/>
+  </g>
+</svg>
