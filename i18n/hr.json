@@ -294,7 +294,7 @@
       "imageSrc": "assets/images/portfolio/01.jpg",
       "clientLogo": "assets/images/clients/light/01.svg",
       "title": "Nedostajući spoj u e-mobilnosti",
-      "description": "Što do sada nije bilo pravi spoj u e-mobilnosti."
+      "description": "Povezujemo e-mobilnost s vašim svakodnevnim životom."
     },
     {
       "link": "#",
@@ -308,14 +308,14 @@
       "imageSrc": "assets/images/portfolio/03.jpg",
       "clientLogo": "assets/images/clients/light/03.svg",
       "title": "Zavodljivo poput oceana",
-      "description": "Viktoria Louise je cvjetajuća modna marka Vicky Heiler."
+      "description": "Zora Style je cvjetajuća modna marka Ane Kovač."
     },
     {
       "link": "#",
       "imageSrc": "assets/images/portfolio/04.jpg",
       "clientLogo": "assets/images/clients/light/04.svg",
       "title": "Čisti dizajn brendiranja",
-      "description": "Umjetnički kolekcionar i arhitekt Axel."
+      "description": "Umjetnički kolekcionar i arhitekt Marko."
     },
     {
       "link": "#",
@@ -329,7 +329,7 @@
       "imageSrc": "assets/images/portfolio/06.jpg",
       "clientLogo": "assets/images/clients/light/06.svg",
       "title": "Cvjetajuća modna marka",
-      "description": "To su bili atributi koje je moodley morao prenijeti."
+      "description": "Inspirirana prirodom, stvorena za vašu ljepotu."
     },
     {
       "link": "#",
@@ -340,13 +340,13 @@
     }
   ],
   "step1_title": "Istraživanje i <br> analitika",
-  "step1_desc": "Počinjemo s istraživanjem kako bismo oblikovali viziju. More, nebo, dan, stvorenja i kopno – sve ima svoje mjesto.",
+  "step1_desc": "Temelj uspješne izrade web stranica kroz podatke i korisničke uvide.",
   "step2_title": "Dizajn i <br> razvoj",
-  "step2_desc": "U ovoj fazi naš tim oblikuje život proizvoda. Svjetlost, dani, zrak i plodnost uzimaju svoj oblik.",
+  "step2_desc": "Kreativno oblikovanje i tehnička izrada web stranica za vrhunsko online iskustvo.",
   "step3_title": "Testiranje i <br> lansiranje",
-  "step3_desc": "Završni korak uspjeha. Gledamo kako naše rješenje dolazi na svjetlo dana, spremno za svijet.",
+  "step3_desc": "Provjera kvalitete i uspješno pokretanje web stranica za besprijekoran rad od prvog dana.",
   "clients_title": "Suradnje...",
-  "clients_desc": "Potpuno zauzete sobe, ali ništa gore. Točke straha, ali zakon je trajao. Smijeh se vratio i nadvladao sve.",
+  "clients_desc": "Zajedno stvaramo web stranice koje spajaju vašu viziju i našu stručnost, uz povjerenje i jasnu komunikaciju.",
   "client_logos": [
     "assets/images/clients/colored/01.svg",
     "assets/images/clients/colored/02.svg",
@@ -370,7 +370,7 @@
   "newsletter_input_placeholder": "Unesite svoju e-mail adresu",
   "newsletter_button": "Pretplati se",
   "footer_title": "Folio",
-  "footer_description": "Portfolio tema kreativne agencije temeljena na Bootstrapu.",
+  "footer_description": "Gradimo moderne web stranice koje rastu zajedno s vašim poslovanjem.",
   "footer_follow_label": "Pratite nas:",
   "footer_follow_fb": "Fb",
   "footer_follow_tw": "Tw",
@@ -437,7 +437,7 @@
   "email_placeholder": "Unesite email...",
   "button_text": "Pridruži se",
   "go_up_text": "Gore",
-  "webestica_text": "Webestica",
+  "webestica_text": "Folio",
   "all_rights_reserved_text": "Sva prava pridržana",
   "terms_text": "Uvjeti",
   "privacy_text": "Privatnost",
