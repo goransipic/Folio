@@ -25,6 +25,7 @@ const contact = {
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
       this.showPreloader();
+      window.scrollTo(0, 0);
       // Collect form data
       const name = document.getElementById("con-name").value.trim();
       const email = document.getElementById("con-email").value.trim();
@@ -48,7 +49,7 @@ const contact = {
         this.hidePreloader();
         //console.log("Message sent, document ID:", email);
         const foo = document.getElementById("container-feedback");
-        foo.innerHTML = `<div>
+        foo.innerHTML = `<div class="py-5 pe-0 pe-md-6">
             <h1 class="text-white-stroke">Hvala! Vaša poruka je poslana.</h1>
             <a class="btn btn-primary mt-4" href="index.html">Početna</a>
         </div>`;
