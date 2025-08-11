@@ -292,21 +292,21 @@
     {
       "link": "#",
       "imageSrc": "assets/images/portfolio/01.jpg",
-      "clientLogo": "assets/images/clients/light/01.svg",
+      "clientLogo": "assets/images/clients/light/giant.svg",
       "title": "Nedostajući spoj u e-mobilnosti",
       "description": "Povezujemo e-mobilnost s vašim svakodnevnim životom."
     },
     {
       "link": "#",
       "imageSrc": "assets/images/portfolio/02.jpg",
-      "clientLogo": "assets/images/clients/light/02.svg",
+      "clientLogo": "assets/images/clients/light/pixo.svg",
       "title": "Trumer je skuhana sreća",
       "description": "Privatna pivovara za izvrsno pivo."
     },
     {
       "link": "#",
       "imageSrc": "assets/images/portfolio/03.jpg",
-      "clientLogo": "assets/images/clients/light/03.svg",
+      "clientLogo": "assets/images/clients/light/eureka.svg",
       "title": "Zavodljivo poput oceana",
       "description": "Zora Style je cvjetajuća modna marka Ane Kovač."
     },
@@ -320,21 +320,21 @@
     {
       "link": "#",
       "imageSrc": "assets/images/portfolio/05.jpg",
-      "clientLogo": "assets/images/clients/light/05.svg",
+      "clientLogo": "assets/images/clients/light/yepp.svg",
       "title": "Nedostajući spoj",
       "description": "Male stvari koje čine razliku."
     },
     {
       "link": "#",
       "imageSrc": "assets/images/portfolio/06.jpg",
-      "clientLogo": "assets/images/clients/light/06.svg",
+      "clientLogo": "assets/images/clients/light/dotmedia.svg",
       "title": "Cvjetajuća modna marka",
       "description": "Inspirirana prirodom, stvorena za vašu ljepotu."
     },
     {
       "link": "#",
       "imageSrc": "assets/images/portfolio/07.jpg",
-      "clientLogo": "assets/images/clients/light/07.svg",
+      "clientLogo": "assets/images/clients/light/campari.svg",
       "title": "Život je težak u planinama",
       "description": "Deset vinarija s jakim osobnostima, individualnim pričama i višeslojnim vinima."
     }
@@ -348,13 +348,13 @@
   "clients_title": "Suradnje...",
   "clients_desc": "Zajedno stvaramo web stranice koje spajaju vašu viziju i našu stručnost, uz povjerenje i jasnu komunikaciju.",
   "client_logos": [
-    "assets/images/clients/colored/01.svg",
-    "assets/images/clients/colored/02.svg",
-    "assets/images/clients/colored/03.svg",
+    "assets/images/clients/colored/campari.svg",
+    "assets/images/clients/colored/pixo.svg",
+    "assets/images/clients/colored/dotmedia.svg",
     "assets/images/clients/colored/04.svg",
-    "assets/images/clients/colored/05.svg",
-    "assets/images/clients/colored/06.svg",
-    "assets/images/clients/colored/07.svg",
+    "assets/images/clients/colored/eureka.svg",
+    "assets/images/clients/colored/giant.svg",
+    "assets/images/clients/colored/yepp.svg",
     "assets/images/clients/colored/08.svg",
     "assets/images/clients/colored/09.svg",
     "assets/images/clients/colored/10.svg",
