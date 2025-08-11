@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const user = userCredential.user;
       console.log("Logged in:", user.email);
 
-      window.location.href = "contact.html";
+      window.location.href = "admin.html";
     } catch (error) {
       console.error("Login failed:", error.message);
       alert("Login failed: " + error.message);

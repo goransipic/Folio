@@ -35,6 +35,7 @@ module.exports = {
   entry: {
     index: './assets/js/index.js',
     contact: './assets/js/contact.js',
+    admin: './assets/js/admin.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -72,6 +73,12 @@ module.exports = {
       template: './templates/contact.hbs',
       templateParameters: () => loadJson(lang),
       chunks: ['contact'],
+    })),
+    ...languages.map(lang => new HtmlWebpackPlugin({
+      filename: lang === 'hr' ? 'admin.html' : `${lang}/admin.html`,
+      template: './templates/admin.hbs',
+      templateParameters: () => loadJson(lang),
+      chunks: ['admin'],
     })),
     // Copy localized static files
     new CopyPlugin({ patterns }),
