@@ -1,32 +1,22 @@
 import app from "./firebaseConfig";
-import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "firebase/auth";
+import {getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut} from "firebase/auth";
 
 const auth = getAuth(app);
 
 document.addEventListener("DOMContentLoaded", () => {
   onAuthStateChanged(auth, (user) => {
-    if (user) {
-      document.getElementById("login-logout").innerHTML =
-        `<a href="#" class="nav-link text-white text-primary-hover"><i class="far fa-user me-2"></i>Odjava</a>`;
-
-      const logoutLink = document.querySelector("#login-logout a");
-
-      logoutLink.addEventListener("click", async (e) => {
-        e.preventDefault();
-
-        try {
-          await signOut(auth);
-          console.log("🚪 User signed out.");
-          window.location.href = "index.html";
-        } catch (error) {
-          console.error("Logout failed:", error.message);
-          alert("Logout failed: " + error.message);
-        }
-      });
-    } else {
-      document.getElementById("login-logout").innerHTML = `<a href="#" class="nav-link text-white text-primary-hover" data-bs-toggle="modal" data-bs-target="#topbarlogin"><i
-      class="far fa-user me-2"></i>Prijava</a>`
-    }
+    const currentUser = user;
+    const logoutLink = document.querySelector("#login-logout a");
+    logoutLink.addEventListener("click", async (e) => {
+      e.preventDefault();
+      if (currentUser) {
+        // Show the modal
+        window.location.href = "admin.html";
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('topbarlogin'));
+        modal.show();
+      }
+    });
   });
   // Handle form submission
   const form = document.getElementById("login-form");
