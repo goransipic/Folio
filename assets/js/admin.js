@@ -1,6 +1,6 @@
 import app from "./firebaseConfig";
 import {getFirestore, collection, getDocs, query, orderBy} from "firebase/firestore";
-import {getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut} from "firebase/auth";
+import {getAuth, onAuthStateChanged} from "firebase/auth";
 
 const db = getFirestore(app)
 const auth = getAuth(app);
