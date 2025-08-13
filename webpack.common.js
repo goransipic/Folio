@@ -19,8 +19,9 @@ const assets = [
   {from: 'assets/vendor', to: 'assets/vendor'},
   {from: 'assets/js', to: 'assets/js'},
   {from: 'robots.txt', to: 'robots.txt'},
+  {from: 'favicon.ico', to: 'favicon.ico'},
   {from: '404.html', to: '404.html'},
-  {from: 'site.webmanifest', to: 'site.webmanifest'},
+  {from: 'sitemap.xml', to: 'sitemap.xml'},
 ];
 
 // Copy to root for 'hr', and prefix with lang for others

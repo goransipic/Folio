@@ -1,8 +1,10 @@
 {
   "lang": "hr",
-  "title": "Folio - Kreativna Agencija Portfolio Tema",
-  "author": "Webestica.com",
-  "description": "Tema portfelja kreativne agencije temeljena na Bootstrapu",
+  "title": "Folio – Kreativna Agencija | Izrada Web Stranica i Web Trgovina",
+  "author": "Folio",
+  "description": "Folio je kreativna agencija koja se bavi izradom web stranica, brendiranjem i digitalnim rješenjima. Pogledajte naš portfolio.",
+  "keywords": "izrada web stranica, web trgovine, kreativna agencija, portfolio, dizajn, branding, web dizajn, Hrvatska",
+  "canonical": "https://folio-dizajn.hr/",
   "home": "Početna",
   "classicDefault": "Klasična zadana",
   "agencyClassic": "Agencija klasična",

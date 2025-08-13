@@ -1,9 +1,10 @@
 {
   "lang": "en",
-  "title": "Folio - Creative Agency Portfolio Theme",
-  "author": "Webestica.com",
-  "description": "A Bootstrap-based creative agency portfolio theme",
-
+  "title": "Folio – Creative Agency | Website and Online Store Development",
+  "author": "Folio",
+  "description": "Folio is a creative agency specializing in website and online store development, branding, and digital solutions. Check out our portfolio.",
+  "keywords": "website development, online stores, creative agency, portfolio, design, branding, web design, Croatia",
+  "canonical": "https://folio-dizajn.hr/",
   "home": "Home",
   "classicDefault": "Classic Default",
   "agencyClassic": "Agency Classic",
