@@ -1,5 +1,5 @@
-# www.robotstxt.org/
 User-agent: *
+Disallow: /admin.index
 Allow: /
 
 Sitemap: https://folio-dizajn.hr/sitemap.xml
