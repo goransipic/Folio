@@ -17,20 +17,26 @@
       </div>
 
       <!-- Footer Widget 2 -->
-      <div class="col-md-6 col-lg-3 mb-5">
+      <div class="col-md-6 col-lg-6 mb-5">
         <h5 class="mb-4 text-white">{{offices_title}}</h5>
         <!-- Address 1 -->
-        <p class="text-white mb-2">{{office1_city}}</p>
-        <address class="mb-0">{{office1_address}}</address>
-        <p>{{call_label}}: <a href="#" class="text-body"><u>{{office1_phone}}</u> ({{toll_free}})</a> </p>
+        <div class="row row-cols-1 row-cols-sm-2">
+          <div class="col">
+            <p class="text-white mb-2">{{office1_city}}</p>
+            <address class="mb-0">{{office1_address}}</address>
+            <p>{{call_label}}: <a href="#" class="text-body"><u>{{office1_phone}}</u> ({{toll_free}})</a> </p>
+          </div>
         <!-- Address 2 -->
-        <p class="text-white mb-2">{{office2_city}}</p>
-        <address class="mb-0">{{office2_address}}</address>
-        <p>{{call_label}}: <a href="#" class="text-body"><u>{{office2_phone}}</u> ({{toll_free}})</a> </p>
+          <div class="col">
+            <p class="text-white mb-2">{{office2_city}}</p>
+            <address class="mb-0">{{office2_address}}</address>
+            <p>{{call_label}}: <a href="#" class="text-body"><u>{{office2_phone}}</u> ({{toll_free}})</a> </p>
+          </div>
+        </div>
       </div>
 
       <!-- Footer Widget 3 -->
-      <div class="col-md-6 col-lg-3 mb-5">
+      <!--<div class="col-md-6 col-lg-3 mb-5">
         <h5 class="mb-4 text-white">{{useful_links_title}}</h5>
         <div class="row">
           <div class="col-6">
@@ -62,7 +68,7 @@
             </ul>
           </div>
         </div>
-      </div>
+      </div>-->
 
       <!-- Footer Widget 4 -->
       <div class="col-md-6 col-lg-3 mb-5">
