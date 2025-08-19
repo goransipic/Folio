@@ -447,13 +447,12 @@
     "sendButton": "Send Message"
     },
     "contactInfo": {
-      "phoneTitle": "+(251) 854-6308",
       "phoneDescription": "Call us on above number to get quick solution. Additional charges may apply",
       "skypeTitle": "Skype: HelloFolio",
       "skypeDescription": "If you have technical questions, chat live with developers in our Skype chat",
-      "emailTitle": "general@folio.com",
+      "emailTitle": "general@folio-dizajn.com",
       "emailDescription": "For general queries and questions including partnership opportunities",
-      "careerTitle": "career@folio.com",
+      "careerTitle": "career@folio-dizajn.com",
       "careerDescription": "Careers & Press related queries please email us at above address"
     }
   }

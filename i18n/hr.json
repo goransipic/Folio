@@ -368,10 +368,10 @@
   "offices_title": "Naše poslovnice",
   "office1_city": "Zagreb, Hrvatska (sjedište)",
   "office1_address": "Maksimir, Grad Zagreb, 10000",
-  "office1_phone": "(098) 122-5782",
+  "office1_phone": "(099) 5357 640",
   "office2_city": "Đurđevac, Hrvatska",
   "office2_address": "Jelačića 1, Đurđevac, 48350",
-  "office2_phone": "(098) 122-5782",
+  "office2_phone": "(099) 5357 640",
   "call_label": "Poziv",
   "toll_free": "besplatan broj",
   "useful_links_title": "Korisni linkovi",
@@ -443,13 +443,12 @@
       "sendButton": "Pošalji poruku"
     },
     "contactInfo": {
-      "phoneTitle": "+(251) 854-6308",
       "phoneDescription": "Nazovite nas na gornji broj za brza rješenja. Mogući dodatni troškovi",
       "skypeTitle": "Skype: HelloFolio",
       "skypeDescription": "Imate tehničko pitanje? Razgovarajte uživo s našim developerima na Skypeu",
-      "emailTitle": "general@folio.com",
+      "emailTitle": "general@folio-dizajn.hr",
       "emailDescription": "Za opća pitanja i partnerstva obratite nam se putem ove e-mail adrese",
-      "careerTitle": "career@folio.com",
+      "careerTitle": "career@folio-dizajn.hr",
       "careerDescription": "Za karijere i medije pišite nam na ovu adresu"
     }
   }
