@@ -8,6 +8,16 @@ function delay(ms) {
 // People need more than this to fill in four fields; bots submit instantly
 const MIN_FILL_MS = 3000;
 
+// Same ID as the pixel init in templates/partials/header.hbs
+const META_PIXEL_ID = "27725301660487136";
+
+// Meta wants trimmed, lowercased email as SHA-256 hex, so the raw address never leaves the browser
+async function sha256Hex(value) {
+  const bytes = new TextEncoder().encode(value);
+  const digest = await crypto.subtle.digest("SHA-256", bytes);
+  return Array.from(new Uint8Array(digest), b => b.toString(16).padStart(2, "0")).join("");
+}
+
 const contact = {
   showPreloader: function () {
     const preloader = document.querySelector('.preloader')
@@ -65,6 +75,12 @@ const contact = {
 
         // Meta Pixel lead; fbq is missing when an ad blocker stops the pixel
         if (typeof window.fbq === "function") {
+          try {
+            // Advanced Matching: re-init attaches the hashed email to this and later events
+            window.fbq("init", META_PIXEL_ID, {em: await sha256Hex(email.toLowerCase())});
+          } catch (err) {
+            console.warn("Meta Pixel advanced matching skipped:", err);
+          }
           window.fbq("track", "Lead");
         }
 
