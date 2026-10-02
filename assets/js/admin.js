@@ -27,11 +27,11 @@ async function loadMessages() {
           <thead>
           <tr>
             <th>#</th>
+            <th>Datum</th>
             <th>Name</th>
             <th>Email</th>
             <th>Subject</th>
             <th>Message</th>
-            <th>Created At</th>
           </tr>
           </thead>
           <tbody id="messagesTableBody">
@@ -49,11 +49,11 @@ async function loadMessages() {
     const row = `
       <tr>
         <th scope="row">${rows}</th>
+        <td class="text-nowrap">${data.createdAt.toDate().toLocaleString("hr-HR", {dateStyle: "short", timeStyle: "short"})}</td>
         <td>${escapeHtml(data.name)}</td>
         <td>${escapeHtml(data.email)}</td>
         <td>${escapeHtml(data.subject)}</td>
-        <td>${escapeHtml(data.message)}</td>
-        <td>${data.createdAt.toDate().toLocaleString()}</td>
+        <td style="white-space: pre-wrap; word-break: break-word; min-width: 250px;">${escapeHtml(data.message)}</td>
       </tr>
     `;
     tableBody.innerHTML += row;
