@@ -61,8 +61,17 @@ async function loadMessages() {
 }
 
 
+async function logout() {
+  await signOut(auth);
+  window.location.href = "index.html";
+}
+
 document.addEventListener("DOMContentLoaded", async () => {
+  const headerLogout = document.getElementById("header-logout");
+  headerLogout.querySelector("button").addEventListener("click", logout);
+
   onAuthStateChanged(auth, async (user) => {
+    headerLogout.classList.toggle("d-none", !user);
     if (user) {
       document.getElementById("table-folio").innerHTML = `<!-- Pre loader -->
                             <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
@@ -80,10 +89,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             <p class="text-light mt-3">Prijavljeni ste kao ${escapeHtml(user.email)}.</p>
             <button id="admin-logout" class="btn btn-primary mt-4">Odjava</button>
         </div>`;
-        document.getElementById("admin-logout").addEventListener("click", async () => {
-          await signOut(auth);
-          window.location.href = "index.html";
-        });
+        document.getElementById("admin-logout").addEventListener("click", logout);
       }
     } else {
       document.getElementById("table-folio").innerHTML = `<div class="py-5 pe-0 pe-md-6">
