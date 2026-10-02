@@ -1,9 +1,9 @@
 // src/firebase.js
 import { initializeApp } from "firebase/app";
-import { initializeAppCheck, ReCaptchaV3Provider } from "firebase/app-check";
+import { initializeAppCheck, ReCaptchaEnterpriseProvider } from "firebase/app-check";
 // example for Firestore
 
-// reCAPTCHA v3 site key (public, safe to ship); registered for folio-dizajn.hr
+// reCAPTCHA Enterprise site key (public, safe to ship); registered for folio-dizajn.hr
 const RECAPTCHA_SITE_KEY = "6LccPNstAAAAAGSfz_eYqRr8THK61F4PEek5ftUA";
 
 const firebaseConfig = {
@@ -27,7 +27,7 @@ if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
 // App Check proves Firestore requests come from this site, so bots
 // writing straight to the database are rejected once enforcement is on.
 initializeAppCheck(app, {
-  provider: new ReCaptchaV3Provider(RECAPTCHA_SITE_KEY),
+  provider: new ReCaptchaEnterpriseProvider(RECAPTCHA_SITE_KEY),
   isTokenAutoRefreshEnabled: true
 });
 
