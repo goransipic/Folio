@@ -43,6 +43,10 @@ const contact = {
           createdAt: Timestamp.now()
         });
 
+        // Meta Pixel lead; fbq is missing when an ad blocker stops the pixel
+        if (typeof window.fbq === "function") {
+          window.fbq("track", "Lead");
+        }
 
         this.hidePreloader();
         //console.log("Message sent, document ID:", email);
