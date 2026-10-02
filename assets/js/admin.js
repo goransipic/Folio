@@ -1,6 +1,6 @@
 import app from "./firebaseConfig";
 import {getFirestore, collection, getDocs, query, orderBy} from "firebase/firestore";
-import {getAuth, onAuthStateChanged} from "firebase/auth";
+import {getAuth, onAuthStateChanged, signOut} from "firebase/auth";
 
 const db = getFirestore(app)
 const auth = getAuth(app);
@@ -71,7 +71,20 @@ document.addEventListener("DOMContentLoaded", async () => {
                               </div>
                               <span class="fs-4">Učitavanje...</span>
                           </div>`
-      await loadMessages();
+      try {
+        await loadMessages();
+      } catch (err) {
+        console.error("Error loading messages:", err);
+        document.getElementById("table-folio").innerHTML = `<div class="py-5 pe-0 pe-md-6">
+            <h1 class="text-white-stroke">Nemate pristup.</h1>
+            <p class="text-light mt-3">Prijavljeni ste kao ${escapeHtml(user.email)}.</p>
+            <button id="admin-logout" class="btn btn-primary mt-4">Odjava</button>
+        </div>`;
+        document.getElementById("admin-logout").addEventListener("click", async () => {
+          await signOut(auth);
+          window.location.href = "index.html";
+        });
+      }
     } else {
       document.getElementById("table-folio").innerHTML = `<div class="py-5 pe-0 pe-md-6">
             <h1 class="text-white-stroke">Niste obavili login.</h1>
