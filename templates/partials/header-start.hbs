@@ -350,9 +350,11 @@
           </a>
         </div>-->
         <!-- Nav Button -->
+        {{#unless showLogout}}
         <div class="nav-item d-none d-xl-block">
           <a href="#" class="btn btn-sm btn-primary mb-0 ms-2">{{getQuote}}</a>
         </div>
+        {{/unless}}
         {{#if showLogout}}
         <!-- Logout button, shown by admin.js when signed in -->
         <div id="header-logout" class="nav-item d-none">
