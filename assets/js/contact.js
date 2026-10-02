@@ -1,5 +1,5 @@
 import  app  from "./firebaseConfig";
-import {doc, getFirestore, setDoc, Timestamp} from 'firebase/firestore';
+import {addDoc, collection, getFirestore, Timestamp} from 'firebase/firestore';
 
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -33,11 +33,9 @@ const contact = {
       const message = document.getElementById("con-message").value.trim();
 
       try {
-        // Create a document reference with email as ID
-        const docRef = doc(db, "contactMessages", email);
+        // Auto-generated ID so repeat messages from the same email are kept
         //await delay(2000)
-        // Set the document data
-        await setDoc(docRef, {
+        await addDoc(collection(db, "contactMessages"), {
           name,
           email,
           subject,

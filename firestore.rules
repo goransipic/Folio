@@ -1,0 +1,34 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isAdmin() {
+      return request.auth != null
+        && request.auth.token.email == "narog.sipic@gmail.com";
+    }
+
+    function isValidString(value, maxLength) {
+      return value is string && value.size() > 0 && value.size() <= maxLength;
+    }
+
+    match /contactMessages/{messageId} {
+      // Public contact form: create only, with the expected fields.
+      allow create: if request.resource.data.keys().hasOnly(['name', 'email', 'subject', 'message', 'createdAt'])
+        && request.resource.data.keys().hasAll(['name', 'email', 'subject', 'message', 'createdAt'])
+        && isValidString(request.resource.data.name, 100)
+        && isValidString(request.resource.data.email, 200)
+        && request.resource.data.email.matches('^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$')
+        && isValidString(request.resource.data.subject, 200)
+        && isValidString(request.resource.data.message, 5000)
+        && request.resource.data.createdAt is timestamp;
+
+      allow read: if isAdmin();
+      allow update, delete: if false;
+    }
+
+    // Everything else is locked.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

@@ -5,6 +5,15 @@ import {getAuth, onAuthStateChanged} from "firebase/auth";
 const db = getFirestore(app)
 const auth = getAuth(app);
 
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 async function loadMessages() {
   const q = query(
     collection(db, "contactMessages"),
@@ -40,10 +49,10 @@ async function loadMessages() {
     const row = `
       <tr>
         <th scope="row">${rows}</th>
-        <td>${data.name}</td>
-        <td>${data.email}</td>
-        <td>${data.subject}</td>
-        <td>${data.message}</td>
+        <td>${escapeHtml(data.name)}</td>
+        <td>${escapeHtml(data.email)}</td>
+        <td>${escapeHtml(data.subject)}</td>
+        <td>${escapeHtml(data.message)}</td>
         <td>${data.createdAt.toDate().toLocaleString()}</td>
       </tr>
     `;
