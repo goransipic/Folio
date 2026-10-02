@@ -5,6 +5,9 @@ function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+// People need more than this to fill in four fields; bots submit instantly
+const MIN_FILL_MS = 3000;
+
 const contact = {
   showPreloader: function () {
     const preloader = document.querySelector('.preloader')
@@ -18,14 +21,31 @@ const contact = {
       preloader.style.display = 'none';
     }, 200);
   },
+  showThanks: function () {
+    const foo = document.getElementById("container-feedback");
+    foo.innerHTML = `<div class="py-5 pe-0 pe-md-6">
+        <h1 class="text-white-stroke">Hvala! Vaša poruka je poslana.</h1>
+        <a class="btn btn-primary mt-4" href="index.html">Početna</a>
+    </div>`;
+  },
   handleForm: function () {
     const db = getFirestore(app);
     const form = document.getElementById("contact-form");
+    const loadedAt = Date.now();
 
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
-      this.showPreloader();
       window.scrollTo(0, 0);
+
+      // Likely bot: show the normal thanks so it doesn't retry, but save nothing
+      const honeypot = document.getElementById("con-website").value;
+      if (honeypot || Date.now() - loadedAt < MIN_FILL_MS) {
+        this.showThanks();
+        form.reset();
+        return;
+      }
+
+      this.showPreloader();
       // Collect form data
       const name = document.getElementById("con-name").value.trim();
       const email = document.getElementById("con-email").value.trim();
@@ -50,11 +70,7 @@ const contact = {
 
         this.hidePreloader();
         //console.log("Message sent, document ID:", email);
-        const foo = document.getElementById("container-feedback");
-        foo.innerHTML = `<div class="py-5 pe-0 pe-md-6">
-            <h1 class="text-white-stroke">Hvala! Vaša poruka je poslana.</h1>
-            <a class="btn btn-primary mt-4" href="index.html">Početna</a>
-        </div>`;
+        this.showThanks();
         //alert("Hvala! Vaša poruka je poslana.");
         form.reset();
       } catch (err) {

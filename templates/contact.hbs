@@ -55,6 +55,10 @@ Header END -->
                     <span class="focus-border"></span>
                   </div>
                 </div>
+                <!-- Honeypot: hidden from people, bots fill it in -->
+                <div class="position-absolute start-0 top-0 overflow-hidden" style="width:1px;height:1px;opacity:0;" aria-hidden="true">
+                  <input id="con-website" name="website" type="text" tabindex="-1" autocomplete="off">
+                </div>
                 <div class="col-md-12 text-start">
                   <button class="btn btn-primary" type="submit">{{contactTranslation.contactForm.sendButton}}</button>
                 </div>
