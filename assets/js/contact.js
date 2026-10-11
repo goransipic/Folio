@@ -11,6 +11,9 @@ const MIN_FILL_MS = 3000;
 // Same ID as the pixel init in templates/partials/header.hbs
 const META_PIXEL_ID = "27725301660487136";
 
+// Google Ads "Folio - kontakt forma" conversion; tag ID matches the gtag config in header.hbs
+const GOOGLE_ADS_SEND_TO = "AW-18374583901/0FGNCImi65gdEN3M17lE";
+
 // Meta wants trimmed, lowercased email as SHA-256 hex, so the raw address never leaves the browser
 async function sha256Hex(value) {
   const bytes = new TextEncoder().encode(value);
@@ -82,6 +85,11 @@ const contact = {
             console.warn("Meta Pixel advanced matching skipped:", err);
           }
           window.fbq("track", "Lead");
+        }
+
+        // Google Ads lead conversion; gtag is missing when an ad blocker stops the tag
+        if (typeof window.gtag === "function") {
+          window.gtag("event", "conversion", {send_to: GOOGLE_ADS_SEND_TO});
         }
 
         this.hidePreloader();
