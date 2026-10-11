@@ -35,6 +35,28 @@
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
   {{#unless noPixel}}
+  <!-- Consent: tags stay cookieless until the visitor accepts in the cookie banner (partials/cookies-start.hbs) -->
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  var folioConsent = null;
+  try { folioConsent = localStorage.getItem('folio-consent'); } catch (e) {}
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied'
+  });
+  if (folioConsent === 'granted') {
+    gtag('consent', 'update', {
+      ad_storage: 'granted',
+      ad_user_data: 'granted',
+      ad_personalization: 'granted',
+      analytics_storage: 'granted'
+    });
+  }
+  </script>
+
   <!-- Meta Pixel Code -->
   <script>
   !function(f,b,e,v,n,t,s)
@@ -45,6 +67,7 @@
   t.src=v;s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('consent', folioConsent === 'granted' ? 'grant' : 'revoke');
   fbq('init', '27725301660487136');
   fbq('track', 'PageView');
   </script>
@@ -56,8 +79,6 @@
   <!-- Google tag (gtag.js) - Google Ads -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18374583901"></script>
   <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'AW-18374583901');
   </script>

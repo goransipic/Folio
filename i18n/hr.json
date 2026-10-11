@@ -432,6 +432,9 @@
   "terms_text": "Uvjeti",
   "privacy_text": "Privatnost",
   "cookies_text": "Kolačići",
+  "cookie_text": "Koristimo kolačiće za mjerenje posjeta i učinka oglasa. Možete ih prihvatiti ili odbiti.",
+  "cookie_accept": "Prihvati",
+  "cookie_decline": "Odbij",
   "contactTranslation": {
     "contactForm": {
       "title": "Ne ustručavaj se, javi se!",

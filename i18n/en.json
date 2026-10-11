@@ -435,6 +435,9 @@
   "terms_text": "Terms",
   "privacy_text": "Privacy",
   "cookies_text": "Cookies",
+  "cookie_text": "We use cookies to measure visits and ad performance. You can accept or decline them.",
+  "cookie_accept": "Accept",
+  "cookie_decline": "Decline",
 
   "contactTranslation": {
     "contactForm" : {
