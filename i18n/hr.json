@@ -435,6 +435,91 @@
   "cookie_text": "Koristimo kolačiće za mjerenje posjeta i učinka oglasa. Možete ih prihvatiti ili odbiti.",
   "cookie_accept": "Prihvati",
   "cookie_decline": "Odbij",
+  "terms": {
+    "pageTitle": "Uvjeti korištenja | Folio",
+    "pageDescription": "Uvjeti korištenja internetske stranice folio-dizajn.hr.",
+    "canonical": "https://folio-dizajn.hr/terms.html",
+    "heading": "Uvjeti korištenja",
+    "updated": "Zadnja izmjena: 11. listopada 2026.",
+    "intro": "Ovi uvjeti uređuju korištenje internetske stranice folio-dizajn.hr. Korištenjem stranice prihvaćate ove uvjete.",
+    "sections": [
+      {
+        "id": "about",
+        "heading": "O stranici",
+        "paragraphs": [
+          "Stranicu folio-dizajn.hr vodi Folio, Maksimir, 10000 Zagreb, Hrvatska. Stranica predstavlja naše usluge izrade web stranica, web trgovina, dizajna i brendiranja te omogućuje slanje upita."
+        ]
+      },
+      {
+        "id": "content",
+        "heading": "Sadržaj stranice",
+        "paragraphs": [
+          "Sadržaj stranice informativne je naravi. Trudimo se da bude točan i ažuran, ali ne jamčimo da je u svakom trenutku potpun i bez pogrešaka.",
+          "Sadržaj možemo izmijeniti ili ukloniti u bilo kojem trenutku bez prethodne najave."
+        ]
+      },
+      {
+        "id": "quotes",
+        "heading": "Upiti i ponude",
+        "paragraphs": [
+          "Slanje upita putem kontakt obrasca ne obvezuje ni vas ni nas. Informacije na stranici nisu obvezujuća ponuda.",
+          "Opseg, cijena, rokovi i ostali uvjeti svake usluge dogovaraju se zasebno, pisanom ponudom ili ugovorom."
+        ]
+      },
+      {
+        "id": "ip",
+        "heading": "Intelektualno vlasništvo",
+        "paragraphs": [
+          "Tekstovi, dizajn, logotip, grafike i ostali sadržaj stranice pripadaju Foliju ili se koriste uz dopuštenje nositelja prava.",
+          "Sadržaj nije dopušteno kopirati, mijenjati ili koristiti u komercijalne svrhe bez našeg prethodnog pisanog dopuštenja."
+        ]
+      },
+      {
+        "id": "use",
+        "heading": "Dopušteno korištenje",
+        "paragraphs": [
+          "Stranicu smijete koristiti samo u zakonite svrhe. Nije dopušteno ometati rad stranice, pokušavati neovlašteno pristupiti njezinim sustavima niti slati neželjene ili automatizirane poruke putem kontakt obrasca."
+        ]
+      },
+      {
+        "id": "links",
+        "heading": "Poveznice na druge stranice",
+        "paragraphs": [
+          "Stranica može sadržavati poveznice na stranice trećih strana. Na njihov sadržaj i pravila privatnosti nemamo utjecaja i za njih ne odgovaramo."
+        ]
+      },
+      {
+        "id": "liability",
+        "heading": "Odgovornost",
+        "paragraphs": [
+          "Stranicu koristite na vlastitu odgovornost. U mjeri u kojoj to zakon dopušta, ne odgovaramo za štetu nastalu korištenjem stranice, nemogućnošću njezina korištenja ili oslanjanjem na njezin sadržaj.",
+          "Ne jamčimo da će stranica uvijek biti dostupna i raditi bez prekida."
+        ]
+      },
+      {
+        "id": "privacy",
+        "heading": "Privatnost",
+        "paragraphs": [
+          "Obrada osobnih podataka i korištenje kolačića opisani su u Pravilima privatnosti, dostupnima na folio-dizajn.hr/privacy.html."
+        ]
+      },
+      {
+        "id": "law",
+        "heading": "Mjerodavno pravo",
+        "paragraphs": [
+          "Na ove uvjete primjenjuje se pravo Republike Hrvatske. Sporove ćemo nastojati riješiti dogovorom, a ako to nije moguće, nadležan je stvarno nadležni sud u Zagrebu."
+        ]
+      },
+      {
+        "id": "changes",
+        "heading": "Izmjene uvjeta i kontakt",
+        "paragraphs": [
+          "Ove uvjete možemo povremeno izmijeniti. Aktualna verzija uvijek je objavljena na ovoj stranici.",
+          "Za pitanja o uvjetima javite nam se na general@folio-dizajn.hr."
+        ]
+      }
+    ]
+  },
   "privacy": {
     "pageTitle": "Pravila privatnosti | Folio",
     "pageDescription": "Kako Folio prikuplja, koristi i štiti osobne podatke posjetitelja stranice folio-dizajn.hr.",

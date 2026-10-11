@@ -438,6 +438,91 @@
   "cookie_text": "We use cookies to measure visits and ad performance. You can accept or decline them.",
   "cookie_accept": "Accept",
   "cookie_decline": "Decline",
+  "terms": {
+    "pageTitle": "Terms of Use | Folio",
+    "pageDescription": "Terms of use for the folio-dizajn.hr website.",
+    "canonical": "https://folio-dizajn.hr/en/terms.html",
+    "heading": "Terms of Use",
+    "updated": "Last updated: 11 October 2026",
+    "intro": "These terms govern the use of the folio-dizajn.hr website. By using the site you accept these terms.",
+    "sections": [
+      {
+        "id": "about",
+        "heading": "About the site",
+        "paragraphs": [
+          "The folio-dizajn.hr website is run by Folio, Maksimir, 10000 Zagreb, Croatia. It presents our web site, web shop, design and branding services and lets you send us an inquiry."
+        ]
+      },
+      {
+        "id": "content",
+        "heading": "Site content",
+        "paragraphs": [
+          "The content of the site is for information only. We try to keep it accurate and up to date, but we do not guarantee that it is complete and free of errors at all times.",
+          "We may change or remove content at any time without notice."
+        ]
+      },
+      {
+        "id": "quotes",
+        "heading": "Inquiries and quotes",
+        "paragraphs": [
+          "Sending an inquiry through the contact form does not bind you or us. Information on the site is not a binding offer.",
+          "The scope, price, deadlines and other terms of each service are agreed separately, in a written quote or contract."
+        ]
+      },
+      {
+        "id": "ip",
+        "heading": "Intellectual property",
+        "paragraphs": [
+          "The texts, design, logo, graphics and other content of the site belong to Folio or are used with the permission of the rights holder.",
+          "You may not copy, modify or use the content for commercial purposes without our prior written permission."
+        ]
+      },
+      {
+        "id": "use",
+        "heading": "Acceptable use",
+        "paragraphs": [
+          "You may use the site only for lawful purposes. You may not disrupt the site, attempt to gain unauthorised access to its systems, or send unsolicited or automated messages through the contact form."
+        ]
+      },
+      {
+        "id": "links",
+        "heading": "Links to other sites",
+        "paragraphs": [
+          "The site may contain links to third-party sites. We have no control over their content or privacy practices and are not responsible for them."
+        ]
+      },
+      {
+        "id": "liability",
+        "heading": "Liability",
+        "paragraphs": [
+          "You use the site at your own risk. To the extent permitted by law, we are not liable for damage arising from the use of the site, the inability to use it, or reliance on its content.",
+          "We do not guarantee that the site will always be available and work without interruption."
+        ]
+      },
+      {
+        "id": "privacy",
+        "heading": "Privacy",
+        "paragraphs": [
+          "The processing of personal data and the use of cookies are described in the Privacy Policy, available at folio-dizajn.hr/en/privacy.html."
+        ]
+      },
+      {
+        "id": "law",
+        "heading": "Governing law",
+        "paragraphs": [
+          "These terms are governed by the law of the Republic of Croatia. We will try to settle disputes by agreement; if that is not possible, the competent court in Zagreb has jurisdiction."
+        ]
+      },
+      {
+        "id": "changes",
+        "heading": "Changes and contact",
+        "paragraphs": [
+          "We may update these terms from time to time. The current version is always published on this page.",
+          "For questions about these terms, contact us at general@folio-dizajn.hr."
+        ]
+      }
+    ]
+  },
   "privacy": {
     "pageTitle": "Privacy Policy | Folio",
     "pageDescription": "How Folio collects, uses and protects the personal data of visitors to folio-dizajn.hr.",

@@ -75,12 +75,16 @@ module.exports = {
       templateParameters: () => loadJson(lang),
       chunks: ['contact'],
     })),
-    ...languages.map(lang => new HtmlWebpackPlugin({
-      filename: lang === 'hr' ? 'privacy.html' : `${lang}/privacy.html`,
-      template: './templates/privacy.hbs',
-      templateParameters: () => loadJson(lang),
+    // Text-only pages share one template; `page` is that page's block in the i18n file
+    ...['privacy', 'terms'].flatMap(key => languages.map(lang => new HtmlWebpackPlugin({
+      filename: lang === 'hr' ? `${key}.html` : `${lang}/${key}.html`,
+      template: './templates/legal.hbs',
+      templateParameters: () => {
+        const json = loadJson(lang);
+        return {...json, page: json[key]};
+      },
       chunks: [],
-    })),
+    }))),
     ...languages.map(lang => new HtmlWebpackPlugin({
       filename: lang === 'hr' ? 'admin.html' : `${lang}/admin.html`,
       template: './templates/admin.hbs',
