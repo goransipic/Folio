@@ -435,6 +435,75 @@
   "cookie_text": "Koristimo kolačiće za mjerenje posjeta i učinka oglasa. Možete ih prihvatiti ili odbiti.",
   "cookie_accept": "Prihvati",
   "cookie_decline": "Odbij",
+  "privacy": {
+    "pageTitle": "Pravila privatnosti | Folio",
+    "pageDescription": "Kako Folio prikuplja, koristi i štiti osobne podatke posjetitelja stranice folio-dizajn.hr.",
+    "canonical": "https://folio-dizajn.hr/privacy.html",
+    "heading": "Pravila privatnosti",
+    "updated": "Zadnja izmjena: 11. listopada 2026.",
+    "intro": "Ova pravila objašnjavaju koje osobne podatke prikupljamo na stranici folio-dizajn.hr, zašto ih prikupljamo i koja su vaša prava.",
+    "link_text": "Pravila privatnosti",
+    "sections": [
+      {
+        "id": "controller",
+        "heading": "Tko smo",
+        "paragraphs": [
+          "Voditelj obrade podataka je Folio, Maksimir, 10000 Zagreb, Hrvatska.",
+          "Za sva pitanja o privatnosti možete nam se javiti na general@folio-dizajn.hr ili na broj (099) 5357 640."
+        ]
+      },
+      {
+        "id": "contact-form",
+        "heading": "Kontakt obrazac",
+        "paragraphs": [
+          "Kada nam pošaljete poruku putem kontakt obrasca, prikupljamo vaše ime, e-mail adresu, predmet i sadržaj poruke.",
+          "Te podatke koristimo samo kako bismo odgovorili na vaš upit i pripremili ponudu. Pravna osnova je poduzimanje radnji na vaš zahtjev prije sklapanja ugovora te naš legitimni interes da odgovorimo na upite.",
+          "Poruke se spremaju u bazu podataka Google Firebase. Čuvamo ih onoliko dugo koliko je potrebno za obradu upita i eventualnu suradnju, a brisanje možete zatražiti u bilo kojem trenutku."
+        ]
+      },
+      {
+        "id": "cookies",
+        "heading": "Kolačići i mjerenje",
+        "paragraphs": [
+          "Pri prvom posjetu prikazujemo obavijest u kojoj možete prihvatiti ili odbiti kolačiće za mjerenje. Vaš izbor sprema se u vašem pregledniku.",
+          "Ako prihvatite, koristimo Google Ads oznaku za mjerenje učinka oglasa i Meta Pixel za mjerenje posjeta. Kada pošaljete kontakt obrazac, Meta Pixelu se šalje i kriptirani (hashirani) oblik vaše e-mail adrese radi povezivanja upita s oglasom. Pravna osnova je vaša privola.",
+          "Ako odbijete ili ne odaberete ništa, Meta Pixel ne šalje podatke, a Google oznaka radi u ograničenom načinu bez kolačića i šalje samo osnovne podatke o posjetu koji se ne povezuju s vama.",
+          "Izbor možete promijeniti brisanjem podataka ove stranice u postavkama preglednika, nakon čega će se obavijest ponovno prikazati."
+        ]
+      },
+      {
+        "id": "services",
+        "heading": "Tehničke usluge",
+        "paragraphs": [
+          "Stranica je smještena na usluzi GitHub Pages, koja pri svakom posjetu bilježi tehničke podatke poput IP adrese.",
+          "Fontovi se učitavaju s Googleovih poslužitelja (Google Fonts), a kontakt obrazac od zlouporabe štiti Firebase App Check s tehnologijom reCAPTCHA, koja obrađuje podatke o vašem uređaju i pregledniku. Pravna osnova je naš legitimni interes za sigurnu i funkcionalnu stranicu."
+        ]
+      },
+      {
+        "id": "recipients",
+        "heading": "Tko prima podatke",
+        "paragraphs": [
+          "Podatke obrađuju naši pružatelji usluga: Google (Firebase, Google Ads, Google Fonts, reCAPTCHA), Meta (Meta Pixel) i GitHub (smještaj stranice).",
+          "Ti pružatelji mogu obrađivati podatke i izvan Europske unije, uključujući SAD, uz zaštitne mjere koje propisuje Opća uredba o zaštiti podataka (GDPR). Vaše podatke ne prodajemo."
+        ]
+      },
+      {
+        "id": "rights",
+        "heading": "Vaša prava",
+        "paragraphs": [
+          "Imate pravo zatražiti pristup svojim podacima, njihov ispravak ili brisanje, ograničenje obrade i prijenos podataka, te uložiti prigovor na obradu. Privolu za kolačiće možete povući u bilo kojem trenutku.",
+          "Zahtjev pošaljite na general@folio-dizajn.hr. Ako smatrate da obrada nije u skladu s propisima, možete podnijeti pritužbu Agenciji za zaštitu osobnih podataka (azop.hr)."
+        ]
+      },
+      {
+        "id": "changes",
+        "heading": "Izmjene pravila",
+        "paragraphs": [
+          "Ova pravila možemo povremeno izmijeniti. Aktualna verzija uvijek je objavljena na ovoj stranici."
+        ]
+      }
+    ]
+  },
   "contactTranslation": {
     "contactForm": {
       "title": "Ne ustručavaj se, javi se!",

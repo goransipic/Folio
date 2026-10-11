@@ -76,6 +76,12 @@ module.exports = {
       chunks: ['contact'],
     })),
     ...languages.map(lang => new HtmlWebpackPlugin({
+      filename: lang === 'hr' ? 'privacy.html' : `${lang}/privacy.html`,
+      template: './templates/privacy.hbs',
+      templateParameters: () => loadJson(lang),
+      chunks: [],
+    })),
+    ...languages.map(lang => new HtmlWebpackPlugin({
       filename: lang === 'hr' ? 'admin.html' : `${lang}/admin.html`,
       template: './templates/admin.hbs',
       templateParameters: () => loadJson(lang),

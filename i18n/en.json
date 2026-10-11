@@ -438,6 +438,75 @@
   "cookie_text": "We use cookies to measure visits and ad performance. You can accept or decline them.",
   "cookie_accept": "Accept",
   "cookie_decline": "Decline",
+  "privacy": {
+    "pageTitle": "Privacy Policy | Folio",
+    "pageDescription": "How Folio collects, uses and protects the personal data of visitors to folio-dizajn.hr.",
+    "canonical": "https://folio-dizajn.hr/en/privacy.html",
+    "heading": "Privacy Policy",
+    "updated": "Last updated: 11 October 2026",
+    "intro": "This policy explains what personal data we collect on folio-dizajn.hr, why we collect it and what your rights are.",
+    "link_text": "Privacy Policy",
+    "sections": [
+      {
+        "id": "controller",
+        "heading": "Who we are",
+        "paragraphs": [
+          "The data controller is Folio, Maksimir, 10000 Zagreb, Croatia.",
+          "For any privacy question, contact us at general@folio-dizajn.hr or on (099) 5357 640."
+        ]
+      },
+      {
+        "id": "contact-form",
+        "heading": "Contact form",
+        "paragraphs": [
+          "When you send us a message through the contact form, we collect your name, email address, subject and the content of your message.",
+          "We use this data only to reply to your inquiry and prepare a quote. The legal basis is taking steps at your request before entering into a contract, and our legitimate interest in answering inquiries.",
+          "Messages are stored in a Google Firebase database. We keep them for as long as needed to handle the inquiry and any resulting cooperation, and you can ask us to delete them at any time."
+        ]
+      },
+      {
+        "id": "cookies",
+        "heading": "Cookies and measurement",
+        "paragraphs": [
+          "On your first visit we show a notice where you can accept or decline measurement cookies. Your choice is saved in your browser.",
+          "If you accept, we use the Google Ads tag to measure ad performance and the Meta Pixel to measure visits. When you submit the contact form, a hashed form of your email address is also sent to the Meta Pixel to match the inquiry with an ad. The legal basis is your consent.",
+          "If you decline or make no choice, the Meta Pixel sends no data, and the Google tag runs in a limited mode without cookies, sending only basic visit data that is not linked to you.",
+          "You can change your choice by clearing this site's data in your browser settings, after which the notice is shown again."
+        ]
+      },
+      {
+        "id": "services",
+        "heading": "Technical services",
+        "paragraphs": [
+          "The site is hosted on GitHub Pages, which records technical data such as your IP address on each visit.",
+          "Fonts are loaded from Google's servers (Google Fonts), and the contact form is protected against abuse by Firebase App Check with reCAPTCHA, which processes data about your device and browser. The legal basis is our legitimate interest in a secure, working site."
+        ]
+      },
+      {
+        "id": "recipients",
+        "heading": "Who receives the data",
+        "paragraphs": [
+          "Data is processed by our service providers: Google (Firebase, Google Ads, Google Fonts, reCAPTCHA), Meta (Meta Pixel) and GitHub (hosting).",
+          "These providers may process data outside the European Union, including in the USA, under the safeguards required by the General Data Protection Regulation (GDPR). We do not sell your data."
+        ]
+      },
+      {
+        "id": "rights",
+        "heading": "Your rights",
+        "paragraphs": [
+          "You have the right to request access to your data, its correction or deletion, restriction of processing and data portability, and to object to processing. You can withdraw your cookie consent at any time.",
+          "Send your request to general@folio-dizajn.hr. If you believe the processing does not comply with the law, you can lodge a complaint with the Croatian Personal Data Protection Agency (azop.hr)."
+        ]
+      },
+      {
+        "id": "changes",
+        "heading": "Changes to this policy",
+        "paragraphs": [
+          "We may update this policy from time to time. The current version is always published on this page."
+        ]
+      }
+    ]
+  },
 
   "contactTranslation": {
     "contactForm" : {
