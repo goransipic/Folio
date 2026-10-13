@@ -38,6 +38,9 @@
   <style>
   .hero-row { min-height: 100vh; min-height: 100svh; }
   @media (min-width: 992px) { .hero-row { min-height: 600px; } }
+  /* The heading font draws letters such as F from overlapping shapes, so a plain text outline shows the
+     seams. A doubled outline with the background colour painted on top hides them. For dark backgrounds. */
+  .text-stroke-clean { color: var(--bs-dark) !important; -webkit-text-stroke-width: 2px; paint-order: stroke fill; }
   </style>
 
   {{#unless noPixel}}
