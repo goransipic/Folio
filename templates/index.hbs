@@ -253,7 +253,12 @@ Header END -->
   Main Banner START -->
   <section class="position-relative bg-dark bg-dark-overlay-4 p-0" style="background-image:url(assets/images/bg/01.jpg); background-position: center center; background-size: cover;">
     <div class="container">
-      <div class="row align-items-center" style="min-height: 600px;">
+      <!-- Fills the screen on phones and tablets; fixed height on desktop -->
+      <style>
+        .hero-row { min-height: 100vh; min-height: 100svh; }
+        @media (min-width: 992px) { .hero-row { min-height: 600px; } }
+      </style>
+      <div class="row align-items-center hero-row">
         <div class="col-lg-9 pt-7 pb-6">
           <h1 class="display-4 text-white">{{landing.title}}</h1>
           <p class="lead text-white">{{landing.text}}</p>
