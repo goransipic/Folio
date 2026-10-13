@@ -5,7 +5,7 @@
 
   <!-- Meta Tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
   <!-- Colour of the browser bar on phones; matches the dark header -->
   <meta name="theme-color" content="#19191c">
   <meta name="robots" content="noindex">
@@ -26,6 +26,11 @@
 
   <!-- Theme CSS -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <style>
+  /* The page draws under the phone's bottom system bar (viewport-fit=cover); keep content clear of it */
+  footer { padding-bottom: env(safe-area-inset-bottom); }
+  </style>
 </head>
 
 <body>

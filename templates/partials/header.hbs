@@ -3,7 +3,7 @@
 
   <!-- Meta Tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
   <!-- Colour of the browser bar on phones; matches the dark header -->
   <meta name="theme-color" content="#19191c">
   <meta name="author" content="{{author}}">
@@ -48,6 +48,9 @@
   /* The heading font draws letters such as F from overlapping shapes, so a plain text outline shows the
      seams. A doubled outline with the background colour painted on top hides them. For dark backgrounds. */
   .text-stroke-clean { color: var(--bs-dark) !important; -webkit-text-stroke-width: 2px; paint-order: stroke fill; }
+  /* The page draws under the phone's bottom system bar (viewport-fit=cover); keep content clear of it */
+  footer { padding-bottom: env(safe-area-inset-bottom); }
+  #cookie-consent { margin-bottom: calc(1rem + env(safe-area-inset-bottom)) !important; }
   </style>
 
   {{#unless noPixel}}
