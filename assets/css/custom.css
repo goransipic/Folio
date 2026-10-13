@@ -19,6 +19,12 @@
   50% { transform: translateY(0.5rem); }
 }
 @media (prefers-reduced-motion: reduce) { .hero-scroll { animation: none; } }
+/* In-page links (#services, #pricing, #about) stop just below the fixed header instead of under it.
+   The homepage header floats over the hero and takes no room, so the spacer the theme inserts once
+   the header sticks would only shift the page by the header's height. */
+#services, #about { scroll-margin-top: 3.4rem; }
+#pricing { scroll-margin-top: 4.5rem; }
+.navbar-transparent + #sticky-space { display: none !important; }
 /* The heading font draws letters such as F from overlapping shapes, so a plain text outline shows the
    seams. A doubled outline with the background colour painted on top hides them. For dark backgrounds. */
 .text-stroke-clean { color: var(--bs-dark) !important; -webkit-text-stroke-width: 2px; paint-order: stroke fill; }
