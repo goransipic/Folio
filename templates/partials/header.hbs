@@ -34,6 +34,12 @@
   <!-- Theme CSS -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+  <!-- Homepage hero: fills the screen on phones and tablets, fixed height on desktop -->
+  <style>
+  .hero-row { min-height: 100vh; min-height: 100svh; }
+  @media (min-width: 992px) { .hero-row { min-height: 600px; } }
+  </style>
+
   {{#unless noPixel}}
   <!-- Consent: tags stay cookieless until the visitor accepts in the cookie banner (partials/cookies-start.hbs) -->
   <script>
