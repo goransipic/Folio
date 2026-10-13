@@ -38,7 +38,7 @@ const contact = {
     const foo = document.getElementById("container-feedback");
     foo.innerHTML = `<div class="py-5 pe-0 pe-md-6">
         <h1 class="text-white-stroke">Hvala! Vaša poruka je poslana.</h1>
-        <a class="btn btn-primary mt-4" href="index.html">Početna</a>
+        <a class="btn btn-primary mt-4" href="./">Početna</a>
     </div>`;
   },
   handleForm: function () {

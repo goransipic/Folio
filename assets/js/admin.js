@@ -63,7 +63,7 @@ async function loadMessages() {
 
 async function logout() {
   await signOut(auth);
-  window.location.href = "index.html";
+  window.location.href = "./";
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     } else {
       document.getElementById("table-folio").innerHTML = `<div class="py-5 pe-0 pe-md-6">
             <h1 class="text-white-stroke">Niste obavili login.</h1>
-            <a class="btn btn-primary mt-4" href="index.html">Početna</a>
+            <a class="btn btn-primary mt-4" href="./">Početna</a>
         </div>`;
     }
   })
