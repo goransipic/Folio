@@ -409,6 +409,7 @@
     "button": "Pogledaj cijene"
   },
   "servicesPage": {
+    "darkHeader": true,
     "pageTitle": "Usluge | Folio",
     "pageDescription": "Izrada web stranica i web trgovina, SEO optimizacija i grafički dizajn – usluge agencije Folio.",
     "canonical": "https://folio-dizajn.hr/usluge.html",
@@ -418,6 +419,7 @@
     "showFeatures": true
   },
   "pricingPage": {
+    "darkHeader": true,
     "pageTitle": "Cijene | Folio",
     "pageDescription": "Početne cijene izrade web stranica, web trgovina, SEO optimizacije i grafičkog dizajna.",
     "canonical": "https://folio-dizajn.hr/cijene.html",

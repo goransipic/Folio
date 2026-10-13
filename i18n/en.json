@@ -406,6 +406,7 @@
     "button": "View pricing"
   },
   "servicesPage": {
+    "darkHeader": true,
     "pageTitle": "Services | Folio",
     "pageDescription": "Website and online store development, SEO optimization and graphic design – services by Folio.",
     "canonical": "https://folio-dizajn.hr/en/services.html",
@@ -415,6 +416,7 @@
     "showFeatures": true
   },
   "pricingPage": {
+    "darkHeader": true,
     "pageTitle": "Pricing | Folio",
     "pageDescription": "Starting prices for websites, online stores, SEO optimization and graphic design.",
     "canonical": "https://folio-dizajn.hr/en/pricing.html",

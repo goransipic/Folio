@@ -1,13 +1,13 @@
 {{#unless showLogout}}
 {{> nav-drawer}}
 {{/unless}}
-<header class="navbar-light header-static navbar-sticky">
+<header class="{{#if dark}}navbar-dark bg-dark navbar-sticky-bg-dark{{else}}navbar-light{{/if}} header-static navbar-sticky">
   <!-- Logo Nav START -->
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar{{#if dark}} navbar-dark{{/if}} navbar-expand-lg">
     <div class="container">
       <!-- Logo START -->
       <a class="navbar-brand" href="./">
-        <img class="navbar-brand-item" src="assets/images/logo.png" alt="Logo">
+        <img class="navbar-brand-item" src="assets/images/{{#if dark}}logo-light.png{{else}}logo.png{{/if}}" alt="Logo">
       </a>
       <!-- Logo END -->
 
