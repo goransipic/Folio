@@ -18,10 +18,10 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">{{home}}</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">{{services}}</a></li>
-          <li class="nav-item"><a class="nav-link" href="pricing.html">{{pricing}}</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{@root.urls.services}}">{{services}}</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{@root.urls.pricing}}">{{pricing}}</a></li>
           <li class="nav-item"><a class="nav-link" href="index.html#about">{{landing.navProcess}}</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">{{contact}}</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{@root.urls.contact}}">{{contact}}</a></li>
         </ul>
       </div>
       {{/unless}}
@@ -38,7 +38,7 @@
         <!-- Nav Button -->
         {{#unless showLogout}}
         <div class="nav-item d-none d-xl-block">
-          <a href="contact.html" class="btn btn-sm btn-primary mb-0 ms-2">{{getQuote}}</a>
+          <a href="{{@root.urls.contact}}" class="btn btn-sm btn-primary mb-0 ms-2">{{getQuote}}</a>
         </div>
         {{/unless}}
         {{#if showLogout}}

@@ -1,5 +1,12 @@
 {
   "lang": "hr",
+  "urls": {
+    "services": "usluge.html",
+    "pricing": "cijene.html",
+    "contact": "kontakt.html",
+    "privacy": "privatnost.html",
+    "terms": "uvjeti.html"
+  },
   "title": "Folio – Kreativna Agencija | Izrada Web Stranica i Web Trgovina",
   "author": "Folio",
   "description": "Folio je kreativna agencija za izradu web stranica i web trgovina, SEO optimizaciju i grafički dizajn. Web stranice od 100 €. Zatražite besplatnu ponudu.",
@@ -404,7 +411,7 @@
   "servicesPage": {
     "pageTitle": "Usluge | Folio",
     "pageDescription": "Izrada web stranica i web trgovina, SEO optimizacija i grafički dizajn – usluge agencije Folio.",
-    "canonical": "https://folio-dizajn.hr/services.html",
+    "canonical": "https://folio-dizajn.hr/usluge.html",
     "heading": "Usluge",
     "intro": "Izrađujemo web stranice i web trgovine te brinemo o njihovoj vidljivosti i izgledu.",
     "showOffers": true,
@@ -413,7 +420,7 @@
   "pricingPage": {
     "pageTitle": "Cijene | Folio",
     "pageDescription": "Početne cijene izrade web stranica, web trgovina, SEO optimizacije i grafičkog dizajna.",
-    "canonical": "https://folio-dizajn.hr/pricing.html",
+    "canonical": "https://folio-dizajn.hr/cijene.html",
     "heading": "Cijene",
     "intro": "Početne cijene naših usluga.",
     "showOffers": true,
@@ -490,7 +497,7 @@
   "terms": {
     "pageTitle": "Uvjeti korištenja | Folio",
     "pageDescription": "Uvjeti korištenja internetske stranice folio-dizajn.hr.",
-    "canonical": "https://folio-dizajn.hr/terms.html",
+    "canonical": "https://folio-dizajn.hr/uvjeti.html",
     "heading": "Uvjeti korištenja",
     "updated": "Zadnja izmjena: 11. listopada 2026.",
     "intro": "Ovi uvjeti uređuju korištenje internetske stranice folio-dizajn.hr. Korištenjem stranice prihvaćate ove uvjete.",
@@ -552,7 +559,7 @@
         "id": "privacy",
         "heading": "Privatnost",
         "paragraphs": [
-          "Obrada osobnih podataka i korištenje kolačića opisani su u Pravilima privatnosti, dostupnima na folio-dizajn.hr/privacy.html."
+          "Obrada osobnih podataka i korištenje kolačića opisani su u Pravilima privatnosti, dostupnima na folio-dizajn.hr/privatnost.html."
         ]
       },
       {
@@ -575,7 +582,7 @@
   "privacy": {
     "pageTitle": "Pravila privatnosti | Folio",
     "pageDescription": "Kako Folio prikuplja, koristi i štiti osobne podatke posjetitelja stranice folio-dizajn.hr.",
-    "canonical": "https://folio-dizajn.hr/privacy.html",
+    "canonical": "https://folio-dizajn.hr/privatnost.html",
     "heading": "Pravila privatnosti",
     "updated": "Zadnja izmjena: 11. listopada 2026.",
     "intro": "Ova pravila objašnjavaju koje osobne podatke prikupljamo na stranici folio-dizajn.hr, zašto ih prikupljamo i koja su vaša prava.",

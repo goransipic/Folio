@@ -67,7 +67,7 @@
         <h5 class="mb-4 text-white">{{stay_in_touch_title}}</h5>
         <p class="mb-2"><a href="mailto:{{landing.email}}" class="text-body"><u>{{landing.email}}</u></a></p>
         <p><a href="{{landing.phoneHref}}" class="text-body"><u>{{office1_phone}}</u></a></p>
-        <a href="contact.html" class="btn btn-primary mb-0">{{project_block_button}}</a>
+        <a href="{{@root.urls.contact}}" class="btn btn-primary mb-0">{{project_block_button}}</a>
       </div>
 
     </div>
@@ -82,9 +82,9 @@
       </div>
       <div class="col-md-6">
         <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
-          <li class="nav-item"><a class="nav-link text-body text-primary-hover" href="terms.html">{{terms_text}}</a></li>
-          <li class="nav-item"><a class="nav-link text-body text-primary-hover" href="privacy.html">{{privacy_text}}</a></li>
-          <li class="nav-item"><a class="nav-link text-body text-primary-hover pe-0" href="privacy.html#cookies">{{cookies_text}}</a></li>
+          <li class="nav-item"><a class="nav-link text-body text-primary-hover" href="{{@root.urls.terms}}">{{terms_text}}</a></li>
+          <li class="nav-item"><a class="nav-link text-body text-primary-hover" href="{{@root.urls.privacy}}">{{privacy_text}}</a></li>
+          <li class="nav-item"><a class="nav-link text-body text-primary-hover pe-0" href="{{@root.urls.privacy}}#cookies">{{cookies_text}}</a></li>
         </ul>
       </div>
     </div>

@@ -24,13 +24,13 @@
         <a class="nav-link text-white-stroke" href="index.html#services">{{services}}</a>
       </li>
       <li class="nav-item display-6 h5">
-        <a class="nav-link text-white-stroke" href="pricing.html">{{pricing}}</a>
+        <a class="nav-link text-white-stroke" href="{{@root.urls.pricing}}">{{pricing}}</a>
       </li>
       <li class="nav-item display-6 h5">
         <a class="nav-link text-white-stroke" href="index.html#about">{{landing.navProcess}}</a>
       </li>
       <li class="nav-item display-6 h5">
-        <a class="nav-link text-white-stroke" href="contact.html">{{contact}}</a>
+        <a class="nav-link text-white-stroke" href="{{@root.urls.contact}}">{{contact}}</a>
       </li>
     </ul>
     <div class="mt-auto mb-5">
@@ -164,7 +164,7 @@ Header START -->
           <!-- Top link -->
          <!-- <ul class="nav ms-3">
             <li class="nav-item">
-              <a href="contact.html" class="nav-link text-white text-primary-hover">{{contact}}</a>
+              <a href="{{@root.urls.contact}}" class="nav-link text-white text-primary-hover">{{contact}}</a>
             </li>
             <li id="login-logout" class="nav-item">
               <a href="#" class="nav-link text-white text-primary-hover" data-bs-toggle="modal" data-bs-target="#topbarlogin"><i class="far fa-user me-2"></i>{{login}}</a>
@@ -205,7 +205,7 @@ Header START -->
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="pricing.html">{{pricing}}</a>
+            <a class="nav-link" href="{{@root.urls.pricing}}">{{pricing}}</a>
           </li>
 
           <li class="nav-item">
@@ -213,7 +213,7 @@ Header START -->
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">{{contact_1}}</a>
+            <a class="nav-link" href="{{@root.urls.contact}}">{{contact_1}}</a>
           </li>
         </ul>
       </div>
@@ -229,7 +229,7 @@ Header START -->
         </div>-->
         <!-- Nav Button -->
         <div class="nav-item d-none d-xl-block">
-          <a href="contact.html" class="btn btn-sm btn-primary mb-0">{{getQuote}}</a>
+          <a href="{{@root.urls.contact}}" class="btn btn-sm btn-primary mb-0">{{getQuote}}</a>
         </div>
         <!-- Nav side Opener -->
         <div class="nav-item d-md-block d-xl-none">
@@ -258,7 +258,7 @@ Header END -->
           <h1 class="display-4 text-white">{{landing.title}}</h1>
           <p class="lead text-white">{{landing.text}}</p>
           <div class="mt-4">
-            <a href="contact.html" class="btn btn-primary me-2 mb-2">{{landing.primaryButton}}</a>
+            <a href="{{@root.urls.contact}}" class="btn btn-primary me-2 mb-2">{{landing.primaryButton}}</a>
             <a href="#pricing" class="btn btn-outline-white mb-2">{{landing.secondaryButton}}</a>
           </div>
           <ul class="list-inline text-white mt-3 mb-0">
@@ -287,7 +287,7 @@ Header END -->
       <div id="pricing">
         {{> offer-cards features=true}}
       </div>
-      <a href="contact.html" class="btn btn-primary mt-5 mb-0">{{landing.primaryButton}}</a>
+      <a href="{{@root.urls.contact}}" class="btn btn-primary mt-5 mb-0">{{landing.primaryButton}}</a>
     </div>
   </section>
   <!-- =======================
@@ -364,7 +364,7 @@ Header END -->
       <div class="bg-dark rounded text-center px-3 py-6">
         <h2 class="display-6 text-white mb-3">{{landing.ctaTitle}}</h2>
         <p class="text-white mb-4">{{landing.ctaText}}</p>
-        <a href="contact.html" class="btn btn-primary mb-0">{{landing.primaryButton}}</a>
+        <a href="{{@root.urls.contact}}" class="btn btn-primary mb-0">{{landing.primaryButton}}</a>
         <p class="text-white mt-4 mb-0">{{landing.ctaCall}} <a class="text-white" href="{{landing.phoneHref}}"><u>{{office1_phone}}</u></a></p>
       </div>
     </div>

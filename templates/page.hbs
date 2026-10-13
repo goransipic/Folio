@@ -30,7 +30,7 @@ Header END -->
         <div class="col-lg-7">
           <h1 class="display-5">{{page.heading}}</h1>
           <p class="lead">{{page.intro}}</p>
-          <a href="contact.html" class="btn btn-primary mb-0 me-3">{{landing.primaryButton}}</a>
+          <a href="{{@root.urls.contact}}" class="btn btn-primary mb-0 me-3">{{landing.primaryButton}}</a>
           <p class="d-inline-block mt-3 mb-0">{{landing.ctaCall}} <a href="{{landing.phoneHref}}"><u>{{office1_phone}}</u></a></p>
         </div>
         <div class="col-lg-5">
@@ -95,7 +95,7 @@ Header END -->
 
       <div class="mt-5">
         <h4 class="mb-3">{{project_block_title}}</h4>
-        <a href="contact.html" class="btn btn-primary mb-0">{{project_block_button}}</a>
+        <a href="{{@root.urls.contact}}" class="btn btn-primary mb-0">{{project_block_button}}</a>
       </div>
     </div>
   </section>

@@ -1,5 +1,5 @@
 <div id="cookie-consent" class="alert bg-dark text-white position-fixed start-0 bottom-0 z-index-9 shadow rounded p-4 ms-3 mb-3 col-9 col-md-3 d-none" role="alert">
-  {{cookie_text}} <a class="text-white" href="privacy.html">{{privacy.link_text}}</a>
+  {{cookie_text}} <a class="text-white" href="{{@root.urls.privacy}}">{{privacy.link_text}}</a>
   <div class="mt-4">
     <button type="button" id="cookie-accept" class="btn btn-link btn-sm text-white mb-0 ps-0">{{cookie_accept}}</button>
     <button type="button" id="cookie-decline" class="btn btn-link btn-sm text-danger mb-0">{{cookie_decline}}</button>

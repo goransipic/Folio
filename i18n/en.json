@@ -1,5 +1,12 @@
 {
   "lang": "en",
+  "urls": {
+    "services": "services.html",
+    "pricing": "pricing.html",
+    "contact": "contact.html",
+    "privacy": "privacy.html",
+    "terms": "terms.html"
+  },
   "title": "Folio – Creative Agency | Website and Online Store Development",
   "author": "Folio",
   "description": "Folio is a creative agency for websites and online stores, SEO and graphic design. Websites from €100. Request a free quote.",

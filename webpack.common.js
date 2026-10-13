@@ -24,6 +24,12 @@ const assets = [
 ];
 
 // Copy to root for 'hr', and prefix with lang for others
+// Page file names can differ per language (the `urls` block of each i18n file); others use the key itself
+const pageFile = (lang, key) => {
+  const name = loadJson(lang).urls[key] || `${key}.html`;
+  return lang === 'hr' ? name : `${lang}/${name}`;
+};
+
 const patterns = languages.flatMap(lang =>
   assets.map(({from, to}) => ({
     from,
@@ -69,14 +75,14 @@ module.exports = {
       chunks: ['index'],
     })),
     ...languages.map(lang => new HtmlWebpackPlugin({
-      filename: lang === 'hr' ? 'contact.html' : `${lang}/contact.html`,
+      filename: pageFile(lang, 'contact'),
       template: './templates/contact.hbs',
       templateParameters: () => loadJson(lang),
       chunks: ['contact'],
     })),
     // Text-only pages share one template; `page` is that page's block in the i18n file
     ...['privacy', 'terms'].flatMap(key => languages.map(lang => new HtmlWebpackPlugin({
-      filename: lang === 'hr' ? `${key}.html` : `${lang}/${key}.html`,
+      filename: pageFile(lang, key),
       template: './templates/legal.hbs',
       templateParameters: () => {
         const json = loadJson(lang);
@@ -91,7 +97,7 @@ module.exports = {
       'izrada-web-stranica': 'websitePage',
       'izrada-web-trgovina': 'webshopPage',
     }).flatMap(([file, block]) => languages.map(lang => new HtmlWebpackPlugin({
-      filename: lang === 'hr' ? `${file}.html` : `${lang}/${file}.html`,
+      filename: pageFile(lang, file),
       template: './templates/page.hbs',
       templateParameters: () => {
         const json = loadJson(lang);
@@ -99,6 +105,13 @@ module.exports = {
       },
       chunks: [],
     }))),
+    // The Croatian pages used to have English file names; keep those addresses working
+    ...Object.entries(loadJson('hr').urls).filter(([key, name]) => name !== `${key}.html`).map(([key, name]) => new HtmlWebpackPlugin({
+      filename: `${key}.html`,
+      template: './templates/redirect.hbs',
+      templateParameters: {target: name},
+      chunks: [],
+    })),
     // GitHub Pages serves the root 404.html for every missing URL, so only the Croatian one is built
     new HtmlWebpackPlugin({
       filename: '404.html',
