@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Spartan:wght@400;700;900&display=swap" rel="stylesheet">
 
   <!-- Theme CSS; absolute paths because this page is served for any missing URL, at any depth -->
+  <link rel="stylesheet" type="text/css" href="/assets/vendor/bootstrap-icons/bootstrap-icons.css">
   <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 </head>
 
@@ -32,19 +33,62 @@
 </header>
 
 <main>
-  <section>
+
+  <!-- =======================
+  Inner intro START -->
+  <section class="text-center">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
+        <!-- Inner intro title -->
+        <div class="col-12 my-5">
           <h1 class="display-2 text-dark-stroke text-primary-shadow">404!</h1>
-          <h2>Stranica nije pronađena</h2>
-          <p class="lead mb-4">Stranica koju tražite ne postoji ili je premještena.</p>
-          <a href="/" class="btn btn-primary me-2 mb-2">Povratak na početnu</a>
-          <a href="/contact.html" class="btn btn-outline-dark mb-2">Kontakt</a>
+          <h3>Stranica nije pronađena</h3>
+          <p>Stranica koju tražite ne postoji ili je premještena.</p>
         </div>
       </div>
     </div>
   </section>
+  <!-- =======================
+  Inner intro END -->
+
+  <!-- =======================
+  Links START -->
+  <section class="bg-light">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <!-- item -->
+        <div class="col-md-4 col-lg-3">
+          <a href="/" class="bg-white d-block text-center p-3 mb-30 line-draw-animation">
+            <div class="line-draw-inner">
+              <span class="text-primary display-8"><i class="bi bi-house"></i></span>
+              <h5 class="my-2">Povratak na početnu</h5>
+            </div>
+          </a>
+        </div>
+        <!-- item -->
+        <div class="col-md-4 col-lg-3">
+          <a href="/services.html" class="bg-white d-block text-center p-3 mb-30 line-draw-animation">
+            <div class="line-draw-inner">
+              <span class="text-primary display-8"><i class="bi bi-briefcase"></i></span>
+              <h5 class="my-2">Naše usluge</h5>
+            </div>
+          </a>
+        </div>
+        <!-- item -->
+        <div class="col-md-4 col-lg-3">
+          <a href="/contact.html" class="bg-white d-block text-center p-3 mb-30 line-draw-animation">
+            <div class="line-draw-inner">
+              <span class="text-primary display-8"><i class="bi bi-info-square"></i></span>
+              <h5 class="my-2">Kontakt</h5>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- =======================
+  Links END -->
+
 </main>
 
 </body>
