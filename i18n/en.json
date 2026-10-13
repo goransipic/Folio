@@ -345,6 +345,7 @@
   "cookie_accept": "Accept",
   "cookie_decline": "Decline",
   "landing": {
+    "scrollHint": "Scroll down",
     "navProcess": "How we work",
     "phoneHref": "tel:+385995357640",
     "email": "general@folio-dizajn.hr",

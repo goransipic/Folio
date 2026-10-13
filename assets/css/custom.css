@@ -6,6 +6,19 @@
 .hero-illustration { display: block; width: 100%; max-width: 280px; height: auto; margin: 0 auto; }
 @media (max-width: 575px) { .hero h1 { font-size: 2.5rem; } }
 @media (min-width: 992px) { .hero-illustration { max-width: 520px; } }
+/* Bouncing arrow at the bottom of the hero */
+.hero-scroll {
+  position: absolute; left: 50%; bottom: calc(1rem + env(safe-area-inset-bottom));
+  margin-left: -1.25rem; width: 2.5rem; height: 2.5rem; line-height: 2.5rem;
+  text-align: center; font-size: 1.5rem; opacity: 0.8;
+  animation: hero-scroll-bounce 1.8s ease-in-out infinite;
+}
+.hero-scroll:hover { opacity: 1; }
+@keyframes hero-scroll-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(0.5rem); }
+}
+@media (prefers-reduced-motion: reduce) { .hero-scroll { animation: none; } }
 /* The heading font draws letters such as F from overlapping shapes, so a plain text outline shows the
    seams. A doubled outline with the background colour painted on top hides them. For dark backgrounds. */
 .text-stroke-clean { color: var(--bs-dark) !important; -webkit-text-stroke-width: 2px; paint-order: stroke fill; }

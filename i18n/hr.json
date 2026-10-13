@@ -348,6 +348,7 @@
   "cookie_accept": "Prihvati",
   "cookie_decline": "Odbij",
   "landing": {
+    "scrollHint": "Pomaknite se dolje",
     "navProcess": "Kako radimo",
     "phoneHref": "tel:+385995357640",
     "email": "general@folio-dizajn.hr",
