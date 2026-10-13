@@ -648,6 +648,7 @@
     ]
   },
   "contactTranslation": {
+    "canonical": "https://folio-dizajn.hr/kontakt.html",
     "contactForm": {
       "title": "Ne ustručavaj se, javi se!",
       "subtitle": "Imaš pitanje ili projekt? Rado ćemo popričati...",

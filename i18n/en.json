@@ -646,6 +646,7 @@
   },
 
   "contactTranslation": {
+    "canonical": "https://folio-dizajn.hr/en/contact.html",
     "contactForm" : {
     "title": "Don't be shy, say hi!",
     "subtitle": "Have a question, a project? We'd love to discuss...",
