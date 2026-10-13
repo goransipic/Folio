@@ -85,13 +85,18 @@ module.exports = {
       },
       chunks: [],
     }))),
-    // Content pages share one template; `page` is that page's `<key>Page` block in the i18n file
-    ...['services', 'pricing'].flatMap(key => languages.map(lang => new HtmlWebpackPlugin({
-      filename: lang === 'hr' ? `${key}.html` : `${lang}/${key}.html`,
+    // Content pages share one template; each file name maps to that page's block in the i18n file
+    ...Object.entries({
+      'services': 'servicesPage',
+      'pricing': 'pricingPage',
+      'izrada-web-stranica': 'websitePage',
+      'izrada-web-trgovina': 'webshopPage',
+    }).flatMap(([file, block]) => languages.map(lang => new HtmlWebpackPlugin({
+      filename: lang === 'hr' ? `${file}.html` : `${lang}/${file}.html`,
       template: './templates/page.hbs',
       templateParameters: () => {
         const json = loadJson(lang);
-        return {...json, page: json[`${key}Page`]};
+        return {...json, page: json[block]};
       },
       chunks: [],
     }))),

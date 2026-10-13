@@ -463,6 +463,7 @@
   "offers": [
     {
       "icon": "bi-laptop",
+      "link": "izrada-web-stranica.html",
       "title": "Izrada web stranice",
       "price": "od 100 €",
       "text": "Moderna, responzivna web stranica prilagođena vašem poslovanju.",
@@ -470,6 +471,7 @@
     },
     {
       "icon": "bi-shop",
+      "link": "izrada-web-trgovina.html",
       "title": "Web trgovina",
       "price": "od 500 €",
       "text": "Skalabilna web trgovina za online prodaju vaših proizvoda ili usluga.",
@@ -519,6 +521,64 @@
           "Navedeni iznosi su početne cijene. Konačna cijena ovisi o opsegu i složenosti projekta.",
           "Opseg, cijenu i rokove dogovaramo zasebno, pisanom ponudom ili ugovorom, prije početka rada.",
           "Ponuda je besplatna i ne obvezuje vas."
+        ]
+      }
+    ]
+  },
+  "websitePage": {
+    "pageTitle": "Izrada web stranica od 100 € | Folio",
+    "pageDescription": "Izrada modernih, responzivnih web stranica po vašoj mjeri. Cijene od 100 €. Zatražite besplatnu ponudu.",
+    "canonical": "https://folio-dizajn.hr/izrada-web-stranica.html",
+    "heading": "Izrada web stranica",
+    "intro": "Vašu ideju pretvaramo u modernu web stranicu prilagođenu vašem poslovanju, koja dobro izgleda na svakom uređaju.",
+    "price": "od 100 €",
+    "priceNote": "Konačna cijena ovisi o opsegu projekta. Ponuda je besplatna.",
+    "featuresTitle": "Što je uključeno",
+    "features": ["Dizajn po vašoj mjeri", "Prikaz prilagođen svim uređajima", "Jasna struktura i sadržaj"],
+    "showSteps": true,
+    "sections": [
+      {
+        "id": "price",
+        "heading": "Koliko košta izrada web stranice",
+        "paragraphs": [
+          "Izrada web stranice počinje od 100 €. Konačna cijena ovisi o broju stranica, sadržaju i funkcionalnostima koje trebate.",
+          "Opseg, cijenu i rokove dogovaramo pisanom ponudom prije početka rada. Ponuda je besplatna i ne obvezuje vas."
+        ]
+      },
+      {
+        "id": "more",
+        "heading": "Dodatne usluge",
+        "paragraphs": [
+          "Uz izradu web stranice nudimo i SEO optimizaciju te grafički dizajn, svaku od 100 €."
+        ]
+      }
+    ]
+  },
+  "webshopPage": {
+    "pageTitle": "Izrada web trgovina od 500 € | Folio",
+    "pageDescription": "Izrada web trgovina s katalogom proizvoda, košaricom i online plaćanjem. Cijene od 500 €. Zatražite besplatnu ponudu.",
+    "canonical": "https://folio-dizajn.hr/izrada-web-trgovina.html",
+    "heading": "Izrada web trgovina",
+    "intro": "Izrađujemo skalabilne web trgovine za online prodaju vaših proizvoda ili usluga, s integriranim sustavom plaćanja.",
+    "price": "od 500 €",
+    "priceNote": "Konačna cijena ovisi o opsegu projekta. Ponuda je besplatna.",
+    "featuresTitle": "Što je uključeno",
+    "features": ["Katalog proizvoda i košarica", "Integracija sustava plaćanja", "Responzivan dizajn"],
+    "showSteps": true,
+    "sections": [
+      {
+        "id": "price",
+        "heading": "Koliko košta izrada web trgovine",
+        "paragraphs": [
+          "Izrada web trgovine počinje od 500 €. Konačna cijena ovisi o broju proizvoda, načinima plaćanja i funkcionalnostima koje trebate.",
+          "Opseg, cijenu i rokove dogovaramo pisanom ponudom prije početka rada. Ponuda je besplatna i ne obvezuje vas."
+        ]
+      },
+      {
+        "id": "more",
+        "heading": "Dodatne usluge",
+        "paragraphs": [
+          "Uz izradu web trgovine nudimo i SEO optimizaciju te grafički dizajn, svaku od 100 €."
         ]
       }
     ]
@@ -688,13 +748,9 @@
       "sendButton": "Pošalji poruku"
     },
     "contactInfo": {
-      "phoneDescription": "Nazovite nas na gornji broj za brza rješenja. Mogući dodatni troškovi",
-      "skypeTitle": "Skype: HelloFolio",
-      "skypeDescription": "Imate tehničko pitanje? Razgovarajte uživo s našim developerima na Skypeu",
+      "phoneDescription": "Nazovite nas za sva pitanja o vašem projektu.",
       "emailTitle": "general@folio-dizajn.hr",
-      "emailDescription": "Za opća pitanja i partnerstva obratite nam se putem ove e-mail adrese",
-      "careerTitle": "career@folio-dizajn.hr",
-      "careerDescription": "Za karijere i medije pišite nam na ovu adresu"
+      "emailDescription": "Za opća pitanja i partnerstva obratite nam se putem ove e-mail adrese"
     }
   }
 }

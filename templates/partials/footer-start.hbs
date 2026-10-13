@@ -6,14 +6,6 @@
       <div class="col-md-6 col-lg-3 mb-5">
         <h3 class="text-white">{{footer_title}}<span class="text-primary">.</span></h3>
         <p>{{footer_description}}</p>
-        <div class="d-flex me-auto">
-          <h6 class="mt-2 me-4 text-white">{{footer_follow_label}}</h6>
-          <div class="list-group-inline list-unstyled text-primary-hover">
-            <a href="#" class="list-group-item text-white bg-transparent">{{footer_follow_fb}}</a>
-            <a href="#" class="list-group-item text-white bg-transparent">{{footer_follow_tw}}</a>
-            <a href="#" class="list-group-item text-white bg-transparent">{{footer_follow_dr}}</a>
-          </div>
-        </div>
       </div>
 
       <!-- Footer Widget 2 -->
@@ -24,13 +16,13 @@
           <div class="col">
             <p class="text-white mb-2">{{office1_city}}</p>
             <address class="mb-0">{{office1_address}}</address>
-            <p>{{call_label}}: <a href="#" class="text-body"><u>{{office1_phone}}</u> ({{toll_free}})</a> </p>
+            <p>{{call_label}}: <a href="{{landing.phoneHref}}" class="text-body"><u>{{office1_phone}}</u></a> </p>
           </div>
         <!-- Address 2 -->
           <div class="col">
             <p class="text-white mb-2">{{office2_city}}</p>
             <address class="mb-0">{{office2_address}}</address>
-            <p>{{call_label}}: <a href="#" class="text-body"><u>{{office2_phone}}</u> ({{toll_free}})</a> </p>
+            <p>{{call_label}}: <a href="{{landing.phoneHref}}" class="text-body"><u>{{office2_phone}}</u></a> </p>
           </div>
         </div>
       </div>
@@ -73,15 +65,9 @@
       <!-- Footer Widget 4 -->
       <div class="col-md-6 col-lg-3 mb-5">
         <h5 class="mb-4 text-white">{{stay_in_touch_title}}</h5>
-        <form>
-          <label class="form-label">{{newsletter_label}}</label>
-          <div class="mb-3">
-            <input class="form-control" type="email" placeholder="{{email_placeholder}}">
-          </div>
-          <div class="mb-3">
-            <button type="submit" value="Subscribe" class="btn btn-primary mb-0">{{button_text}}</button>
-          </div>
-        </form>
+        <p class="mb-2"><a href="mailto:{{landing.email}}" class="text-body"><u>{{landing.email}}</u></a></p>
+        <p><a href="{{landing.phoneHref}}" class="text-body"><u>{{office1_phone}}</u></a></p>
+        <a href="contact.html" class="btn btn-primary mb-0">{{project_block_button}}</a>
       </div>
 
     </div>

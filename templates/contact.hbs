@@ -83,44 +83,24 @@ Header END -->
     <div class="container">
       <div class="row">
         <!-- Call -->
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6">
           <div class="d-flex flex-row align-items-center mb-3">
           <span class="text-primary display-8 me-3">
             <i class="bi bi-headset"></i>
           </span>
-            <h6 class="mt-2"><a href="#">{{office1_phone}}</a></h6>
+            <h6 class="mt-2"><a href="{{landing.phoneHref}}">{{office1_phone}}</a></h6>
           </div>
           <p>{{contactTranslation.contactInfo.phoneDescription}}</p>
         </div>
-        <!-- Skype -->
-        <div class="col-md-6 col-lg-3">
-          <div class="d-flex flex-row align-items-center mb-3">
-          <span class="text-primary display-8 me-3">
-            <i class="bi bi-chat-left-text"></i>
-          </span>
-            <h6 class="mt-2"><a href="#">{{contactTranslation.contactInfo.skypeTitle}}</a></h6>
-          </div>
-          <p>{{contactTranslation.contactInfo.skypeDescription}}</p>
-        </div>
         <!-- Email -->
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6">
           <div class="d-flex flex-row align-items-center mb-3">
           <span class="text-primary display-8 me-3">
             <i class="bi bi-envelope"></i>
           </span>
-            <h6 class="mt-2"><a href="#">{{contactTranslation.contactInfo.emailTitle}}</a></h6>
+            <h6 class="mt-2"><a href="mailto:{{contactTranslation.contactInfo.emailTitle}}">{{contactTranslation.contactInfo.emailTitle}}</a></h6>
           </div>
           <p>{{contactTranslation.contactInfo.emailDescription}}</p>
-        </div>
-        <!-- Careers -->
-        <div class="col-md-6 col-lg-3">
-          <div class="d-flex flex-row align-items-center mb-3">
-          <span class="text-primary display-8 me-3">
-            <i class="bi bi-person-plus"></i>
-          </span>
-            <h6 class="mt-2"><a href="#">{{contactTranslation.contactInfo.careerTitle}}</a></h6>
-          </div>
-          <p>{{contactTranslation.contactInfo.careerDescription}}</p>
         </div>
       </div>
     </div>

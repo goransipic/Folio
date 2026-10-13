@@ -24,12 +24,57 @@ Header END -->
   Content page START -->
   <section>
     <div class="container">
+      {{#if page.features}}
+      <!-- Landing page for one service: pitch and quote button beside what is included and the starting price -->
+      <div class="row g-4 align-items-center mb-5">
+        <div class="col-lg-7">
+          <h1 class="display-5">{{page.heading}}</h1>
+          <p class="lead">{{page.intro}}</p>
+          <a href="contact.html" class="btn btn-primary mb-0 me-3">{{landing.primaryButton}}</a>
+          <p class="d-inline-block mt-3 mb-0">{{landing.ctaCall}} <a href="{{landing.phoneHref}}"><u>{{office1_phone}}</u></a></p>
+        </div>
+        <div class="col-lg-5">
+          <div class="card card-body border">
+            <h5 class="mb-3">{{page.featuresTitle}}</h5>
+            <ul class="list-unstyled mb-4">
+              {{#each page.features}}
+              <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>{{this}}</li>
+              {{/each}}
+            </ul>
+            <p class="h3 text-primary mb-2">{{page.price}}</p>
+            <p class="small mb-0">{{page.priceNote}}</p>
+          </div>
+        </div>
+      </div>
+      {{else}}
       <div class="row">
         <div class="col-lg-8 mb-5">
           <h1 class="display-5">{{page.heading}}</h1>
           <p class="lead">{{page.intro}}</p>
         </div>
       </div>
+      {{/if}}
+
+      {{#if page.showSteps}}
+      <h2 class="h3 mt-5 mb-4">{{landing.processTitle}}</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h2 class="display-4 mb-3 text-light-stroke text-light-shadow">01</h2>
+          <h4>{{{step1_title}}}</h4>
+          <p class="mb-0">{{step1_desc}}</p>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h2 class="display-4 mb-3 text-light-stroke text-light-shadow">02</h2>
+          <h4>{{{step2_title}}}</h4>
+          <p class="mb-0">{{step2_desc}}</p>
+        </div>
+        <div class="col-md-4">
+          <h2 class="display-4 mb-3 text-light-stroke text-light-shadow">03</h2>
+          <h4>{{{step3_title}}}</h4>
+          <p class="mb-0">{{step3_desc}}</p>
+        </div>
+      </div>
+      {{/if}}
 
       {{#if page.showOffers}}
       {{> offer-cards features=page.showFeatures}}

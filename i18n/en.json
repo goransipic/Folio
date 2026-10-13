@@ -392,7 +392,7 @@
   "newsletter_button": "Subscribe",
 
   "footer_title": "Folio",
-  "footer_description": "Bootstrap based Creative Agency Portfolio Theme.",
+  "footer_description": "We build modern websites that grow together with your business.",
   "footer_follow_label": "Follow on:",
   "footer_follow_fb": "Fb",
   "footer_follow_tw": "Tw",
@@ -401,10 +401,10 @@
   "offices_title": "Our offices",
   "office1_city": "Zagreb, Croatia (headquarters)",
   "office1_address": "Maksimir, City of Zagreb, 10000",
-  "office1_phone": "(098) 122-5782",
+  "office1_phone": "(099) 5357 640",
   "office2_city": "Đurđevac, Croatia",
   "office2_address": "Ban Jelačić Street 1, Đurđevac, Koprivnica-Križevci County, 48350",
-  "office2_phone": "(098) 122-5782",
+  "office2_phone": "(099) 5357 640",
   "call_label": "Call",
   "toll_free": "Toll-free",
 
@@ -430,7 +430,7 @@
   "button_text": "Join us",
   "go_up_text": "Go Up",
 
-  "webestica_text": "Webestica",
+  "webestica_text": "Folio",
   "all_rights_reserved_text": "All rights reserved",
   "terms_text": "Terms",
   "privacy_text": "Privacy",
@@ -466,6 +466,7 @@
   "offers": [
     {
       "icon": "bi-laptop",
+      "link": "izrada-web-stranica.html",
       "title": "Website development",
       "price": "from €100",
       "text": "A modern, responsive website tailored to your business.",
@@ -473,6 +474,7 @@
     },
     {
       "icon": "bi-shop",
+      "link": "izrada-web-trgovina.html",
       "title": "Online store",
       "price": "from €500",
       "text": "A scalable online store for selling your products or services.",
@@ -522,6 +524,64 @@
           "The amounts shown are starting prices. The final price depends on the scope and complexity of the project.",
           "Scope, price and deadlines are agreed separately, by written offer or contract, before work begins.",
           "The offer is free and does not commit you to anything."
+        ]
+      }
+    ]
+  },
+  "websitePage": {
+    "pageTitle": "Website development from €100 | Folio",
+    "pageDescription": "Modern, responsive websites tailored to your business. Prices from €100. Request a free quote.",
+    "canonical": "https://folio-dizajn.hr/en/izrada-web-stranica.html",
+    "heading": "Website development",
+    "intro": "We turn your idea into a modern website tailored to your business that looks good on every device.",
+    "price": "from €100",
+    "priceNote": "The final price depends on the scope of the project. The quote is free.",
+    "featuresTitle": "What is included",
+    "features": ["Design tailored to you", "Display adapted to every device", "Clear structure and content"],
+    "showSteps": true,
+    "sections": [
+      {
+        "id": "price",
+        "heading": "How much a website costs",
+        "paragraphs": [
+          "A website starts at €100. The final price depends on the number of pages, the content and the features you need.",
+          "Scope, price and deadlines are agreed by written offer before work begins. The offer is free and does not commit you to anything."
+        ]
+      },
+      {
+        "id": "more",
+        "heading": "Additional services",
+        "paragraphs": [
+          "Alongside website development we also offer SEO optimization and graphic design, each from €100."
+        ]
+      }
+    ]
+  },
+  "webshopPage": {
+    "pageTitle": "Online store development from €500 | Folio",
+    "pageDescription": "Online stores with a product catalogue, cart and online payment. Prices from €500. Request a free quote.",
+    "canonical": "https://folio-dizajn.hr/en/izrada-web-trgovina.html",
+    "heading": "Online store development",
+    "intro": "We build scalable online stores for selling your products or services, with an integrated payment system.",
+    "price": "from €500",
+    "priceNote": "The final price depends on the scope of the project. The quote is free.",
+    "featuresTitle": "What is included",
+    "features": ["Product catalogue and cart", "Payment system integration", "Responsive design"],
+    "showSteps": true,
+    "sections": [
+      {
+        "id": "price",
+        "heading": "How much an online store costs",
+        "paragraphs": [
+          "An online store starts at €500. The final price depends on the number of products, the payment methods and the features you need.",
+          "Scope, price and deadlines are agreed by written offer before work begins. The offer is free and does not commit you to anything."
+        ]
+      },
+      {
+        "id": "more",
+        "heading": "Additional services",
+        "paragraphs": [
+          "Alongside online store development we also offer SEO optimization and graphic design, each from €100."
         ]
       }
     ]
@@ -692,13 +752,9 @@
     "sendButton": "Send Message"
     },
     "contactInfo": {
-      "phoneDescription": "Call us on above number to get quick solution. Additional charges may apply",
-      "skypeTitle": "Skype: HelloFolio",
-      "skypeDescription": "If you have technical questions, chat live with developers in our Skype chat",
-      "emailTitle": "general@folio-dizajn.com",
-      "emailDescription": "For general queries and questions including partnership opportunities",
-      "careerTitle": "career@folio-dizajn.com",
-      "careerDescription": "Careers & Press related queries please email us at above address"
+      "phoneDescription": "Call us with any question about your project.",
+      "emailTitle": "general@folio-dizajn.hr",
+      "emailDescription": "For general queries and questions including partnership opportunities"
     }
   }
 }
