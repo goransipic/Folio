@@ -36,8 +36,14 @@
 
   <!-- Homepage hero: fills the screen on phones and tablets, fixed height on desktop -->
   <style>
+  .hero { background-image: radial-gradient(circle at 85% 20%, rgba(var(--bs-primary-rgb), 0.28), transparent 55%); }
   .hero-row { min-height: 100vh; min-height: 100svh; }
-  @media (min-width: 992px) { .hero-row { min-height: 600px; } }
+  .hero-illustration { display: block; width: 100%; max-width: 300px; height: auto; margin: 0 auto; }
+  @media (max-width: 575px) { .hero h1 { font-size: 2.5rem; } }
+  @media (min-width: 992px) {
+    .hero-row { min-height: 600px; }
+    .hero-illustration { max-width: 520px; }
+  }
   /* The heading font draws letters such as F from overlapping shapes, so a plain text outline shows the
      seams. A doubled outline with the background colour painted on top hides them. For dark backgrounds. */
   .text-stroke-clean { color: var(--bs-dark) !important; -webkit-text-stroke-width: 2px; paint-order: stroke fill; }
