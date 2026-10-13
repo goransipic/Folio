@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hr">
+<html lang={{lang}}>
 <head>
   <title>Stranica nije pronađena | Folio</title>
 
@@ -8,30 +8,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="robots" content="noindex">
 
+  <!-- This page is served for any missing URL, at any depth, so relative links must resolve from the site root -->
+  <base href="/">
+
   <!-- Favicon -->
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="icon" href="/favicon.ico">
 
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Spartan:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Rubik:wght@400;500;700&family=Spartan:wght@400;700;900&display=swap" rel="stylesheet">
 
-  <!-- Theme CSS; absolute paths because this page is served for any missing URL, at any depth -->
-  <link rel="stylesheet" type="text/css" href="/assets/vendor/bootstrap-icons/bootstrap-icons.css">
-  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
 
-<header class="navbar-light">
-  <nav class="navbar">
-    <div class="container">
-      <a class="navbar-brand" href="/">
-        <img class="navbar-brand-item" src="/assets/images/logo.png" alt="Folio">
-      </a>
-    </div>
-  </nav>
-</header>
+<!-- =======================
+Header START -->
+{{> header-start}}
+<!-- =======================
+Header END -->
 
+<!-- **************** MAIN CONTENT START **************** -->
 <main>
 
   <!-- =======================
@@ -58,7 +61,7 @@
       <div class="row d-flex justify-content-center">
         <!-- item -->
         <div class="col-md-4 col-lg-3">
-          <a href="/" class="bg-white d-block text-center p-3 mb-30 line-draw-animation">
+          <a href="index.html" class="bg-white d-block text-center p-3 mb-30 line-draw-animation">
             <div class="line-draw-inner">
               <span class="text-primary display-8"><i class="bi bi-house"></i></span>
               <h5 class="my-2">Povratak na početnu</h5>
@@ -67,7 +70,7 @@
         </div>
         <!-- item -->
         <div class="col-md-4 col-lg-3">
-          <a href="/services.html" class="bg-white d-block text-center p-3 mb-30 line-draw-animation">
+          <a href="services.html" class="bg-white d-block text-center p-3 mb-30 line-draw-animation">
             <div class="line-draw-inner">
               <span class="text-primary display-8"><i class="bi bi-briefcase"></i></span>
               <h5 class="my-2">Naše usluge</h5>
@@ -76,7 +79,7 @@
         </div>
         <!-- item -->
         <div class="col-md-4 col-lg-3">
-          <a href="/contact.html" class="bg-white d-block text-center p-3 mb-30 line-draw-animation">
+          <a href="contact.html" class="bg-white d-block text-center p-3 mb-30 line-draw-animation">
             <div class="line-draw-inner">
               <span class="text-primary display-8"><i class="bi bi-info-square"></i></span>
               <h5 class="my-2">Kontakt</h5>
@@ -90,6 +93,22 @@
   Links END -->
 
 </main>
+<!-- **************** MAIN CONTENT END **************** -->
+
+<!-- =======================
+Footer START -->
+{{> footer-start}}
+<!-- =======================
+Footer END -->
+
+<!-- Back to top -->
+{{> back-to-top}}
+
+<!-- Bootstrap JS -->
+{{> bootstrap-js}}
+
+<!-- Template Functions -->
+{{> template-functions}}
 
 </body>
 </html>

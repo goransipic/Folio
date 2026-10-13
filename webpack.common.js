@@ -20,7 +20,6 @@ const assets = [
   {from: 'assets/js', to: 'assets/js'},
   {from: 'robots.txt', to: 'robots.txt'},
   {from: 'favicon.ico', to: 'favicon.ico'},
-  {from: '404.html', to: '404.html'},
   {from: 'sitemap.xml', to: 'sitemap.xml'},
 ];
 
@@ -100,6 +99,13 @@ module.exports = {
       },
       chunks: [],
     }))),
+    // GitHub Pages serves the root 404.html for every missing URL, so only the Croatian one is built
+    new HtmlWebpackPlugin({
+      filename: '404.html',
+      template: './templates/404.hbs',
+      templateParameters: () => loadJson('hr'),
+      chunks: [],
+    }),
     ...languages.map(lang => new HtmlWebpackPlugin({
       filename: lang === 'hr' ? 'admin.html' : `${lang}/admin.html`,
       template: './templates/admin.hbs',
