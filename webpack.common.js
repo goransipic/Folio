@@ -6,10 +6,13 @@ const lang = require('./webpack.common-values.js');
 
 const languages = lang.languages;
 
+// Changes on every build; appended to our own CSS and JS addresses so browsers do not keep an old copy
+const BUILD_ID = Date.now().toString(36);
+
 // Clear Node's require cache and re-load the JSON
 const loadJson = (lang) => {
   const filePath = path.resolve(__dirname, 'i18n', `${lang}.json`);
-  return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+  return {...JSON.parse(fs.readFileSync(filePath, 'utf-8')), buildId: BUILD_ID};
 };
 
 // Static assets to copy
