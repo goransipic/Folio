@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang={{lang}}>
+{{> header title=page.pageTitle description=page.pageDescription canonical=page.canonical}}
+
+<body>
+
+<!-- Pre loader -->
+{{> preloader}}
+
+<!-- Search START -->
+{{> search-start}}
+<!-- Search END -->
+
+<!-- =======================
+Header START -->
+{{> header-start}}
+<!-- =======================
+Header END -->
+
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+
+  <!-- =======================
+  Content page START -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mb-5">
+          <h1 class="display-5">{{page.heading}}</h1>
+          <p class="lead">{{page.intro}}</p>
+        </div>
+      </div>
+
+      {{#if page.showOffers}}
+      {{> offer-cards features=page.showFeatures}}
+      {{/if}}
+
+      {{#if page.sections}}
+      <div class="row">
+        <div class="col-lg-8">
+          {{#each page.sections}}
+          <h4 id="{{id}}" class="mt-5">{{heading}}</h4>
+          {{#each paragraphs}}
+          <p>{{this}}</p>
+          {{/each}}
+          {{/each}}
+        </div>
+      </div>
+      {{/if}}
+
+      <div class="mt-5">
+        <h4 class="mb-3">{{project_block_title}}</h4>
+        <a href="contact.html" class="btn btn-primary mb-0">{{project_block_button}}</a>
+      </div>
+    </div>
+  </section>
+  <!-- =======================
+  Content page END -->
+
+</main>
+<!-- **************** MAIN CONTENT END **************** -->
+
+<!-- =======================
+Footer START -->
+{{> footer-start}}
+<!-- =======================
+Footer END -->
+
+<!-- =======================
+Cookies alert START -->
+{{> cookies-start}}
+<!-- =======================
+Cookies alert END -->
+
+<!-- Custom cursor -->
+{{> custom-cursor}}
+
+<!-- Back to top -->
+{{> back-to-top}}
+
+<!-- =======================
+JS libraries, plugins and custom scripts -->
+
+<!-- Bootstrap JS -->
+{{> bootstrap-js}}
+
+<!-- Template Functions -->
+{{> template-functions}}
+
+</body>
+</html>

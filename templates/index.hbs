@@ -16,44 +16,26 @@
   </div>
   <div class="offcanvas-body vh-lg-100 d-flex align-items-start flex-column px-5 px-md-6">
     <!-- Offcanvas inner START -->
-    <ul class="nav dropdown-toggle-start-icon d-block flex-column mb-5">
-      <li class="nav-item display-6 h5 position-relative">
-        <a href="index.html" class="nav-link text-white-stroke d-block">{{home}}</a>
-        <a class="dropdown-toggle collapsed" data-bs-toggle="collapse" href="#home-dropdown-collapse" role="button" aria-expanded="false" aria-controls="home-dropdown-collapse"></a>
-      </li>
-      <li class="collapse" id="home-dropdown-collapse">
-        <ul class="nav flex-column w-100 pb-4 pe-0 pe-lg-5">
-          <li class="nav-item"> <a class="nav-link text-body" href="index.html">{{classicDefault}}</a> </li>
-          <li class="nav-item"> <a class="nav-link text-body" href="index-2.html">{{agencyClassic}}</a> </li>
-          <li class="nav-item"> <a class="nav-link text-body" href="index-3.html">{{agencyTrendy}}<span class="badge bg-danger ms-2">{{hot}}</span></a> </li>
-          <li class="nav-item"> <a class="nav-link text-body" href="index-4.html">{{agencyModern}}</a> </li>
-          <li class="nav-item"> <a class="nav-link text-body" href="index-5.html">{{studioShowcase}}</a> </li>
-          <li class="nav-item"> <a class="nav-link text-body" href="index-6.html">{{creativeAgency}}</a> </li>
-          <li class="nav-item"> <a class="nav-link text-body" href="index-7.html">{{digitalStudio}}</a> </li>
-          <li class="nav-item"> <a class="nav-link text-body" href="index-8.html">{{portfolioShowcase}}</a> </li>
-          <li class="nav-item"> <a class="nav-link text-body" href="index-9.html">{{corporate}}</a> </li>
-          <li class="nav-item"> <a class="nav-link text-body" href="index-10.html">{{personalPortfolio}}</a> </li>
-        </ul>
+    <ul class="nav d-block flex-column mb-5">
+      <li class="nav-item display-6 h5">
+        <a class="nav-link text-white-stroke" href="index.html">{{home}}</a>
       </li>
       <li class="nav-item display-6 h5">
-        <a class="nav-link text-white-stroke" href="#">{{about}}</a>
+        <a class="nav-link text-white-stroke" href="index.html#services">{{services}}</a>
       </li>
       <li class="nav-item display-6 h5">
-        <a class="nav-link text-white-stroke" href="#">{{work}}</a>
+        <a class="nav-link text-white-stroke" href="pricing.html">{{pricing}}</a>
       </li>
       <li class="nav-item display-6 h5">
-        <a class="nav-link text-white-stroke" href="#">{{services}}</a>
+        <a class="nav-link text-white-stroke" href="index.html#about">{{landing.navProcess}}</a>
       </li>
       <li class="nav-item display-6 h5">
-        <a class="nav-link text-white-stroke" href="#">{{journal}}</a>
-      </li>
-      <li class="nav-item display-6 h5">
-        <a class="nav-link text-white-stroke" href="./contact.html">{{contact}}</a>
+        <a class="nav-link text-white-stroke" href="contact.html">{{contact}}</a>
       </li>
     </ul>
     <div class="mt-auto mb-5">
-      <a href="#" class="font-heading text-white text-primary-hover d-block mb-3">hello@folio.com</a>
-      <a href="#" class="font-heading text-white text-primary-hover">+(251) 854-6308</a>
+      <a href="mailto:{{landing.email}}" class="font-heading text-white text-primary-hover d-block mb-3">{{landing.email}}</a>
+      <a href="{{landing.phoneHref}}" class="font-heading text-white text-primary-hover">{{office1_phone}}</a>
     </div>
     <!-- Offcanvas inner END -->
   </div>
@@ -158,7 +140,7 @@ Header START -->
               <span class="text-white"><i class="far fa-clock me-2"></i>{{visitTime}}</span>
             </li>
             <li class="nav-item">
-              <a class="navbar-link text-white text-primary-hover" href="#"><i class="fas fa-headset me-2"></i>{{callUsNow}}: {{office1_phone}}</a>
+              <a class="navbar-link text-white text-primary-hover" href="{{landing.phoneHref}}"><i class="fas fa-headset me-2"></i>{{callUsNow}}: {{office1_phone}}</a>
             </li>
           </ul>
         </div>
@@ -189,12 +171,6 @@ Header START -->
             </li>
           </ul>-->
 
-          <!-- Top social -->
-          <ul class="list-unstyled d-flex">
-            <li><a class="text-white text-primary-hover px-2" href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a class="text-white text-primary-hover px-2" href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a class="text-white text-primary-hover ps-2" href="#"><i class="fab fa-twitter"></i></a></li>
-          </ul>
         </div>
       </div>
     </div>
@@ -220,7 +196,6 @@ Header START -->
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav navbar-nav-scroll navbar-nav-scroll mx-auto">
 
-
           <li class="nav-item">
             <a class="nav-link" href="index.html">{{home}}</a>
           </li>
@@ -230,15 +205,11 @@ Header START -->
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="index.html#testimonials">{{testimonials}}</a>
+            <a class="nav-link" href="pricing.html">{{pricing}}</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="index.html#portfolio">{{work}}</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#about">{{about}}</a>
+            <a class="nav-link" href="index.html#about">{{landing.navProcess}}</a>
           </li>
 
           <li class="nav-item">
@@ -280,66 +251,23 @@ Header END -->
 
   <!-- =======================
   Main Banner START -->
-  <section class="position-relative bg-dark p-0">
-    <!-- Social sites link left -->
-    <div class="position-absolute top-50 start-0 translate-middle z-index-9 ms-4 d-none d-xxl-block">
-      <div class="list-group-inline list-unstyled rotate-270">
-        <a href="#" class="list-group-item text-white bg-transparent mt-4">{{facebook}}</a>
-        <a href="#" class="list-group-item text-white bg-transparent mt-4">{{twitter}}</a>
-        <a href="#" class="list-group-item text-white bg-transparent mt-4">{{dribbble}}</a>
-      </div>
-    </div>
-
-    <!-- Scroll Down -->
-    <div class="scroll-down scroll-down-light m-5 d-none d-md-block">
-      <div class="scroll-line"></div>
-      <span class="scoll-text">{{scrollDown}}</span>
-    </div>
-
-    <!-- Banner START -->
-    <div class="tiny-slider dots-white dots-bordered dots-end arrow-bordered arrow-large arrow-round arrow-start-bottom arrow-md-none">
-      <div class="tiny-slider-inner h-500 h-sm-700 h-xl-900" data-autoplay="true" data-autoplaytime="7000" data-gutter="0" data-arrow="true" data-dots="true" data-items="1">
-
-        <!-- Slide 1 START -->
-        <div class="h-100 bg-dark-overlay-4 bg-dark" style="background-image:url(assets/images/bg/01.jpg); background-position: center center; background-size: cover;">
-          <div class="container h-100">
-            <div class="row d-flex h-100">
-              <div class="justify-content-center align-self-center align-items-start">
-                <div class="slider-content text-start">
-                  <h5 class="animate__animated animate__fadeInUp animate__delay-1s text-white mb-1 mb-md-4">{{slide1Title}}</h5>
-                  <h2 class="display-3 display-sm-1 text-white-stroke text-primary-shadow d-block animate__animated animate__fadeInUp animate__delay-2s">{{slide1Main}}</h2>
-                  <p class="animate__animated animate__fadeInUp animate__delay-3s lead text-white">{{slide1Text}}</p>
-                  <div class="animate__animated animate__fadeInUp mt-4 animate__delay-4s">
-                    <a href="contact.html" class="btn btn-primary">{{getQuote}}</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <section class="position-relative bg-dark bg-dark-overlay-4 p-0" style="background-image:url(assets/images/bg/01.jpg); background-position: center center; background-size: cover;">
+    <div class="container">
+      <div class="row align-items-center" style="min-height: 600px;">
+        <div class="col-lg-9 pt-7 pb-6">
+          <h5 class="text-white mb-3">{{landing.eyebrow}}</h5>
+          <h1 class="display-4 text-white">{{landing.title}}</h1>
+          <p class="lead text-white">{{landing.text}}</p>
+          <div class="mt-4">
+            <a href="contact.html" class="btn btn-primary me-2 mb-2">{{landing.primaryButton}}</a>
+            <a href="#pricing" class="btn btn-outline-white mb-2">{{landing.secondaryButton}}</a>
           </div>
+          <ul class="list-inline text-white mt-3 mb-0">
+            {{#each landing.points}}
+            <li class="list-inline-item me-4"><i class="bi bi-check2 text-primary me-2"></i>{{this}}</li>
+            {{/each}}
+          </ul>
         </div>
-        <!-- Slide 1 END -->
-
-        <!-- Slide 2 START -->
-        <div class="h-100 bg-dark-overlay-4 bg-white" style="background-image:url(assets/images/bg/02.jpg); background-position: center center; background-size: cover;">
-          <div class="container h-100">
-            <div class="row d-flex h-100">
-              <div class="justify-content-center align-self-center align-items-start">
-                <div class="slider-content text-start">
-                 <h5 class="animate__animated animate__fadeInUp animate__delay-1s text-white mt-2 my-md-4">{{slide2Title}}
-                  <h2 class="display-3 display-sm-1 animate__animated animate__fadeInUp animate__delay-2s fw-bold text-white">
-                    <span class="text-white-stroke text-primary-shadow d-block ">{{slide2Main}}</span>{{slide2Sub}}
-                  </h2>
-                  <p class="animate__animated animate__fadeInUp animate__delay-3s lead text-white">{{slide2Text}}</p>
-                  <div class="animate__animated animate__fadeInUp animate__delay-4s mt-3">
-                    <a href="contact.html" class="btn btn-primary">{{getQuote}}</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Slide 2 END -->
-
       </div>
     </div>
   </section>
@@ -347,366 +275,82 @@ Header END -->
   Main Banner END -->
 
   <!-- =======================
-  Service START -->
-  <section class="position-relative">
-    <!-- Shape Decoration START -->
-    <!-- Shape 1 -->
-    <figure class="position-absolute end-0 top-0 m-4 d-none d-lg-block">
-      <svg width="148" height="140" viewBox="0 0 148 140" xmlns="http://www.w3.org/2000/svg">
-        <path class="svg-custom-border-dark" d="m9.95 131.41c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"/>
-        <circle class="svg-custom-border-dark" cx="25.86" cy="131.41" r="2.95"/>
-        <circle class="svg-custom-border-dark" cx="44.71" cy="131.41" r="2.95"/>
-        <circle class="svg-custom-border-dark" cx="63.57" cy="131.41" r="2.95"/>
-        <circle class="svg-custom-border-dark" cx="82.43" cy="131.41" r="2.95"/>
-        <circle class="svg-custom-border-dark" cx="101.29" cy="131.41" r="2.95"/>
-        <circle class="svg-custom-border-dark" cx="120.14" cy="131.41" r="2.95"/>
-        <path class="svg-custom-border-dark" d="m141.95 131.41c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m9.95 113.61c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"/>
-        <circle class="svg-custom-border-dark" cx="25.86" cy="113.61" r="2.95"/>
-        <circle class="svg-custom-border-dark" cx="44.71" cy="113.61" r="2.95"/>
-        <circle class="svg-custom-border-dark" cx="63.57" cy="113.61" r="2.95"/>
-        <circle class="svg-custom-border-dark" cx="82.43" cy="113.61" r="2.95"/>
-        <circle class="svg-custom-border-dark" cx="101.29" cy="113.61" r="2.95"/>
-        <circle class="svg-custom-border-dark" cx="120.14" cy="113.61" r="2.95"/>
-        <path class="svg-custom-border-dark" d="m141.95 113.61c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m9.95 95.81c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"/>
-        <circle class="svg-custom-border-dark" cx="25.86" cy="95.81" r="2.95"/>
-        <circle class="svg-custom-border-dark" cx="44.71" cy="95.81" r="2.95"/>
-        <circle class="svg-custom-border-dark" cx="63.57" cy="95.81" r="2.95"/>
-        <circle class="svg-custom-border-dark" cx="82.43" cy="95.81" r="2.95"/>
-        <circle class="svg-custom-border-dark" cx="101.29" cy="95.81" r="2.95"/>
-        <circle class="svg-custom-border-dark" cx="120.14" cy="95.81" r="2.95"/>
-        <path class="svg-custom-border-dark" d="m141.95 95.81c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m9.95 78.01c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.63 0.01 2.95 1.33 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m28.8 78.01c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.63 0.01 2.95 1.33 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m47.66 78.01c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.63 0.01 2.95 1.33 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m66.52 78.01c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.63 0.01 2.95 1.33 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m85.37 78.01c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.64 0.01 2.95 1.33 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m104.23 78.01c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.63 0.01 2.95 1.33 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m123.09 78.01c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.63 0.01 2.95 1.33 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m141.95 78.01c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.63 0.01 2.95 1.33 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m9.95 60.22c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m28.8 60.22c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m47.66 60.22c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m66.52 60.22c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m85.37 60.22c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.64 0 2.95 1.32 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m104.23 60.22c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m123.09 60.22c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m141.95 60.22c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m9.95 42.42c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m28.8 42.42c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m47.66 42.42c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m66.52 42.42c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m85.37 42.42c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.64 0 2.95 1.32 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m104.23 42.42c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m123.09 42.42c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m141.95 42.42c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m9.95 24.62c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"/>
-        <circle class="svg-custom-border-dark" cx="25.86" cy="24.62" r="2.95"/>
-        <circle class="svg-custom-border-dark" cx="44.71" cy="24.62" r="2.95"/>
-        <circle class="svg-custom-border-dark" cx="63.57" cy="24.62" r="2.95"/>
-        <circle class="svg-custom-border-dark" cx="82.43" cy="24.62" r="2.95"/>
-        <circle class="svg-custom-border-dark" cx="101.29" cy="24.62" r="2.95"/>
-        <circle class="svg-custom-border-dark" cx="120.14" cy="24.62" r="2.95"/>
-        <path class="svg-custom-border-dark" d="m141.95 24.62c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"/>
-        <path class="svg-custom-border-dark" d="m9.95 6.82c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95c0-1.62 1.32-2.94 2.95-2.94s2.95 1.32 2.95 2.94z"/>
-        <circle class="svg-custom-border-dark" cx="25.86" cy="6.82" r="2.95"/>
-        <circle class="svg-custom-border-dark" cx="44.71" cy="6.82" r="2.95"/>
-        <circle class="svg-custom-border-dark" cx="63.57" cy="6.82" r="2.95"/>
-        <circle class="svg-custom-border-dark" cx="82.43" cy="6.82" r="2.95"/>
-        <circle class="svg-custom-border-dark" cx="101.29" cy="6.82" r="2.95"/>
-        <circle class="svg-custom-border-dark" cx="120.14" cy="6.82" r="2.95"/>
-        <path class="svg-custom-border-dark" d="m141.95 6.82c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.63 0.01 2.95 1.33 2.95 2.95z"/>
-      </svg>
-    </figure>
-    <!-- Shape 2 -->
-    <figure class="position-absolute start-0 bottom-0 mb-6 ms-6 d-none d-lg-block">
-      <svg width="214" height="172" viewBox="0 0 358 287" xmlns="http://www.w3.org/2000/svg">
-        <ellipse class="fill-primary" transform="matrix(.9961 -.0884 .0884 .9961 -9.9064 21.268)" cx="235.25" cy="122.52" rx="120.04" ry="120.04"/>
-        <defs> <ellipse id="round-bg" transform="matrix(.7071 -.7071 .7071 .7071 -91.988 129.49)" cx="110.31" cy="175.78" rx="109" ry="109"/> </defs>
-        <clipPath id="lines"><use xlink:href="#round-bg"/></clipPath>
-        <g clip-path="url(#lines)">
-          <path class="fill-dark" d="m-64.69 132.76c5.31 3.47 5.08 9.47 4.89 14.76-0.18 4.92-0.34 9.16 3.19 11.48 3.53 2.31 7.36 0.47 11.79-1.67 4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.48 3.53 2.31 7.36 0.47 11.79-1.67 4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47l-2.06 3.14c-5.3-3.47-5.08-9.47-4.88-14.76 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.48-3.53-2.31-7.36-0.47-11.79 1.67-4.77 2.3-10.17 4.9-15.48 1.43l2.06-3.14c3.53 2.31 7.36 0.47 11.8-1.67 4.77-2.29 10.17-4.89 15.48-1.42z"/>
-        </g>
-        <g clip-path="url(#lines)">
-          <path class="fill-dark" d="m-79.96 156.09c5.31 3.47 5.08 9.47 4.89 14.76-0.18 4.92-0.34 9.16 3.19 11.48 3.53 2.31 7.36 0.47 11.79-1.67 4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47l-2.06 3.14c-5.3-3.47-5.08-9.47-4.88-14.76 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.88-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.48-3.53-2.31-7.36-0.47-11.79 1.67-4.77 2.3-10.17 4.9-15.48 1.43l2.06-3.14c3.53 2.31 7.36 0.47 11.8-1.67 4.76-2.28 10.17-4.88 15.47-1.41z"/>
-        </g>
-        <g clip-path="url(#lines)">
-          <path class="fill-dark" d="m-49.1 108.94c5.31 3.47 5.08 9.47 4.89 14.76-0.18 4.92-0.34 9.16 3.19 11.48 3.53 2.31 7.36 0.47 11.79-1.67 4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.76-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47l-2.06 3.14c-5.3-3.47-5.08-9.47-4.88-14.76 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.48-3.53-2.31-7.36-0.47-11.79 1.67-4.77 2.3-10.17 4.9-15.48 1.43l2.06-3.14c3.53 2.31 7.36 0.47 11.8-1.67 4.77-2.29 10.18-4.9 15.48-1.42z"/>
-        </g>
-        <g clip-path="url(#lines)">
-          <path class="fill-dark" d="m-32.99 84.32c5.31 3.47 5.08 9.47 4.89 14.76-0.18 4.92-0.34 9.16 3.19 11.48 3.53 2.31 7.36 0.47 11.79-1.67 4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47l-2.06 3.14c-5.3-3.47-5.08-9.47-4.88-14.76 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.88-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.48-3.53-2.31-7.36-0.47-11.79 1.67-4.77 2.3-10.17 4.9-15.48 1.43l2.06-3.14c3.53 2.31 7.36 0.47 11.8-1.67 4.76-2.28 10.17-4.88 15.47-1.41z"/>
-        </g>
-        <g clip-path="url(#lines)">
-          <path class="fill-dark" d="m-1.61 36.38c5.31 3.47 5.08 9.47 4.89 14.76-0.18 4.92-0.34 9.16 3.19 11.48 3.53 2.31 7.36 0.47 11.79-1.67 4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47l-2.06 3.14c-5.3-3.47-5.08-9.47-4.88-14.76 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.76 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.88-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.45-5.08-9.44-4.89-14.73 0.18-4.92 0.34-9.16-3.19-11.48-3.53-2.31-7.36-0.47-11.79 1.67-4.77 2.3-10.17 4.9-15.48 1.43l2.06-3.14c3.53 2.31 7.36 0.47 11.8-1.67 4.76-2.3 10.16-4.9 15.47-1.43z"/>
-        </g>
-        <g clip-path="url(#lines)">
-          <path class="fill-dark" d="m-16.88 59.71c5.31 3.47 5.08 9.47 4.89 14.76-0.18 4.92-0.34 9.16 3.19 11.48 3.53 2.31 7.36 0.47 11.79-1.67 4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47l-2.06 3.14c-5.3-3.47-5.08-9.47-4.88-14.76 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.76 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.48-3.53-2.31-7.36-0.47-11.79 1.67-4.77 2.3-10.17 4.9-15.48 1.43l2.06-3.14c3.53 2.31 7.36 0.47 11.8-1.67 4.77-2.27 10.17-4.88 15.48-1.4z"/>
-        </g>
-        <g clip-path="url(#lines)">
-          <path class="fill-dark" d="m13.98 12.56c5.31 3.47 5.08 9.47 4.89 14.76-0.18 4.92-0.34 9.16 3.19 11.48 3.53 2.31 7.36 0.47 11.79-1.67 4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.76-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47l-2.06 3.14c-5.3-3.47-5.08-9.47-4.88-14.76 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.48-3.53-2.31-7.36-0.47-11.79 1.67-4.77 2.3-10.17 4.9-15.48 1.43l2.06-3.14c3.53 2.31 7.36 0.47 11.8-1.67 4.77-2.29 10.17-4.9 15.48-1.42z"/>
-        </g>
-        <g clip-path="url(#lines)">
-          <path class="fill-dark" d="m30.09-12.06c5.31 3.47 5.08 9.47 4.89 14.76-0.18 4.92-0.34 9.16 3.19 11.48 3.53 2.31 7.36 0.47 11.79-1.67 4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47l-2.06 3.14c-5.3-3.47-5.08-9.47-4.88-14.76 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.48s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43l2.06-3.14c3.53 2.31 7.36 0.47 11.8-1.67 4.77-2.28 10.17-4.88 15.48-1.41z"/>
-        </g>
-      </svg>
-    </figure>
-    <!-- Shape Decoration END -->
-
-    <div class="container position-relative">
+  Services and pricing START -->
+  <section id="services">
+    <div class="container">
       <div class="row">
+        <!-- Title -->
         <div class="col-lg-8 mb-5">
-          <h2 class="display-5">{{marketingStrategyTitle}}</h2>
-          <p>{{marketingStrategyDescription}}</p>
+          <h2 class="display-5">{{landing.servicesTitle}}</h2>
+          <p>{{landing.servicesText}}</p>
         </div>
       </div>
-      <div class="row d-flex justify-content-lg-end">
-        <!-- Service Item 1-->
-        <div class="col-sm-6 col-lg-3 mb-5 mb-lg-0">
-          <h2 class="display-1 text-dark-stroke text-hover-fill text-primary-shadow">{{brandingInitial}}</h2>
-          <h5 class="mb-4">{{brandingTitle}}</h5>
-          <div class="list-group list-group-borderless list-unstyled">
-            <a href="#" class="list-group-item bg-transparent">{{brandingItem1}}</a>
-            <a href="#" class="list-group-item bg-transparent">{{brandingItem2}}</a>
-            <a href="#" class="list-group-item bg-transparent">{{brandingItem3}}</a>
-            <a href="#" class="list-group-item bg-transparent">{{brandingItem4}}</a>
-            <a href="#" class="list-group-item bg-transparent">{{brandingItem5}}</a>
-          </div>
-        </div>
-        <!-- Service Item 2-->
-        <div class="col-sm-6 col-lg-3 mb-5 mb-lg-0">
-          <h2 class="display-1 text-dark-stroke text-hover-fill text-primary-shadow">{{graphicDesignInitial}}</h2>
-          <h5 class="mb-4">{{graphicDesignTitle}}</h5>
-          <div class="list-group list-group-borderless list-unstyled">
-            <a href="#" class="list-group-item bg-transparent">{{graphicDesignItem1}}</a>
-            <a href="#" class="list-group-item bg-transparent">{{graphicDesignItem2}}</a>
-            <a href="#" class="list-group-item bg-transparent">{{graphicDesignItem3}}</a>
-            <a href="#" class="list-group-item bg-transparent">{{graphicDesignItem4}}</a>
-            <a href="#" class="list-group-item bg-transparent">{{graphicDesignItem5}}</a>
-          </div>
-        </div>
-        <!-- Service Item 3-->
-        <div class="col-sm-6 col-lg-3 mb-5 mb-lg-0">
-          <h2 class="display-1 text-dark-stroke text-hover-fill text-primary-shadow">{{developmentInitial}}</h2>
-          <h5 class="mb-4">{{developmentTitle}}</h5>
-          <div class="list-group list-group-borderless list-unstyled">
-            <a href="#" class="list-group-item bg-transparent">{{developmentItem1}}</a>
-            <a href="#" class="list-group-item bg-transparent">{{developmentItem2}}</a>
-            <a href="#" class="list-group-item bg-transparent">{{developmentItem3}}</a>
-            <a href="#" class="list-group-item bg-transparent">{{developmentItem4}}</a>
-            <a href="#" class="list-group-item bg-transparent">{{developmentItem5}}</a>
-          </div>
-        </div>
-      </div><!-- row END -->
-
-      <div class="row d-flex justify-content-end">
-        <div class="col-lg-9">
-          <a href="#" class="btn btn-line text-dark mt-4">{{viewAllServicesButton}}</a>
-        </div>
+      <div id="pricing">
+        {{> offer-cards features=true}}
       </div>
+      <a href="contact.html" class="btn btn-primary mt-5 mb-0">{{landing.primaryButton}}</a>
     </div>
   </section>
   <!-- =======================
-  Service END -->
+  Services and pricing END -->
 
   <!-- =======================
-  Features START -->
-  <section id="services" class="bg-dark position-relative pattern-overlay-5 mx-xl-3 mx-xxxl-9 rounded">
+  Why us START -->
+  <section class="bg-dark position-relative pattern-overlay-5 mx-xl-3 mx-xxxl-9 rounded">
     <div class="container">
       <div class="row">
         <!-- Title -->
         <div class="col-md-5 mb-5">
-          <h2 class="display-5 text-white-stroke">{{sectionTitle}}</h2>
-          <p>{{sectionDescription}}</p>
+          <h2 class="display-5 text-white-stroke">{{landing.whyTitle}}</h2>
+          <p>{{landing.whyText}}</p>
         </div>
-        <div class="col-md-7 mb-5">
+        <div class="col-md-7">
           <div class="row">
-            <!-- Feature item 1 -->
+            {{#each landing.why}}
             <div class="col-sm-6 mb-5">
-              <i class="display-6 text-primary bi {{feature1Icon}}"></i>
-              <h5 class="text-white my-3">{{feature1Title}}</h5>
-              <p class="text-secondary">{{feature1Description}}</p>
+              <i class="display-6 text-primary bi {{icon}}"></i>
+              <h5 class="text-white my-3">{{title}}</h5>
+              <p class="text-secondary m-0">{{text}}</p>
             </div>
-            <!-- Feature item 2 -->
-            <div class="col-sm-6 mb-5">
-              <i class="display-6 text-primary bi {{feature2Icon}}"></i>
-              <h5 class="text-white my-3">{{feature2Title}}</h5>
-              <p class="text-secondary">{{feature2Description}}</p>
-            </div>
-            <!-- Feature item 3 -->
-            <div class="col-sm-6 mb-5 mb-sm-0">
-              <i class="display-6 text-primary bi {{feature3Icon}}"></i>
-              <h5 class="text-white my-3">{{feature3Title}}</h5>
-              <p class="text-secondary m-0">{{feature3Description}}</p>
-            </div>
-            <!-- Feature item 4 -->
-            <div class="col-sm-6">
-              <i class="display-6 text-primary bi {{feature4Icon}}"></i>
-              <h5 class="text-white my-3">{{feature4Title}}</h5>
-              <p class="text-secondary m-0">{{feature4Description}}</p>
-            </div>
+            {{/each}}
           </div>
         </div>
       </div><!-- row END -->
     </div>
   </section>
   <!-- =======================
-  Features END -->
-
-  <!-- =======================
-  Testimonials START -->
-  <section id="testimonials" class="p-0">
-    <div class="container">
-      <div class="row position-relative">
-        <!-- Title -->
-        <div class="col-sm-8 mb-3 mx-auto text-center pt-7">
-          <h2 class="display-5 mb-5 text-dark-stroke">{{testimonialsTitle}}</h2>
-        </div>
-        <!-- Testimonials -->
-        <div class="col-md-10 mx-auto text-center pb-7">
-          <div class="tiny-slider arrow-md-none arrow-bordered arrow-large arrow-round">
-            <div class="tiny-slider-inner" data-gutter="0" data-edge="50" data-autoplay="false" data-arrow="true" data-dots="false" data-items="1">
-
-              <!-- Testimonial item 1 -->
-              <div class="item px-3 px-md-6">
-                <div class="position-absolute top-50 start-50 translate-middle display-1 text-body z-index-n9 opacity-1">
-                  <i class="fas fa-quote-left"></i>
-                </div>
-                <div class="avatar">
-                  <img class="avatar-img rounded-circle" src="{{testimonial1.avatarSrc}}" alt="avatar">
-                </div>
-                <p class="lead">{{testimonial1.text}}</p>
-                <h6 class="mb-0 mt-3">{{testimonial1.name}}</h6>
-                <span class="small">{{testimonial1.position}}</span>
-              </div>
-
-              <!-- Testimonial item 2 -->
-              <div class="item px-3 px-md-6">
-                <div class="position-absolute top-50 start-50 translate-middle display-1 text-body z-index-n9 opacity-1">
-                  <i class="fas fa-quote-left"></i>
-                </div>
-                <div class="avatar">
-                  <img class="avatar-img rounded-circle" src="{{testimonial2.avatarSrc}}" alt="avatar">
-                </div>
-                <p class="lead">{{testimonial2.text}}</p>
-                <h6 class="mb-0 mt-3">{{testimonial2.name}}</h6>
-                <span class="small">{{testimonial2.position}}</span>
-              </div>
-
-              <!-- Testimonial item 3 -->
-              <div class="item px-3 px-md-6">
-                <div class="position-absolute top-50 start-50 translate-middle display-1 text-body z-index-n9 opacity-1">
-                  <i class="fas fa-quote-left"></i>
-                </div>
-                <div class="avatar">
-                  <img class="avatar-img rounded-circle" src="{{testimonial3.avatarSrc}}" alt="avatar">
-                </div>
-                <p class="lead">{{testimonial3.text}}</p>
-                <h6 class="mb-0 mt-3">{{testimonial3.name}}</h6>
-                <span class="small">{{testimonial3.position}}</span>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div><!-- row END -->
-    </div>
-  </section>
-  <!-- =======================
-  Testimonials END -->
-
-  <!-- =======================
-  Portfolio START -->
-  <section id="portfolio" class="pt-4">
-    <div class="container">
-      <!-- Title -->
-      <div class="row d-flex justify-content-between align-items-center">
-        <div class="col-sm-8 mb-3">
-          <h2 class="display-5 mb-0 mb-sm-4 text-dark-stroke">{{sectionTitle}}</h2>
-        </div>
-        <div class="col-sm-4 mb-4 text-start text-sm-end">
-          <a href="{{buttonLink}}" class="btn btn-line text-dark mt-3">{{buttonText}}</a>
-        </div>
-      </div>
-      <!-- Portfolio items -->
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="tiny-slider dots-bordered">
-            <div class="tiny-slider-inner" data-arrow="false" data-dots="true" data-items-xl="3" data-items-lg="3" data-items-md="3" data-items-sm="2" data-items-xs="1">
-
-              {{#each portfolioItems}}
-                <div class="item">
-                  <a href="{{link}}" class="card card-metro">
-                    <!-- Card Image -->
-                    <div class="card-image">
-                      <img src="{{imageSrc}}" alt="card image">
-                    </div>
-                    <!-- Card Overlay -->
-                    <div class="card-img-overlay d-flex flex-column">
-                      <img class="w-40" src="{{clientLogo}}" alt="">
-                      <div class="mt-auto card-text">
-                        <h5 class="text-white">{{title}}</h5>
-                        <p class="small text-white mb-0 text-truncate">{{description}}</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              {{/each}}
-
-            </div>
-          </div>
-        </div>
-      </div><!-- row END -->
-    </div>
-  </section>
-  <!-- =======================
-  Portfolio END -->
+  Why us END -->
 
   <!-- =======================
   Steps START -->
   <section id="about">
     <div class="container">
       <div class="row">
+        <!-- Title -->
+        <div class="col-lg-8 mb-5">
+          <h2 class="display-5">{{landing.processTitle}}</h2>
+        </div>
+      </div>
+      <div class="row">
         <!-- Step 1 -->
-        <div class="col-sm-12 col-md-4 mb-5">
-          <div class="text-start position-relative">
-            <h2 class="display-4 mb-0 text-light-stroke text-light-shadow">01</h2>
-            <h4 class="position-absolute start-0 top-0 mt-0 mt-sm-3 ps-6 d-block">
-              {{{step1_title}}}
-            </h4>
-          </div>
-          <div class="ps-6 pt-4 pt-sm-0">
-            <p>{{step1_desc}}</p>
-            <img class="rounded" src="assets/images/about/01.jpg" alt="">
-          </div>
+        <div class="col-md-4 mb-5 mb-md-0">
+          <h2 class="display-4 mb-3 text-light-stroke text-light-shadow">01</h2>
+          <h4>{{{step1_title}}}</h4>
+          <p class="mb-0">{{step1_desc}}</p>
         </div>
 
         <!-- Step 2 -->
-        <div class="col-sm-6 col-md-4 mb-5">
-          <div class="text-start position-relative">
-            <h2 class="display-4 mb-0 text-light-stroke text-light-shadow">02</h2>
-            <h4 class="position-absolute start-0 top-0 mt-0 mt-sm-3 ps-6 d-block">
-              {{{step2_title}}}
-            </h4>
-          </div>
-          <div class="ps-6 pt-4 pt-sm-0">
-            <p>{{step2_desc}}</p>
-            <img class="rounded" src="assets/images/about/02.jpg" alt="">
-          </div>
+        <div class="col-md-4 mb-5 mb-md-0">
+          <h2 class="display-4 mb-3 text-light-stroke text-light-shadow">02</h2>
+          <h4>{{{step2_title}}}</h4>
+          <p class="mb-0">{{step2_desc}}</p>
         </div>
 
         <!-- Step 3 -->
-        <div class="col-sm-6 col-md-4">
-          <div class="text-start position-relative">
-            <h2 class="display-4 mb-0 text-light-stroke text-light-shadow">03</h2>
-            <h4 class="position-absolute start-0 top-0 mt-0 mt-sm-3 ps-6 d-block">
-              {{{step3_title}}}
-            </h4>
-          </div>
-          <div class="ps-6 pt-4 pt-sm-0">
-            <p>{{step3_desc}}</p>
-            <img class="rounded" src="assets/images/about/03.jpg" alt="">
-          </div>
+        <div class="col-md-4">
+          <h2 class="display-4 mb-3 text-light-stroke text-light-shadow">03</h2>
+          <h4>{{{step3_title}}}</h4>
+          <p class="mb-0">{{step3_desc}}</p>
         </div>
       </div>
     </div>
@@ -715,134 +359,19 @@ Header END -->
   Steps END -->
 
   <!-- =======================
-  Clients START -->
+  Action box START -->
   <section class="pt-0">
     <div class="container">
-      <div class="row">
-        <!-- Title -->
-        <div class="col-lg-4">
-          <h2 class="display-5 mb-3">{{clients_title}}</h2>
-          <p>{{clients_desc}}</p>
-        </div>
-
-        <!-- Clients logos -->
-        <div class="col-lg-8">
-          <div class="row">
-            {{#each client_logos}}
-              <div class="col-6 col-sm-4 col-lg-3">
-                <div class="mb-4 p-4 grayscale bg-light-overlay-dotted text-center">
-                  <img src="{{this}}" alt="">
-                </div>
-              </div>
-            {{/each}}
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- =======================
-  Clients END -->
-
-  <!-- =======================
-  Action box START -->
-  <section class="pt-0 position-relative">
-    <!-- Shape Decoration START -->
-    <figure class="position-absolute start-0 bottom-0 ms-n6 mb-n4 z-index-9 d-none d-lg-block">
-      <svg width="285" height="82" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 82">
-        <rect class="fill-primary" x="22.67" y="16.58" width="262.22" height="65.42"/>
-        <path d="m9.63 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0.01-4.82-2.15-4.82-4.81s2.16-4.81 4.81-4.81c2.66 0 4.82 2.15 4.82 4.81z"/>
-        <path d="m35.25 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.15 4.81 4.81z"/>
-        <path d="m60.88 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.15 4.81 4.81z"/>
-        <path d="m86.5 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.15 4.81 4.81z"/>
-        <path d="m112.12 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.15 4.81 4.81z"/>
-        <path d="m137.75 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.15 4.81 4.81z"/>
-        <path d="m163.37 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.15 4.81 4.81z"/>
-        <path d="m188.99 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.15 4.81 4.81z"/>
-        <path d="m214.62 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.15 4.81 4.81z"/>
-        <path d="m240.24 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.15 4.81 4.81z"/>
-        <path d="m9.63 30.38c0 2.66-2.16 4.81-4.81 4.81-2.66 0.01-4.82-2.15-4.82-4.81s2.16-4.81 4.81-4.81c2.66 0 4.82 2.16 4.82 4.81z"/>
-        <path d="m35.25 30.38c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.16 4.81 4.81z"/>
-        <path d="m60.88 30.38c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.16 4.81 4.81z"/>
-        <path d="m86.5 30.38c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.16 4.81 4.81z"/>
-        <path d="m112.12 30.38c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.16 4.81 4.81z"/>
-        <path d="m137.75 30.38c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.16 4.81 4.81z"/>
-        <circle cx="158.56" cy="30.38" r="4.81"/>
-        <circle cx="184.18" cy="30.38" r="4.81"/>
-        <circle cx="209.8" cy="30.38" r="4.81"/>
-        <circle cx="235.43" cy="30.38" r="4.81"/>
-        <path d="m9.63 55.94c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.82-2.16-4.82-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66-0.01 4.82 2.15 4.82 4.81z"/>
-        <path d="m35.25 55.94c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66-0.01 4.81 2.15 4.81 4.81z"/>
-        <path d="m60.88 55.94c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.65-0.01 4.81 2.15 4.81 4.81z"/>
-        <path d="m86.5 55.94c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.65-0.01 4.81 2.15 4.81 4.81z"/>
-        <path d="m112.12 55.94c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66-0.01 4.81 2.15 4.81 4.81z"/>
-        <path d="m137.75 55.94c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.65-0.01 4.81 2.15 4.81 4.81z"/>
-        <circle cx="158.56" cy="55.94" r="4.81"/>
-        <circle cx="184.18" cy="55.94" r="4.81"/>
-        <circle cx="209.8" cy="55.94" r="4.81"/>
-        <circle cx="235.43" cy="55.94" r="4.81"/>
-      </svg>
-    </figure>
-    <!-- Shape Decoration END -->
-    <div class="container">
-      <div class="row g-0 d-flex align-items-center">
-        <!-- Our Work Block -->
-        <div class="col-sm-6">
-          <div class="text-center bg-primary-multiply position-relative overflow-hidden px-3 py-6 h-100">
-            <h2 class="mb-3 display-6">
-              <a class="text-white-stroke" href="#">{{our_work_title}}</a>
-            </h2>
-            <a class="btn btn-line text-white mb-0" href="#">{{our_work_button}}</a>
-            <img
-              class="bg-primary-multiply position-absolute top-50 start-50 translate-middle z-index-n9"
-              src="{{our_work_image}}" alt="">
-          </div>
-        </div>
-
-        <!-- Project Block -->
-        <div class="col-sm-6">
-          <div class="text-center bg-dark px-3 py-6 h-100">
-            <h2 class="mb-3 display-6 text-white">{{project_block_title}}</h2>
-            <a class="btn btn-line text-white mb-0" href="#">{{project_block_button}}</a>
-          </div>
-        </div>
+      <div class="bg-dark rounded text-center px-3 py-6">
+        <h2 class="display-6 text-white mb-3">{{landing.ctaTitle}}</h2>
+        <p class="text-white mb-4">{{landing.ctaText}}</p>
+        <a href="contact.html" class="btn btn-primary mb-0">{{landing.primaryButton}}</a>
+        <p class="text-white mt-4 mb-0">{{landing.ctaCall}} <a class="text-white" href="{{landing.phoneHref}}"><u>{{office1_phone}}</u></a></p>
       </div>
     </div>
   </section>
   <!-- =======================
   Action box END -->
-
-  <!-- =======================
-  Newsletter START-->
-  <section class="bg-dark position-relative bg-dark-overlay-4">
-    <div class="container">
-      <div class="row justify-content-between">
-        <!-- Title -->
-        <div class="col-sm-5">
-          <h2 class="display-6 text-white-stroke">{{newsletter_title}}</h2>
-        </div>
-
-        <!-- Content and input -->
-        <div class="col-sm-6">
-          <p class="mt-3">{{newsletter_description}}</p>
-          <form>
-            <div class="input-group">
-              <input
-                class="form-control bg-white border-0"
-                type="text"
-                name="Newsletter"
-                placeholder="{{newsletter_input_placeholder}}"
-              />
-              <button type="button" class="btn btn-line btn-primary mb-0">
-                {{newsletter_button}}
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- =======================
-  Newsletter END-->
 
 </main>
 <!-- **************** MAIN CONTENT END **************** -->

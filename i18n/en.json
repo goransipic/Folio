@@ -438,6 +438,94 @@
   "cookie_text": "We use cookies to measure visits and ad performance. You can accept or decline them.",
   "cookie_accept": "Accept",
   "cookie_decline": "Decline",
+  "landing": {
+    "navProcess": "How we work",
+    "phoneHref": "tel:+385995357640",
+    "email": "general@folio-dizajn.hr",
+    "eyebrow": "Folio – website development",
+    "title": "Websites and online stores",
+    "text": "We turn your idea into a modern, fast website that looks good on every device.",
+    "primaryButton": "Request a free quote",
+    "secondaryButton": "See pricing",
+    "points": ["Free quote", "Responsive design", "SEO optimization"],
+    "servicesTitle": "Services and pricing",
+    "servicesText": "The prices shown are starting prices. The final price depends on the scope of the project and is agreed by offer.",
+    "whyTitle": "Why Folio",
+    "whyText": "We build sites that are easy to find, pleasant to use and simple to maintain.",
+    "why": [
+      {"icon": "bi-phone", "title": "Responsive design", "text": "Your site looks and works well on phones, tablets and computers."},
+      {"icon": "bi-search", "title": "SEO optimization", "text": "We build your site so search engines can find and understand it easily."},
+      {"icon": "bi-credit-card", "title": "Payment integration", "text": "We connect your online store to an online payment system."},
+      {"icon": "bi-chat-dots", "title": "Free quote", "text": "Get in touch and you will receive a quote with no obligation."}
+    ],
+    "processTitle": "How we work",
+    "ctaTitle": "Have a project?",
+    "ctaText": "Tell us what you need and we will send you a free quote.",
+    "ctaCall": "or call us:"
+  },
+  "offers": [
+    {
+      "icon": "bi-laptop",
+      "title": "Website development",
+      "price": "from €100",
+      "text": "A modern, responsive website tailored to your business.",
+      "features": ["Design tailored to you", "Display adapted to every device", "Clear structure and content"]
+    },
+    {
+      "icon": "bi-shop",
+      "title": "Online store",
+      "price": "from €500",
+      "text": "A scalable online store for selling your products or services.",
+      "features": ["Product catalogue and cart", "Payment system integration", "Responsive design"]
+    },
+    {
+      "icon": "bi-bar-chart-line",
+      "title": "SEO optimization",
+      "price": "from €100",
+      "text": "Better visibility for your site in search engines.",
+      "features": ["Site and keyword analysis", "Content and structure optimization", "Technical optimization"]
+    },
+    {
+      "icon": "bi-palette",
+      "title": "Graphic design",
+      "price": "from €100",
+      "text": "A visual identity that makes your brand recognizable.",
+      "features": ["Brand identity", "Visual design", "Illustration and iconography"]
+    }
+  ],
+  "pricingSection": {
+    "title": "Pricing",
+    "description": "Starting prices for our services. The final price depends on the scope of the project and is agreed by offer.",
+    "button": "View pricing"
+  },
+  "servicesPage": {
+    "pageTitle": "Services | Folio",
+    "pageDescription": "Website and online store development, SEO optimization and graphic design – services by Folio.",
+    "canonical": "https://folio-dizajn.hr/en/services.html",
+    "heading": "Services",
+    "intro": "We build websites and online stores and take care of their visibility and look.",
+    "showOffers": true,
+    "showFeatures": true
+  },
+  "pricingPage": {
+    "pageTitle": "Pricing | Folio",
+    "pageDescription": "Starting prices for websites, online stores, SEO optimization and graphic design.",
+    "canonical": "https://folio-dizajn.hr/en/pricing.html",
+    "heading": "Pricing",
+    "intro": "Starting prices for our services.",
+    "showOffers": true,
+    "sections": [
+      {
+        "id": "how",
+        "heading": "How the price is set",
+        "paragraphs": [
+          "The amounts shown are starting prices. The final price depends on the scope and complexity of the project.",
+          "Scope, price and deadlines are agreed separately, by written offer or contract, before work begins.",
+          "The offer is free and does not commit you to anything."
+        ]
+      }
+    ]
+  },
   "terms": {
     "pageTitle": "Terms of Use | Folio",
     "pageDescription": "Terms of use for the folio-dizajn.hr website.",

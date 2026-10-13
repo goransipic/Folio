@@ -435,6 +435,94 @@
   "cookie_text": "Koristimo kolačiće za mjerenje posjeta i učinka oglasa. Možete ih prihvatiti ili odbiti.",
   "cookie_accept": "Prihvati",
   "cookie_decline": "Odbij",
+  "landing": {
+    "navProcess": "Kako radimo",
+    "phoneHref": "tel:+385995357640",
+    "email": "general@folio-dizajn.hr",
+    "eyebrow": "Folio – izrada web stranica",
+    "title": "Izrada web stranica i web trgovina",
+    "text": "Vašu ideju pretvaramo u modernu, brzu web stranicu koja dobro izgleda na svakom uređaju.",
+    "primaryButton": "Zatražite besplatnu ponudu",
+    "secondaryButton": "Pogledajte cijene",
+    "points": ["Besplatna ponuda", "Responzivan dizajn", "SEO optimizacija"],
+    "servicesTitle": "Usluge i cijene",
+    "servicesText": "Navedene cijene su početne. Konačna cijena ovisi o opsegu projekta i dogovara se ponudom.",
+    "whyTitle": "Zašto Folio",
+    "whyText": "Stranice gradimo tako da ih je lako pronaći, ugodno koristiti i jednostavno održavati.",
+    "why": [
+      {"icon": "bi-phone", "title": "Responzivan dizajn", "text": "Stranica izgleda i radi dobro na mobitelu, tabletu i računalu."},
+      {"icon": "bi-search", "title": "SEO optimizacija", "text": "Stranicu gradimo tako da je tražilice lako pronađu i razumiju."},
+      {"icon": "bi-credit-card", "title": "Integracija plaćanja", "text": "Web trgovinu povezujemo sa sustavom online plaćanja."},
+      {"icon": "bi-chat-dots", "title": "Besplatna ponuda", "text": "Javite nam se i dobit ćete ponudu koja vas ni na što ne obvezuje."}
+    ],
+    "processTitle": "Kako radimo",
+    "ctaTitle": "Imate projekt?",
+    "ctaText": "Opišite nam što trebate i poslat ćemo vam besplatnu ponudu.",
+    "ctaCall": "ili nas nazovite:"
+  },
+  "offers": [
+    {
+      "icon": "bi-laptop",
+      "title": "Izrada web stranice",
+      "price": "od 100 €",
+      "text": "Moderna, responzivna web stranica prilagođena vašem poslovanju.",
+      "features": ["Dizajn po vašoj mjeri", "Prikaz prilagođen svim uređajima", "Jasna struktura i sadržaj"]
+    },
+    {
+      "icon": "bi-shop",
+      "title": "Web trgovina",
+      "price": "od 500 €",
+      "text": "Skalabilna web trgovina za online prodaju vaših proizvoda ili usluga.",
+      "features": ["Katalog proizvoda i košarica", "Integracija sustava plaćanja", "Responzivan dizajn"]
+    },
+    {
+      "icon": "bi-bar-chart-line",
+      "title": "SEO optimizacija",
+      "price": "od 100 €",
+      "text": "Bolja vidljivost vaše stranice na tražilicama.",
+      "features": ["Analiza stranice i ključnih riječi", "Optimizacija sadržaja i strukture", "Tehnička optimizacija"]
+    },
+    {
+      "icon": "bi-palette",
+      "title": "Grafički dizajn",
+      "price": "od 100 €",
+      "text": "Vizualni identitet koji vaš brend čini prepoznatljivim.",
+      "features": ["Identitet brenda", "Vizualni dizajn", "Ilustracija i ikonografija"]
+    }
+  ],
+  "pricingSection": {
+    "title": "Cijene",
+    "description": "Početne cijene naših usluga. Konačna cijena ovisi o opsegu projekta i dogovara se ponudom.",
+    "button": "Pogledaj cijene"
+  },
+  "servicesPage": {
+    "pageTitle": "Usluge | Folio",
+    "pageDescription": "Izrada web stranica i web trgovina, SEO optimizacija i grafički dizajn – usluge agencije Folio.",
+    "canonical": "https://folio-dizajn.hr/services.html",
+    "heading": "Usluge",
+    "intro": "Izrađujemo web stranice i web trgovine te brinemo o njihovoj vidljivosti i izgledu.",
+    "showOffers": true,
+    "showFeatures": true
+  },
+  "pricingPage": {
+    "pageTitle": "Cijene | Folio",
+    "pageDescription": "Početne cijene izrade web stranica, web trgovina, SEO optimizacije i grafičkog dizajna.",
+    "canonical": "https://folio-dizajn.hr/pricing.html",
+    "heading": "Cijene",
+    "intro": "Početne cijene naših usluga.",
+    "showOffers": true,
+    "sections": [
+      {
+        "id": "how",
+        "heading": "Kako se formira cijena",
+        "paragraphs": [
+          "Navedeni iznosi su početne cijene. Konačna cijena ovisi o opsegu i složenosti projekta.",
+          "Opseg, cijenu i rokove dogovaramo zasebno, pisanom ponudom ili ugovorom, prije početka rada.",
+          "Ponuda je besplatna i ne obvezuje vas."
+        ]
+      }
+    ]
+  },
   "terms": {
     "pageTitle": "Uvjeti korištenja | Folio",
     "pageDescription": "Uvjeti korištenja internetske stranice folio-dizajn.hr.",
