@@ -651,22 +651,10 @@ var e = {
                 }
             });
 
-            backBtn.addEventListener('click', () => {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth',
-                });
-                // Phones can stop short of the top when their toolbar resizes the page mid-scroll;
-                // once the scroll has settled, finish the job.
-                var last = -1, checks = 0;
-                var settle = setInterval(function () {
-                    if (window.scrollY === last || ++checks > 25) {
-                        clearInterval(settle);
-                        if (window.scrollY > 0) window.scrollTo(0, 0);
-                    }
-                    last = window.scrollY;
-                }, 200);
-            });
+            backBtn.addEventListener('click', () => window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            }));
         }
     },
     // END: Back to Top
