@@ -209,14 +209,7 @@
   "twitter": "Twitter",
   "dribbble": "Dribbble",
   "scrollDown": "Pomakni dolje",
-  "slide1Title": "Dizajn i razvoj",
-  "slide1Main": "Web stranica",
-  "slide1Text": "Vašu ideju pretvaramo u atraktivnu i učinkovitu web stranicu.",
   "howItWorks": "Kako to funkcionira",
-  "slide2Title": "Dizajn i razvoj",
-  "slide2Main": "Web trgovina",
-  "slide2Sub": "",
-  "slide2Text": "Stvaramo moderne web trgovine za rast vašeg online poslovanja.",
   "discussProject": "Raspravimo o projektu",
   "marketingStrategyTitle": "Redefinirajte digitalnu prisutnost",
   "marketingStrategyDescription": "Gradimo web stranice i web trgovine koje privlače pažnju i pretvaraju posjetitelje u kupce. Uz to, osnažujemo vaš brend kroz kreativan dizajn, video produkciju i jedinstvene digitalne strategije.",
@@ -256,100 +249,12 @@
   "feature4Icon": "bi-envelope-open",
   "feature4Title": "E-mail kampanje",
   "feature4Description": "Učinkovite komunikacijske kampanje koje aktiviraju vašu ciljnu skupinu.",
-  "testimonialsTitle": "Izjave korisnika",
-  "testimonial1": {
-    "avatarSrc": "assets/images/avatar/01.jpg",
-    "text": "Od prvog kontakta sve je bilo jasno, profesionalno i brzo. Stranica je dizajnirana baš po našim željama, a završena je i prije dogovorenog roka. Posebno nam se sviđa responzivnost na mobilnim uređajima. Preporučujemo svakome tko traži pouzdanog web developera.",
-    "name": "Marko L.",
-    "position": "Vlasnik Obrta"
-  },
-  "testimonial2": {
-    "avatarSrc": "assets/images/avatar/02.jpg",
-    "text": "Imali smo samo osnovnu ideju kako bi naša stranica trebala izgledati, ali on ju je pretvorio u funkcionalnu i vizualno privlačnu platformu. Komunikacija je bila iznimno laka, a sve promjene su implementirane bez problema.",
-    "name": "Ana P",
-    "position": "Freelance Dizajnerica"
-  },
-  "testimonial3": {
-    "avatarSrc": "assets/images/avatar/03.jpg",
-    "text": "Naša nova web stranica je ubrzala poslovanje i poboljšala doseg kod klijenata. Posebno cijenimo SEO optimizaciju koja je odmah donijela rezultate na tražilicama. Od srca preporučujemo.",
-    "name": "Ivana R.",
-    "position": "Marketinška Agencija"
-  },
-  "sectionTitle": "Naš Portfolio",
-  "buttonText": "Pogledajte naš rad",
-  "buttonLink": "#",
-  "portfolioItems": [
-    {
-      "link": "#",
-      "imageSrc": "assets/images/portfolio/01.jpg",
-      "clientLogo": "assets/images/clients/light/giant.svg",
-      "title": "Nedostajući spoj u e-mobilnosti",
-      "description": "Povezujemo e-mobilnost s vašim svakodnevnim životom."
-    },
-    {
-      "link": "#",
-      "imageSrc": "assets/images/portfolio/02.jpg",
-      "clientLogo": "assets/images/clients/light/pixo.svg",
-      "title": "Trumer je skuhana sreća",
-      "description": "Privatna pivovara za izvrsno pivo."
-    },
-    {
-      "link": "#",
-      "imageSrc": "assets/images/portfolio/03.jpg",
-      "clientLogo": "assets/images/clients/light/eureka.svg",
-      "title": "Zavodljivo poput oceana",
-      "description": "Zora Style je cvjetajuća modna marka Ane Kovač."
-    },
-    {
-      "link": "#",
-      "imageSrc": "assets/images/portfolio/04.jpg",
-      "clientLogo": "assets/images/clients/light/04.svg",
-      "title": "Čisti dizajn brendiranja",
-      "description": "Umjetnički kolekcionar i arhitekt Marko."
-    },
-    {
-      "link": "#",
-      "imageSrc": "assets/images/portfolio/05.jpg",
-      "clientLogo": "assets/images/clients/light/yepp.svg",
-      "title": "Nedostajući spoj",
-      "description": "Male stvari koje čine razliku."
-    },
-    {
-      "link": "#",
-      "imageSrc": "assets/images/portfolio/06.jpg",
-      "clientLogo": "assets/images/clients/light/dotmedia.svg",
-      "title": "Cvjetajuća modna marka",
-      "description": "Inspirirana prirodom, stvorena za vašu ljepotu."
-    },
-    {
-      "link": "#",
-      "imageSrc": "assets/images/portfolio/07.jpg",
-      "clientLogo": "assets/images/clients/light/campari.svg",
-      "title": "Život je težak u planinama",
-      "description": "Deset vinarija s jakim osobnostima, individualnim pričama i višeslojnim vinima."
-    }
-  ],
   "step1_title": "Istraživanje i <br> analitika",
   "step1_desc": "Temelj uspješne izrade web stranica kroz podatke i korisničke uvide.",
   "step2_title": "Dizajn i <br> razvoj",
   "step2_desc": "Kreativno oblikovanje i tehnička izrada web stranica za vrhunsko online iskustvo.",
   "step3_title": "Testiranje i <br> lansiranje",
   "step3_desc": "Provjera kvalitete i uspješno pokretanje web stranica za besprijekoran rad od prvog dana.",
-  "clients_title": "Suradnje...",
-  "clients_desc": "Zajedno stvaramo web stranice koje spajaju vašu viziju i našu stručnost, uz povjerenje i jasnu komunikaciju.",
-  "client_logos": [
-    "assets/images/clients/colored/campari.svg",
-    "assets/images/clients/colored/pixo.svg",
-    "assets/images/clients/colored/dotmedia.svg",
-    "assets/images/clients/colored/04.svg",
-    "assets/images/clients/colored/eureka.svg",
-    "assets/images/clients/colored/giant.svg",
-    "assets/images/clients/colored/yepp.svg",
-    "assets/images/clients/colored/08.svg",
-    "assets/images/clients/colored/09.svg",
-    "assets/images/clients/colored/10.svg",
-    "assets/images/clients/colored/11.svg"
-  ],
   "our_work_title": "Naši Projekti",
   "our_work_button": "Pogledaj projekte",
   "our_work_image": "assets/images/about/05.jpg",
